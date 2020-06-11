@@ -1,0 +1,21 @@
+/* Basic CSS reset and style */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; /* set font size to a mutiple of 10 */
+}
+
+body {
+  min-height: 100vh;
+}
