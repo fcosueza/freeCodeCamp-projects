@@ -23,11 +23,12 @@ body {
 /* Element Styling */
 
 .header {
-  height: 100vh;
   flex-direction: column;
+  height: 100vh;
+  background: #d2b447;
 }
 
-.main-title, 
+.main-title,
 .main-description {
   margin-top: 0;
   text-align: center;
