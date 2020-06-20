@@ -19,3 +19,11 @@ html {
 body {
   min-height: 100vh;
 }
+
+/* Util Classes */
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
