@@ -20,6 +20,28 @@ body {
   min-height: 100vh;
 }
 
+/* Element Styling */
+
+.header {
+  height: 100vh;
+  flex-direction: column;
+}
+
+.main-title, 
+.main-description {
+  margin-top: 0;
+  text-align: center;
+}
+
+.main-title {
+  font-size: 15rem;
+  margin-bottom: 4rem;
+}
+
+.main-description {
+  font-size: 6rem;
+}
+
 /* Util Classes */
 
 .flex-center {
