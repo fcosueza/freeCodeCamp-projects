@@ -71,6 +71,7 @@ body {
   min-width: 40rem;
   padding: 8rem 0;
   align-self: start;
+  text-align: center;
 }
 
 .portrait {
@@ -80,7 +81,7 @@ body {
 .img-portrait {
   float: left;
   width: 20rem;
-  height: 25rem;
+  height: 23rem;
   margin-right: 4rem;
   background: white;
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
@@ -88,7 +89,11 @@ body {
 
 .text-portrait {
   line-height: 1.4;
-  text-align: center;
+  margin-top: 1rem;
+}
+
+.bio-text {
+  margin-top: 8rem;
 }
 
 /* Util Classes */
