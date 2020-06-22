@@ -59,6 +59,38 @@ body {
   margin-top: 2rem;
 }
 
+.sect-bio {
+  font-size: 2.4rem;
+  height: 200vh;
+  align-items: start;
+  background: #cfc18f;
+}
+
+.content {
+  width: 60%;
+  min-width: 40rem;
+  padding: 8rem 0;
+  align-self: start;
+}
+
+.portrait {
+  display: flow-root;
+}
+
+.img-portrait {
+  float: left;
+  width: 20rem;
+  height: 25rem;
+  margin-right: 4rem;
+  background: white;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+}
+
+.text-portrait {
+  line-height: 1.4;
+  text-align: center;
+}
+
 /* Util Classes */
 
 .flex-center {
