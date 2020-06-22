@@ -61,7 +61,6 @@ body {
 
 .sect-bio {
   font-size: 2.4rem;
-  height: 200vh;
   align-items: start;
   background: #cfc18f;
 }
@@ -94,6 +93,14 @@ body {
 
 .bio-text {
   margin-top: 8rem;
+}
+
+.panoramic-img {
+  width: 100%;
+  height: 50rem;
+  margin-top: 8rem;
+  background: white;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 }
 
 /* Util Classes */
