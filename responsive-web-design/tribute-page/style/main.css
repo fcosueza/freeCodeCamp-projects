@@ -29,14 +29,17 @@ body {
 }
 
 .main-title,
-.main-description {
-  margin-top: 0;
+.main-description,
+.quote__text {
+  margin: 0;
+  width: 60%;
+  min-width: 40rem;
   text-align: center;
 }
 
 .main-title {
   font-size: 15rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .main-description {
@@ -50,8 +53,6 @@ body {
 
 .quote__text {
   font-size: 2.5rem;
-  width: 60%;
-  text-align: center;
 }
 
 .quote__foot {
