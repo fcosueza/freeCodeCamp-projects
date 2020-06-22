@@ -4,10 +4,6 @@
 *::after,
 *::before {
   box-sizing: border-box;
-}
-
-html,
-body {
   margin: 0;
   padding: 0;
 }
@@ -60,45 +56,45 @@ body {
 }
 
 .sect-bio {
-  font-size: 2.4rem;
+  font-size: 2rem;
   align-items: start;
   background: #cfc18f;
+  padding-top: 8rem;
 }
 
 .content {
   width: 60%;
   min-width: 40rem;
-  padding: 8rem 0;
   align-self: start;
   text-align: center;
+  line-height: 1.4;
 }
 
 .portrait {
   display: flow-root;
+  vertical-align: center;
 }
 
 .img-portrait {
   float: left;
   width: 20rem;
-  height: 23rem;
-  margin-right: 4rem;
+  height: 20rem;
+  margin-right: 2rem;
   background: white;
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 }
 
 .text-portrait {
-  line-height: 1.4;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .bio-text {
-  margin-top: 8rem;
+  margin: 8rem 0;
 }
 
 .panoramic-img {
   width: 100%;
   height: 50rem;
-  margin-top: 8rem;
   background: white;
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 }
