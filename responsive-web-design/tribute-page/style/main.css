@@ -57,7 +57,6 @@ body {
 
 .sect-bio,
 .sect-work {
-  font-size: 2rem;
   align-items: start;
   padding-top: 8rem;
 }
@@ -71,9 +70,9 @@ body {
 }
 
 .content {
+  font-size: 2rem;
   width: 60%;
   min-width: 40rem;
-  align-self: start;
   text-align: center;
   line-height: 1.4;
 }
@@ -124,6 +123,12 @@ body {
   height: 25rem;
   background: white;
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+}
+
+.sect-links {
+  height: 40vh;
+  padding: 8rem 0;
+  background: #c4c4c4;
 }
 
 /* Util Classes */
