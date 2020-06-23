@@ -55,11 +55,19 @@ body {
   margin-top: 2rem;
 }
 
-.sect-bio {
+.sect-bio,
+.sect-work {
   font-size: 2rem;
   align-items: start;
-  background: #cfc18f;
   padding-top: 8rem;
+}
+
+.sect-bio {
+  background: #cfc18f;
+}
+
+.sect-work {
+  background: #ebe8cf;
 }
 
 .content {
@@ -93,6 +101,11 @@ body {
   height: 50rem;
   background: white;
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+}
+
+.transition {
+  height: 15rem;
+  background: white;
 }
 
 /* Util Classes */
