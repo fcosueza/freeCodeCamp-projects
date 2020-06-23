@@ -131,6 +131,13 @@ body {
   background: #c4c4c4;
 }
 
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  color: white;
+  background: black;
+}
+
 /* Util Classes */
 
 .flex-center {
