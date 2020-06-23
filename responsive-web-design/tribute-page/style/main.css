@@ -108,6 +108,24 @@ body {
   background: white;
 }
 
+.work-text {
+  margin-bottom: 8rem;
+}
+
+.work-images {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 8rem;
+}
+
+.book-img {
+  width: 21rem;
+  height: 25rem;
+  background: white;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+}
+
 /* Util Classes */
 
 .flex-center {
