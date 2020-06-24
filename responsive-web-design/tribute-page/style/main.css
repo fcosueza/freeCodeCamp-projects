@@ -18,6 +18,15 @@ body {
 
 /* Element Styling */
 
+.content {
+  font-size: 2rem;
+  width: 60%;
+  min-width: 40rem;
+  max-width: 150rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
 .header {
   height: 100vh;
   background: #d2b447;
@@ -56,15 +65,6 @@ body {
 
 .sect-work {
   background: #ebe8cf;
-}
-
-.content {
-  font-size: 2rem;
-  width: 60%;
-  min-width: 40rem;
-  max-width: 150rem;
-  text-align: center;
-  line-height: 1.4;
 }
 
 .portrait {
