@@ -27,6 +27,10 @@ body {
   line-height: 1.4;
 }
 
+.content > * {
+  margin: 8rem 0;
+}
+
 .header {
   height: 100vh;
   background: #d2b447;
@@ -51,12 +55,11 @@ body {
 }
 
 .quote__foot {
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 .section {
   align-items: start;
-  padding-top: 8rem;
 }
 
 .sect-bio {
@@ -72,17 +75,13 @@ body {
   vertical-align: center;
 }
 
-.img-portrait {
+.portrait__img {
   float: left;
   width: 18rem;
   height: 19rem;
   margin-right: 2rem;
   background: white;
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-}
-
-.bio-text {
-  margin: 8rem 0;
 }
 
 .panoramic-img {
@@ -97,15 +96,10 @@ body {
   background: white;
 }
 
-.work-text {
-  margin-bottom: 8rem;
-}
-
 .work-images {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-bottom: 8rem;
 }
 
 .book-img {
@@ -117,7 +111,6 @@ body {
 
 .sect-links {
   height: 40vh;
-  padding: 8rem 0;
   background: #c4c4c4;
 }
 
