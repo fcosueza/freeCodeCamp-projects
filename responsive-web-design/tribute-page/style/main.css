@@ -71,6 +71,11 @@ body {
   background: #ebe8cf;
 }
 
+.section-links {
+  height: 40vh;
+  background: #c4c4c4;
+}
+
 .portrait {
   display: flow-root;
   vertical-align: center;
@@ -105,11 +110,6 @@ body {
   width: 21rem;
   height: 25rem;
   background: white;
-}
-
-.section-links {
-  height: 40vh;
-  background: #c4c4c4;
 }
 
 .footer {
