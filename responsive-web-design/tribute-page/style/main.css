@@ -19,14 +19,12 @@ body {
 /* Element Styling */
 
 .header {
-  flex-direction: column;
   height: 100vh;
   background: #d2b447;
 }
 
 .header__title,
 .header__description {
-  margin: 0;
   width: 60%;
   min-width: 40rem;
   text-align: center;
@@ -34,7 +32,7 @@ body {
 
 .header__title {
   font-size: 15rem;
-  margin-bottom: 3rem;
+  margin: 0 0 3rem;
 }
 
 .header__description {
@@ -42,15 +40,19 @@ body {
 }
 
 .quote {
-  font-size: 2.5rem;
   background: #f3e5e5;
   padding: 8rem 0;
+}
+
+.quote__text {
+  font-size: 2.5rem;
 }
 
 .quote__foot {
   margin-top: 2rem;
 }
 
+.section,
 .sect-bio,
 .sect-work {
   align-items: start;
@@ -139,6 +141,7 @@ body {
 
 .flex-center {
   display: flex;
+  flex-flow: column wrap;
   align-items: center;
   justify-content: center;
 }
