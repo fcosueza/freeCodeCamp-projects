@@ -24,21 +24,20 @@ body {
   background: #d2b447;
 }
 
-.main-title,
-.main-description,
-.quote__text {
+.header__title,
+.header__description {
   margin: 0;
   width: 60%;
   min-width: 40rem;
   text-align: center;
 }
 
-.main-title {
+.header__title {
   font-size: 15rem;
   margin-bottom: 3rem;
 }
 
-.main-description {
+.header__description {
   font-size: 6rem;
 }
 
