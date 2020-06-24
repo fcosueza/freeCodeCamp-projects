@@ -38,11 +38,12 @@ body {
 
 .header__title {
   font-size: 15rem;
-  margin: 0 0 3rem;
+  margin-bottom: 2rem;
 }
 
 .header__description {
   font-size: 6rem;
+  margin-top: 0;
 }
 
 .quote {
@@ -62,11 +63,11 @@ body {
   align-items: start;
 }
 
-.sect-bio {
+.section-biography {
   background: #cfc18f;
 }
 
-.sect-work {
+.section-work {
   background: #ebe8cf;
 }
 
@@ -84,7 +85,7 @@ body {
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 }
 
-.panoramic-img {
+.figure__img {
   width: 100%;
   height: 50rem;
   background: white;
@@ -96,20 +97,20 @@ body {
   background: white;
 }
 
-.work-images {
+.gallery {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.book-img {
+.gallery__img {
   width: 21rem;
   height: 25rem;
   background: white;
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 }
 
-.sect-links {
+.section-links {
   height: 40vh;
   background: #c4c4c4;
 }
