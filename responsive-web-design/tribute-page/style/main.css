@@ -3,6 +3,7 @@
 :root {
   --font-color: #fff;
   --transition-color: #000;
+  --details-color: #8c251c;
   --bio-color: #594a4a;
   --work-color: #192624;
 }
@@ -33,10 +34,15 @@ body {
   min-width: 70rem;
   max-width: 140rem;
   line-height: 1.4;
+  color: var(--font-color);
 }
 
 .content > * {
   margin: 8rem 0;
+}
+
+.detail {
+  color: var(--details-color);
 }
 
 .header {
@@ -62,8 +68,8 @@ body {
 
 .quote {
   text-align: center;
-  background: #f3e5e5;
   padding: 8rem 0;
+  background: var(--transition-color);
 }
 
 .quote__text {
