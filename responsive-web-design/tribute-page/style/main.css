@@ -38,7 +38,7 @@ body {
 
 .header__title {
   font-size: 15rem;
-  margin-bottom: 2rem;
+  margin: 0 0 2rem;
 }
 
 .header__description {
@@ -59,8 +59,11 @@ body {
   margin: 2rem 0;
 }
 
-.section {
-  align-items: start;
+.section,
+.header,
+.quote {
+  flex-flow: column wrap;
+  justify-content: center;
 }
 
 .section-biography {
@@ -101,8 +104,7 @@ body {
 }
 
 .gallery {
-  display: flex;
-  align-items: center;
+  flex-flow: row wrap;
   justify-content: space-evenly;
 }
 
@@ -123,9 +125,7 @@ body {
 
 .flex-center {
   display: flex;
-  flex-flow: column wrap;
   align-items: center;
-  justify-content: center;
 }
 
 .box-shadow {
