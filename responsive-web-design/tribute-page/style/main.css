@@ -1,3 +1,12 @@
+/* Theme Variables */
+
+:root {
+  --font-color: #fff;
+  --transition-color: #000;
+  --bio-color: #594a4a;
+  --work-color: #192624;
+}
+
 /* Basic CSS reset and style */
 
 *,
@@ -23,7 +32,6 @@ body {
   width: 50%;
   min-width: 70rem;
   max-width: 140rem;
-  text-align: center;
   line-height: 1.4;
 }
 
@@ -33,20 +41,27 @@ body {
 
 .header {
   height: 100vh;
-  background: #d2b447;
+  padding-left: 10rem;
+  color: white;
+  background: center / cover no-repeat url(../images/hero.jpg);
 }
 
 .header__title {
+  position: relative;
+  bottom: 5rem;
   font-size: 15rem;
   margin: 0 0 2rem;
 }
 
 .header__description {
+  position: relative;
+  bottom: 3rem;
   font-size: 6rem;
-  margin-top: 0;
+  margin: 0;
 }
 
 .quote {
+  text-align: center;
   background: #f3e5e5;
   padding: 8rem 0;
 }
@@ -60,7 +75,6 @@ body {
 }
 
 .section,
-.header,
 .quote {
   flex-flow: column wrap;
   justify-content: center;
