@@ -3,7 +3,7 @@
 :root {
   --font-color: #fff;
   --transition-color: #000;
-  --detail-colors-color: #8c251c;
+  --detail-color: #8c251c;
   --bio-color: #594a4a;
   --work-color: #192624;
   --links-color: #8c7851;
@@ -46,7 +46,7 @@ body {
   height: 100vh;
   padding-left: 10%;
   color: white;
-  background: center / cover no-repeat url(../images/hero.jpg);
+  background: center / cover no-repeat url(../images/hero_1920x1282.jpeg);
 }
 
 .header__title {
@@ -155,5 +155,5 @@ body {
 }
 
 .detail-color {
-  color: var(--detail-colors-color);
+  color: var(--detail-color);
 }
