@@ -107,8 +107,7 @@ body {
 
 .portrait__img {
   float: left;
-  width: 18rem;
-  height: 19rem;
+  width: 25%;
   margin-right: 2rem;
   background: white;
 }
