@@ -3,7 +3,6 @@
 :root {
   --font-color: #fff;
   --transition-color: #000;
-  --detail-color: #8c251c;
   --bio-color: #594a4a;
   --work-color: #192624;
   --links-color: #8c7851;
@@ -155,5 +154,5 @@ body {
 }
 
 .detail-color {
-  color: var(--detail-color);
+  color: var(--bio-color);
 }
