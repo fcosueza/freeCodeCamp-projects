@@ -19,7 +19,7 @@
 }
 
 html {
-  font-size: 62.5%; /* set font size to a mutiple of 10 */
+  font-size: 85%; /* set font size to a mutiple of 10 */
 }
 
 body {
@@ -110,6 +110,10 @@ body {
   width: 25%;
   margin-right: 2rem;
   background: white;
+}
+
+.portrait__text:nth-of-type(n + 2) {
+  margin-top: 8rem;
 }
 
 .figure__img {
