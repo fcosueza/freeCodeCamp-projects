@@ -19,7 +19,7 @@
 }
 
 html {
-  font-size: 85%; /* set font size to a mutiple of 10 */
+  font-size: 62.5%; /* set font size to a mutiple of 10 */
 }
 
 body {
@@ -116,10 +116,22 @@ body {
   margin-top: 8rem;
 }
 
+.figure {
+  flex-flow: column wrap;
+}
+
 .figure__img {
   width: 100%;
   height: 50rem;
   background: white;
+}
+
+.figure__caption {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.8rem;
+  text-align: center;
+  background: var(--transition-color);
 }
 
 .transition {
