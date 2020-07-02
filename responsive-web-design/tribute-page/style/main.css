@@ -100,16 +100,27 @@ body {
   background: var(--links-color);
 }
 
-.portrait {
+.float {
   display: flow-root;
   vertical-align: center;
 }
 
-.portrait__img {
+.float__img-left {
   float: left;
-  width: 25%;
   margin-right: 2rem;
-  background: white;
+}
+
+.float__img-right {
+  float: right;
+  margin-left: 2rem;
+}
+
+.img-portrait {
+  width: 25%;
+}
+
+.img-grave {
+  width: 30%;
 }
 
 .figure {
@@ -129,7 +140,7 @@ body {
 }
 
 .transition {
-  height: 13rem;
+  height: rem;
   background: var(--transition-color);
 }
 
