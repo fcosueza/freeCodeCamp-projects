@@ -112,17 +112,12 @@ body {
   background: white;
 }
 
-.portrait__text:nth-of-type(n + 2) {
-  margin-top: 8rem;
-}
-
 .figure {
   flex-flow: column wrap;
 }
 
 .figure__img {
   width: 100%;
-  background: white;
 }
 
 .figure__caption {
