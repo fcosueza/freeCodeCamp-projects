@@ -129,6 +129,7 @@ body {
 
 .figure__img {
   width: 100%;
+  max-width: 140rem;
 }
 
 .figure__caption {
@@ -140,7 +141,7 @@ body {
 }
 
 .transition {
-  height: rem;
+  height: 10rem;
   background: var(--transition-color);
 }
 
