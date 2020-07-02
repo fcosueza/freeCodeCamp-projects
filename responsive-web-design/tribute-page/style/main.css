@@ -110,19 +110,6 @@ body {
   margin-right: 2rem;
 }
 
-.float__img-right {
-  float: right;
-  margin-left: 2rem;
-}
-
-.img-portrait {
-  width: 25%;
-}
-
-.img-grave {
-  width: 30%;
-}
-
 .figure {
   flex-flow: column wrap;
 }
