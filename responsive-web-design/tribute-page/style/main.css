@@ -119,6 +119,10 @@ body {
   max-width: 140rem;
 }
 
+.img-portrait {
+  width: 25%;
+}
+
 .figure__caption {
   width: 100%;
   padding: 0.8rem;
