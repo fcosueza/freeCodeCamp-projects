@@ -142,8 +142,8 @@ body {
 }
 
 .card {
-  width: 25rem;
-  height: 40rem;
+  width: 20rem;
+  height: 30rem;
   margin: 2rem;
   background: black;
 }
@@ -151,7 +151,7 @@ body {
 .card__img {
   display: block;
   width: 100%;
-  height: 35rem;
+  height: 25rem;
   margin: 0 auto;
   background: white;
 }
