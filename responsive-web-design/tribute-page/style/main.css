@@ -4,8 +4,8 @@
   --font-color: #fff;
   --transition-color: #000;
   --bio-color: #594a4a;
-  --books-color: #192624;
-  --links-color: #675635;
+  --links-color: #192624;
+  --books-color: #675635;
 }
 
 /* Basic CSS reset and style */
@@ -142,8 +142,17 @@ body {
 }
 
 .card {
-  width: 30%;
-  height: 25rem;
+  width: 25rem;
+  height: 40rem;
+  margin: 2rem;
+  background: black;
+}
+
+.card__img {
+  display: block;
+  width: 100%;
+  height: 35rem;
+  margin: 0 auto;
   background: white;
 }
 
