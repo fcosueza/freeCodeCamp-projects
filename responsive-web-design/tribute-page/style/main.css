@@ -140,7 +140,7 @@ body {
   justify-content: space-between;
 }
 
-.card {
+.card-3D {
   position: relative;
   width: 25rem;
   height: 41rem;
@@ -149,20 +149,16 @@ body {
   perspective: 1000px;
 }
 
-.card__content {
+.card-3D__content {
   font-size: 1.5rem;
   width: 100%;
   height: 100%;
-  transition: 0.8s;
+  transition: transform 0.8s;
   transform-style: preserve-3d;
 }
 
-.card:hover .card__content {
-  transform: rotateY(180deg);
-}
-
-.card__front,
-.card__back {
+.card-3D__front,
+.card-3D__back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -172,18 +168,18 @@ body {
   backface-visibility: hidden;
 }
 
-.card__back {
+.card-3D__back {
   transform: rotateY(180deg);
   padding: 2rem;
 }
 
-.card__img {
+.card-3D__img {
   display: block;
   width: 100%;
   margin: 0 auto;
 }
 
-.card__title {
+.card-3D__title {
   line-height: 1.5;
   text-align: center;
   margin-top: 1rem;
@@ -194,6 +190,12 @@ body {
   padding: 2rem 0;
   color: white;
   background: black;
+}
+
+/* State Classes */
+
+.card-3D:hover .card-3D__content {
+  transform: rotateY(180deg);
 }
 
 /* Util Classes */
