@@ -186,7 +186,7 @@ body {
 
 .strong {
   display: inline-block;
-  width: 35%;
+  width: 32%;
 }
 
 .footer {
@@ -196,7 +196,7 @@ body {
   background: black;
 }
 
-/* State Classes */
+/* Elements State */
 
 .card-3D:hover .card-3D__content {
   transform: rotateY(180deg);
@@ -212,6 +212,8 @@ body {
 .box-shadow {
   box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.5);
 }
+
+/* Media Queries */
 
 @media only screen and (min-width: 1400px) {
   html {
