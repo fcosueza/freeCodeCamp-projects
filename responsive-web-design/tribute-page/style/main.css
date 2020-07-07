@@ -1,4 +1,4 @@
-/* Theme Variables */
+/* Variables */
 
 :root {
   --font-color: #fff;
@@ -189,6 +189,11 @@ body {
   width: 32%;
 }
 
+li {
+  display: inline-block;
+  margin: 2rem;
+}
+
 .footer {
   text-align: center;
   padding: 2rem 0;
@@ -215,7 +220,7 @@ body {
 
 /* Media Queries */
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 2500px) {
   html {
     font-size: 120%;
   }
