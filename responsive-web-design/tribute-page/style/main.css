@@ -91,7 +91,6 @@ body {
 }
 
 .section-links {
-  height: 40vh;
   background: var(--links-color);
 }
 
@@ -165,7 +164,6 @@ body {
 
 .card-3D__back {
   transform: rotateY(180deg);
-  padding: 2rem;
 }
 
 .card-3D__img {
@@ -178,6 +176,17 @@ body {
   line-height: 1.5;
   text-align: center;
   margin-top: 1rem;
+}
+
+.card-3D__text {
+  height: 100%;
+  padding: 1rem;
+  background: var(--bio-color);
+}
+
+.strong {
+  display: inline-block;
+  width: 35%;
 }
 
 .footer {
@@ -202,4 +211,10 @@ body {
 
 .box-shadow {
   box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (min-width: 1400px) {
+  html {
+    font-size: 120%;
+  }
 }
