@@ -189,20 +189,20 @@ body {
   width: 32%;
 }
 
-.links-list {
+.link-list {
   margin-left: 2rem;
 }
 
 .link-list__link {
   display: inline-block;
   margin-top: 1rem;
-  color: white;
 }
 
 .footer {
+  font-size: 1.5rem;
   text-align: center;
   padding: 2rem 0;
-  color: white;
+  color: var(--font-color);
   background: black;
 }
 
@@ -210,6 +210,14 @@ body {
 
 .card-3D:hover .card-3D__content {
   transform: rotateY(180deg);
+}
+
+.link-list__link:link {
+  color: var(--font-color);
+}
+
+.link-list__link:visited {
+  color: var(--books-color);
 }
 
 /* Util Classes */
@@ -228,5 +236,44 @@ body {
 @media only screen and (min-width: 2500px) {
   html {
     font-size: 120%;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  html {
+    font-size: 50%;
+  }
+
+  .content {
+    min-width: 22rem;
+    width: 90%;
+  }
+
+  .gallery {
+    justify-content: space-evenly;
+  }
+
+  .img-portrait {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .header__title {
+    font-size: 10rem;
+  }
+
+  .header__description {
+    font-size: 4rem;
+  }
+
+  .img-portrait {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  html {
+    font-size: 45%;
   }
 }
