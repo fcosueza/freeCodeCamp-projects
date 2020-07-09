@@ -42,7 +42,7 @@ body {
 }
 
 .header {
-  height: 100vh;
+  min-height: 100vh;
   padding-left: 10%;
   color: white;
   background: center / cover no-repeat url(../images/hero_1920x1282.jpeg);
