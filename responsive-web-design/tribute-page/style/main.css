@@ -125,7 +125,7 @@ body {
 }
 
 .transition {
-  height: 10rem;
+  height: 5rem;
   background: var(--transition-color);
 }
 
@@ -189,9 +189,14 @@ body {
   width: 32%;
 }
 
-li {
+.links-list {
+  margin-left: 2rem;
+}
+
+.link-list__link {
   display: inline-block;
-  margin: 2rem;
+  margin-top: 1rem;
+  color: white;
 }
 
 .footer {
