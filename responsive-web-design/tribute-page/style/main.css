@@ -184,7 +184,7 @@ body {
   background: var(--bio-color);
 }
 
-.strong {
+.card-3D__text--strong {
   display: inline-block;
   width: 32%;
 }
