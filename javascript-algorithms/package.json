@@ -1,0 +1,25 @@
+{
+  "name": "javascript-algorithms",
+  "version": "1.0.0",
+  "description": "Exercises for freeCodeCamp Javascript Algorithms and Data Structures certification",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fcosueza/freeCodeCamp-projects.git"
+  },
+  "author": "Fco Sueza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fcosueza/freeCodeCamp-projects.git"
+  },
+  "homepage": "https://github.com/fcosueza/freeCodeCamp-projects/javascript-algorithms#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "babel-jest": "^26.1.0",
+    "jest": "^26.1.0"
+  }
+}
