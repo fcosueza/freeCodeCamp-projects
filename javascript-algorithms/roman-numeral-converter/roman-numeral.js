@@ -14,6 +14,13 @@ const ROMAN = [
   ["I", 1]
 ];
 
-const convertToRoman = number => number;
+const convertToRoman = number =>
+  ROMAN.reduce(
+    (acc, curr) => [
+      acc[0] + curr[0].repeat(acc[1] / curr[1]),
+      acc[1] % curr[1]
+    ],
+    ["", number]
+  )[0];
 
 export default convertToRoman;
