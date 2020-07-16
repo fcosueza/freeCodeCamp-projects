@@ -18,10 +18,22 @@ body {
 
 /* Elements style */
 
+.main-content {
+  padding: 2rem;
+}
+
 .form {
-  max-width: 50rem;
+  font-size: 1.6rem;
+  max-width: 60rem;
   min-width: 22rem;
   margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Util Classes */
+
+.box-shadow {
+  box-shadow: 0 0.7rem 2rem rgba(0, 0, 0, 0.175);
 }
 
 
