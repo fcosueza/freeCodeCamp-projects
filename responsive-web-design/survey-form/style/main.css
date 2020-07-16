@@ -16,4 +16,12 @@ body {
   min-height: 100vh;
 }
 
+/* Elements style */
+
+.form {
+  max-width: 50rem;
+  min-width: 22rem;
+  margin: 0 auto;
+}
+
 
