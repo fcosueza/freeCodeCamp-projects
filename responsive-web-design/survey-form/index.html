@@ -16,23 +16,33 @@
   <body>
 
     <main>
-      <form action="/submit-data" method="post">
+      <form id="survey-form" action="/submit-data" method="post">
         <header>
-          <h1>Codvid-19 Survey</h1>
-          <p>Data collection for EU Codiv-19 patients and analisys research</p>
+          <h1 id="title">Codvid-19 Survey</h1>
+          <p id="description">Data collection for EU Codiv-19 patients and analisys research</p>
         </header>
         <section>
           <h2>Patient Related Info</h2>
           <hr>
 
           <div>
-            <label for="age">How old are you?</label>
-            <input type="number" value="1" min="1" max="120" id="age" name="patien-age" step="1" required>
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" name="patient-name" placeholder="Introduce your name..." required>
           </div>
 
           <div>
-            <label for="country">In which country of EU do you live?</label>
-            <select id="country">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" placeholder="your@email.com" required>
+          </div>
+
+          <div>
+            <label for="age" id="number-label">How old are you?</label>
+            <input type="number" id="number" min="1" max="120" id="age" name="patien-age" step="1" placeholder="Introduce a number between 1 and 120" required>
+          </div>
+
+          <div>
+            <label for="dropdown">In which country of EU do you live?</label>
+            <select id="dropdown">
               <option value="austria">Austria</option>
               <option value="belgium">Belgium</option>
               <option value="bulgaria">Bulgaria</option>
@@ -181,13 +191,20 @@
               <label for="hospital-no">No</label>
             </div>
           </fieldset>
+
+          <div>
+            <label for="msg">If you think there are something we miss, leave us a message</label>
+          <textarea id="msg" name="msg" cols="30" rows="10"></textarea>
+          </div>
         </section>
 
         <div>
-          <button type="button">Submit</button>
+          <button id="submit" type="submit">Submit</button>
         </div>
       </form>
     </main>
 
+    <!-- freeCodeCamp test suit -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
