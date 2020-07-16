@@ -12,7 +12,182 @@
 
     <title>COVID-19 Survey Form</title>
   </head>
+
   <body>
+
+    <main>
+      <form action="/submit-data" method="post">
+        <header>
+          <h1>Codvid-19 Survey</h1>
+          <p>Data collection for EU Codiv-19 patients and analisys research</p>
+        </header>
+        <section>
+          <h2>Patient Related Info</h2>
+          <hr>
+
+          <div>
+            <label for="age">How old are you?</label>
+            <input type="number" value="1" min="1" max="120" id="age" name="patien-age" step="1" required>
+          </div>
+
+          <div>
+            <label for="country">In which country of EU do you live?</label>
+            <select id="country">
+              <option value="austria">Austria</option>
+              <option value="belgium">Belgium</option>
+              <option value="bulgaria">Bulgaria</option>
+              <option value="croatia">Croatia</option>
+              <option value="cyprus">Cyprus</option>
+              <option value="czech Republic">Czech Republic</option>
+              <option value="estonia">Estonia</option>
+              <option value="finland">Finland</option>
+              <option value="france">France</option>
+              <option value="germany">Germany</option>
+              <option value="greece">Greece</option>
+              <option value="hungary">Hungary</option>
+              <option value="ireland">Ireland</option>
+              <option value="italy">Italy</option>
+              <option value="lithuania">Lithuania</option>
+              <option value="luxembourg">Luxembourg</option>
+              <option value="malta">Malta</option>
+              <option value="netherlands">Netherlands</option>
+              <option value="poland">Poland</option>
+              <option value="portulgal">Portugal</option>
+              <option value="romania">Romania</option>
+              <option value="slovakia">Slovakia</option>
+              <option value="slovenia">Slovenia</option>
+              <option value="spain">Spain</option>
+              <option value="sweden">Sweden</option>
+            </select>
+          </div>
+
+          <fieldset>
+            <legend>Do you have previous pathologies?</legend>
+            <div>
+              <input type="checkbox" value="cardio" id="prev-cardio" name="checkbox-prev">
+              <label for="prev-cardio">Cardiovascular disease</label>
+            </div>
+            <div>
+              <input type="checkbox" value="hypertension" id="prev-hyper" name="checkbox-prev">
+              <label for="prev-hyper">Hypertension</label>
+            </div>
+            <div>
+              <input type="checkbox" value="diabetes" id="prev-diabetes" name="checkbox-prev">
+              <label for="prev-diabetes">Diabetes</label>
+            </div>
+            <div>
+              <input type="checkbox" value="lung-diseas" id="prev-lung" name="checkbox-prev">
+              <label for="prev-lung">Chronic Lung Disease</label>
+            </div>
+            <div>
+              <input type="checkbox" value="immuno" id="prev-immuno" name="checkbox-prev">
+              <label for="prev-immuno">Immunosuppression</label>
+            </div>
+            <div>
+              <input type="checkbox" value="cancer" id="prev-cancer" name="checkbox-prev">
+              <label for="prev-cancer">Cancer</label>
+            </div>
+            <div>
+              <input type="checkbox" value="ictus" id="prev-ictus" name="checkbox-prev">
+              <label for="prev-ictus">Ictus</label>
+            </div>
+            <div>
+              <input type="checkbox" value="dementia" id="prev-dementia" name="checkbox-prev">
+              <label for="prev-dementia">Dementia</label>
+            </div>
+            <div>
+              <input type="checkbox" value="liver" id="prev-liver" name="checkbox-prev">
+              <label for="prev-liver">Chronic Liver Disease</label>
+            </div>
+            <div>
+              <input type="checkbox" value="kidney" id="prev-kidney" name="checkbox-prev">
+              <label for="prev-kidney">Chronic Kideny Failure</label>
+            </div>
+            <div>
+              <input type="checkbox" value="none" id="prev-none" name="checkbox-prev">
+              <label for="prev-none">None</label>
+            </div>
+          </fieldset>
+        </section>
+        <section>
+          <h2>Course of Illnes Info</h2>
+          <hr>
+
+          <div>
+            <label for="symtoms-date">When the symptoms started?</label>
+            <input type="date" id="date" name="symtoms-date">
+          </div>
+
+          <fieldset>
+            <legend>Which symtoms have you had throughout the illness?</legend>
+            <div>
+              <input type="checkbox" value="fever" id="sympt-fever" name="checkbox-symps">
+              <label for="sympt-fever">Fever</label>
+            </div>
+            <div>
+              <input type="checkbox" value="fatigue" id="sympt-fatigue" name="checkbox-symps">
+              <label for="sympt-fatigue">Fatigue</label>
+            </div>
+            <div>
+              <input type="checkbox" value="dry-cough" id="sympt-cough" name="checkbox-symps">
+              <label for="sympt-cough">Dry Cough</label>
+            </div>
+            <div>
+              <input type="checkbox" value="loss-apetite" id="sympt-apetite" name="checkbox-symps">
+              <label  for="sympt-apetite">Loss of apetite</label>
+            </div>
+            <div>
+              <input type="checkbox" value="body-aches" id="sympt-body-aches" name="checkbox-symps">
+              <label for="sympt-body-aches">Body Aches</label>
+            </div>
+            <div>
+              <input type="checkbox" value="shortness-breath" id="sympt-breath" name="checkbox-symps">
+              <label for="sympt-breath">Shortness of Breath</label>
+            </div>
+            <div>
+              <input type="checkbox" value="mucus" id="sympt-mucus" name="checkbox-symps">
+              <label for="sympt-mucus">Mucus</label>
+            </div>
+            <div>
+              <input type="checkbox" value="sore-throat" id="sympt-sorethroat" name="checkbox-symps">
+              <label for="sympt-sorethroat">Sore Throat</label>
+            </div>
+            <div>
+              <input type="checkbox" value="headache" id="sympt-headache" name="checkbox-symps">
+              <label for="sympt-headache">Headache</label>
+            </div>
+            <div>
+              <input type="checkbox" value="nausea" id="sympt-nausea" name="checkbox-symps">
+              <label for="sympt-nausea">Nausea</label>
+            </div>
+            <div>
+              <input type="checkbox" value="diarrhea" id="sympt-diarrhea" name="checkbox-symps">
+              <label for="sympt-diarrhea">Diarrhea</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>You needed hospitalization?</legend>
+            <div>
+              <input type="radio" value="hospital-normal" id="hospital-normal" name="radio-hospi" checked>
+              <label for="hospital-normal">Yes, normal hospitalization</label>
+            </div>
+            <div>
+              <input type="radio" value="hospital-icu" id="hospital-icu" name="radio-hospi">
+              <label for="hospital-icu">Yes, ICU hopitalization</label>
+            </div>
+            <div>
+              <input type="radio" value="hospital-no" id="hospital-no" name="radio-hospi">
+              <label for="hospital-no">No</label>
+            </div>
+          </fieldset>
+        </section>
+
+        <div>
+          <button type="button">Submit</button>
+        </div>
+      </form>
+    </main>
 
   </body>
 </html>
