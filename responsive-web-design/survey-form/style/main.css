@@ -16,6 +16,12 @@ body {
   min-height: 100vh;
 }
 
+input[type="number"] {
+  -webkit-appearance: texfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
 /* Elements style */
 
 .main-content {
@@ -27,7 +33,15 @@ body {
   max-width: 60rem;
   min-width: 22rem;
   margin: 0 auto;
-  padding: 2rem;
+}
+
+.header {
+  padding: 4rem;
+  text-align: center;
+}
+
+.header__title {
+  margin: 0 0 1rem;
 }
 
 /* Util Classes */
@@ -35,5 +49,3 @@ body {
 .box-shadow {
   box-shadow: 0 0.7rem 2rem rgba(0, 0, 0, 0.175);
 }
-
-
