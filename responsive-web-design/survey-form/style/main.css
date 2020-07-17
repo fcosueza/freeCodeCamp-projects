@@ -55,9 +55,19 @@ input[type="number"] {
   margin-bottom: 1.6rem;
 }
 
-.form__section {
+.section {
   font-size: 1.6rem;
   padding: 2rem 8rem;
+}
+
+.section__title {
+  font-size: 3rem;
+  color: #1c7333;
+}
+
+.horizontal-rule {
+  height: 0.1rem;
+  background: #1c7333;
 }
 
 .input-group {
@@ -74,6 +84,10 @@ input[type="number"] {
 .input-group__label,
 .fieldset__legend {
   margin-bottom: 0.6rem;
+}
+
+.input-group__input {
+  padding: 0.6rem 0.2rem;
 }
 
 .fieldset {
