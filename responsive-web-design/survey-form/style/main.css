@@ -13,7 +13,9 @@ html {
 }
 
 body {
+  font-family: Roboto, "Helvetiva Neu", Arial, sans-serif;
   min-height: 100vh;
+  line-height: 1.5;
 }
 
 input[type="number"] {
@@ -22,26 +24,46 @@ input[type="number"] {
   appearance: textfield;
 }
 
-/* Elements style */
-
-.main-content {
-  padding: 2rem;
+label,
+input,
+textarea,
+select {
+  display: block;
+  width: 100%;
 }
 
+/* Elements style */
+
 .form {
-  font-size: 1.6rem;
-  max-width: 60rem;
+  max-width: 65rem;
   min-width: 22rem;
   margin: 0 auto;
 }
 
+.main-content {
+  padding: 5rem 0;
+}
+
 .header {
-  padding: 4rem;
+  padding: 4.8rem;
   text-align: center;
+  color: white;
+  background: linear-gradient(to bottom right, #1c7333, #28a745);
 }
 
 .header__title {
-  margin: 0 0 1rem;
+  font-size: 5rem;
+  margin: 0 0 0.5rem;
+}
+
+.header__description {
+  font-size: 1.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.form__section {
+  font-size: 1.6rem;
+  padding: 2rem 6rem;
 }
 
 /* Util Classes */

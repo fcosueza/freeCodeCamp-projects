@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/main.css" type="text/css" />
     <link rel="stylesheet" href="style/normalize.css" type="text/css" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <title>COVID-19 Survey Form</title>
   </head>
@@ -16,14 +17,14 @@
   <body>
 
     <main class="main-content">
-      <form id="survey-form"  class="form box-shadow" action="/submit-data" method="post">
-        <header>
-          <h1 id="title">Codvid-19 Survey</h1>
-          <p id="description">Data collection for EU Codiv-19 patients and analisys research</p>
+      <form class="form box-shadow" id="survey-form" action="/submit-data" method="post">
+        <header class="header">
+          <h1 class="header__title" id="title">Codvid-19 Survey</h1>
+          <p class="header__description" id="description">Data collection for EU Codiv-19 patients and analisys research</p>
         </header>
-        <section>
-          <h2>Patient Related Info</h2>
-          <hr>
+        <section class="form__section">
+          <h2 class="section__title">Patient Related Info</h2>
+          <hr class="horizontal-rule">
 
           <div>
             <label for="name" id="name-label">Name</label>
@@ -119,9 +120,9 @@
             </div>
           </fieldset>
         </section>
-        <section>
-          <h2>Course of Illnes Info</h2>
-          <hr>
+        <section class="form__section">
+          <h2 class="section__title">Course of Illnes Info</h2>
+          <hr class="horizontal-rule">
 
           <div>
             <label for="symtoms-date">When the symptoms started?</label>
