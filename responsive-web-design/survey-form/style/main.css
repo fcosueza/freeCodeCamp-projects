@@ -30,7 +30,6 @@ input[type="number"] {
 .main-content {
   padding: 5rem 0;
   line-height: 1.5;
-  font-weight: 400;
   color: #212529;
 }
 
@@ -45,6 +44,12 @@ input[type="number"] {
   padding: 4.5rem;
   text-align: center;
   color: white;
+}
+
+.header,
+.section__title,
+.hr,
+.btn {
   background: linear-gradient(to bottom right, #1c7333, #28a745);
 }
 
@@ -59,12 +64,15 @@ input[type="number"] {
 }
 
 .section {
+  width: 75%;
   font-size: 1.6rem;
-  padding: 2rem 8rem;
+  margin: 2rem auto 0;
 }
 
 .section__title {
   font-size: 3rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: #1c7333;
 }
 
@@ -73,13 +81,15 @@ input[type="number"] {
   background: #1c7333;
 }
 
-.input-group {
-  margin: 2rem 0;
+.input-group,
+.fieldset {
+  margin-top: 2rem;
 }
 
 .input-group__label,
 .input-group__input,
-.input-group__select {
+.input-group__select,
+.input-group__textarea {
   display: block;
   width: 100%;
 }
@@ -96,6 +106,22 @@ input[type="number"] {
 .fieldset {
   border: none;
   padding: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  width: 40%;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  margin: 2rem auto;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
 }
 
 /* Util Classes */
