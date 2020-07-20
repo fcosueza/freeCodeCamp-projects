@@ -48,7 +48,7 @@ input[type="number"] {
 
 .header,
 .section__title,
-.hr,
+.horizontal-rule,
 .btn {
   background: linear-gradient(to bottom right, #1c7333, #28a745);
 }
@@ -77,8 +77,8 @@ input[type="number"] {
 }
 
 .horizontal-rule {
-  height: 0.1rem;
-  background: #1c7333;
+  height: 0.3rem;
+  border: none;
 }
 
 .input-group,
@@ -118,7 +118,7 @@ input[type="number"] {
   font-size: 1.8rem;
   font-weight: bold;
   padding: 0.6rem 1.2rem;
-  margin: 2rem auto;
+  margin: 3rem auto;
   border: none;
   border-radius: 0.5rem;
   color: white;
