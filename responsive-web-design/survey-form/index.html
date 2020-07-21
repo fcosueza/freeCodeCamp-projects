@@ -18,14 +18,14 @@
 
     <main class="main-content">
       <form class="form box-shadow" id="survey-form" action="/submit-data" method="post">
-        <header class="header">
+        <header class="header bg-gradient">
           <h1 class="header__title" id="title">Codvid-19 Survey</h1>
           <p class="header__description" id="description">Data collection for EU Codiv-19 patients and analisys research</p>
         </header>
 
         <section class="section">
-          <h2 class="section__title">Patient Related Info</h2>
-          <hr class="horizontal-rule">
+          <h2 class="section__title bg-gradient bg-clip">Patient Related Info</h2>
+          <hr class="horizontal-rule bg-gradient">
 
           <div class="input-group">
             <label class="input-group__label" for="name" id="name-label">Name</label>
@@ -44,7 +44,7 @@
 
           <div class="input-group">
             <label class="input-group__label" for="dropdown">In which country do you live from the UE?</label>
-            <select class="input-group__select" id="dropdown">
+            <select class="input-group__select input-group__input" id="dropdown">
               <option value="austria">Austria</option>
               <option value="belgium">Belgium</option>
               <option value="bulgaria">Bulgaria</option>
@@ -122,8 +122,8 @@
           </fieldset>
         </section>
         <section class="section">
-          <h2 class="section__title">Course of Illnes Info</h2>
-          <hr class="horizontal-rule">
+          <h2 class="section__titlei bg-gradient bg-clip">Course of Illnes Info</h2>
+          <hr class="horizontal-rule bg-gradient">
 
           <div class="input-group">
             <label class="input-group__label" for="date">When the symptoms started?</label>
@@ -196,12 +196,12 @@
 
           <div class="input-group">
             <label class="input-group__label" for="msg">If you think we missed something, leave us a message</label>
-            <textarea class="input-group__textarea" id="msg" name="msg" cols="30" rows="10"></textarea>
+            <textarea class="input-group__input" id="msg" name="msg" cols="30" rows="10"></textarea>
           </div>
         </section>
 
         <div class="container">
-          <button class="btn" id="submit" type="submit">Submit</button>
+          <button class="btn bg-gradient" id="submit" type="submit">Submit</button>
         </div>
       </form>
     </main>
