@@ -100,11 +100,17 @@ input[type="number"] {
 }
 
 .input-group__input,
-.input-group__textarea {
+.input-group__textarea,
+.input-group__select {
+  color: rgba(0, 0, 0, 0.7);
   border: 0.1rem solid lightgrey;
   border-radius: 0.4rem;
   padding: 0.6rem 1rem;
   transition: all 0.3s ease-in;
+}
+
+*::placeholder {
+  color: black;
 }
 
 .checkbox-group__label,
@@ -139,10 +145,18 @@ input[type="number"] {
   color: white;
 }
 
+.input-group__select {
+  background: no-repeat 96%/2.5% url(../images/triangle-arrow-24.png);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 /* Elements state */
 
 .input-group__input:focus,
-.input-group__textarea:focus {
+.input-group__textarea:focus,
+.input-group__select:focus {
   box-shadow: 0 0 0.2rem 0.2rem rgba(28, 115, 51, 0.4);
   border-color: #1c7333;
   outline: 0;
