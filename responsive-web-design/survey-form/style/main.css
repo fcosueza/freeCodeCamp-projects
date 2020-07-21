@@ -34,7 +34,7 @@ input[type="number"] {
 }
 
 .form {
-  max-width: 64rem;
+  max-width: 60rem;
   min-width: 22rem;
   margin: 0 auto;
   background: white;
@@ -59,7 +59,7 @@ input[type="number"] {
 }
 
 .header__description {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   margin-bottom: 1.6rem;
 }
 
@@ -99,8 +99,23 @@ input[type="number"] {
   margin-bottom: 0.6rem;
 }
 
-.input-group__input {
-  padding: 0.6rem 0.2rem;
+.input-group__input,
+.input-group__textarea {
+  border: 0.1rem solid lightgrey;
+  border-radius: 0.4rem;
+  padding: 0.6rem 1rem;
+  transition: all 0.3s ease-in;
+}
+
+.checkbox-group__label,
+.radio-group__label {
+  margin-left: 0.3rem;
+  vertical-align: center;
+}
+
+.checkbox-group__input:checked,
+.radio-group__input:checked {
+  background: red;
 }
 
 .fieldset {
@@ -122,6 +137,20 @@ input[type="number"] {
   border: none;
   border-radius: 0.5rem;
   color: white;
+}
+
+/* Elements state */
+
+.input-group__input:focus,
+.input-group__textarea:focus {
+  box-shadow: 0 0 0.2rem 0.2rem rgba(28, 115, 51, 0.4);
+  border-color: #1c7333;
+  outline: 0;
+}
+
+.btn:hover {
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+  cursor: pointer;
 }
 
 /* Util Classes */
