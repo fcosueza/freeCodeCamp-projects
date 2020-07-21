@@ -29,7 +29,6 @@ input[type="number"] {
 
 .main-content {
   padding: 5rem 0;
-  line-height: 1.5;
   color: #212529;
 }
 
@@ -37,6 +36,7 @@ input[type="number"] {
   max-width: 60rem;
   min-width: 22rem;
   margin: 0 auto;
+  line-height: 1.5;
   background: white;
 }
 
@@ -146,7 +146,7 @@ input[type="number"] {
 }
 
 .input-group__select {
-  background: no-repeat 96%/2.5% url(../images/triangle-arrow-24.png);
+  background: no-repeat 96%/2.4% url(../images/triangle-arrow-24.png);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -156,10 +156,17 @@ input[type="number"] {
 
 .input-group__input:focus,
 .input-group__textarea:focus,
-.input-group__select:focus {
+.input-group__select:focus,
+.checkbox-group__input:focus,
+.radio-group__input:focus {
   box-shadow: 0 0 0.2rem 0.2rem rgba(28, 115, 51, 0.4);
   border-color: #1c7333;
   outline: 0;
+}
+
+.checkbox-group__input:checked {
+  background: black;
+  user-select: none;
 }
 
 .btn:hover {
