@@ -86,27 +86,25 @@ input[type="number"] {
   margin-top: 2rem;
 }
 
-.input-group__label,
 .input-group__input,
 .input-group__select,
 .input-group__textarea {
   display: block;
   width: 100%;
+  color: rgba(0, 0, 0, 0.7);
+  border: 0.1rem solid lightgrey;
+  border-radius: 0.4rem;
+  padding: 0.6rem 1rem;
+  transition: all 0.2s ease-in;
+}
+
+.input-group__label {
+  display: inline-block;
 }
 
 .input-group__label,
 .fieldset__legend {
   margin-bottom: 0.6rem;
-}
-
-.input-group__input,
-.input-group__textarea,
-.input-group__select {
-  color: rgba(0, 0, 0, 0.7);
-  border: 0.1rem solid lightgrey;
-  border-radius: 0.4rem;
-  padding: 0.6rem 1rem;
-  transition: all 0.3s ease-in;
 }
 
 *::placeholder {
@@ -117,11 +115,6 @@ input[type="number"] {
 .radio-group__label {
   margin-left: 0.3rem;
   vertical-align: center;
-}
-
-.checkbox-group__input:checked,
-.radio-group__input:checked {
-  background: red;
 }
 
 .fieldset {
@@ -152,6 +145,18 @@ input[type="number"] {
   appearance: none;
 }
 
+.checkbox-group__input {
+  position: relative;
+  top: 0.25rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  border: 0.15rem solid rgba(0, 0, 0, 0.3);
+  border-radius: 0.3rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 /* Elements state */
 
 .input-group__input:focus,
@@ -159,26 +164,14 @@ input[type="number"] {
 .input-group__select:focus,
 .checkbox-group__input:focus,
 .radio-group__input:focus {
-  box-shadow: 0 0 0.2rem 0.2rem rgba(28, 115, 51, 0.4);
+  box-shadow: 0 0 0.3rem 0.2rem rgba(28, 115, 51, 0.4);
   border-color: #1c7333;
   outline: 0;
 }
 
-.checkbox-group__input:checked {
-  background: black;
-  user-select: none;
-}
-
-.checkbox-group__input {
-  position: relative;
-  top: 0.25rem;
-  width: 1.7rem; 
-  height: 1.7rem;
-  border: 0.15rem solid  rgba(0, 0, 0, 0.3);
-  border-radius: 0.3rem;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+.checkbox-group__input:checked,
+.radio-group__input:checked {
+  background: #28a745;
 }
 
 .btn:hover {
