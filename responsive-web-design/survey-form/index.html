@@ -1,230 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="author" content="Fco Sueza" />
+    <meta name="description" content="A simple J.R.R Tolkien tribute page" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="author" content="Fco Sueza" />
-  <meta name="description" content="A simple J.R.R Tolkien tribute page" />
+    <link rel="stylesheet" href="style/main.css" type="text/css" />
+    <link rel="stylesheet" href="style/normalize.css" type="text/css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style/main.css" type="text/css" />
-  <link rel="stylesheet" href="style/normalize.css" type="text/css" />
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>COVID-19 Survey Form</title>
+  </head>
 
-  <title>COVID-19 Survey Form</title>
-</head>
+  <body>
 
-<body>
+    <main class="main-content">
+      <form class="form box-shadow" id="survey-form" action="/submit-data" method="post">
+        <header class="header bg-gradient">
+          <h1 class="header__title" id="title">Covid-19 Survey</h1>
+          <p class="header__description" id="description">Data collection for EU Covid-19 patients and analysis research</p>
+        </header>
 
-  <main class="main-content">
-    <form class="form box-shadow" id="survey-form" action="/submit-data" method="post">
-      <header class="header bg-gradient">
-        <h1 class="header__title" id="title">Covid-19 Survey</h1>
-        <p class="header__description" id="description">Data collection for EU Covid-19 patients and analysis research
-        </p>
-      </header>
+        <section class="section">
+          <h2 class="section__title bg-gradient bg-clip">Patient Related Info</h2>
+          <hr class="horizontal-rule bg-gradient">
 
-      <section class="section">
-        <h2 class="section__title bg-gradient bg-clip">Patient Related Info</h2>
-        <hr class="horizontal-rule bg-gradient">
+          <div class="input-group">
+            <label class="input-group__label" for="name" id="name-label">Name</label>
+            <input class="input-group__input" type="text" id="name" name="patient-name" placeholder="Introduce your name..." required>
+          </div>
 
-        <div class="input-group">
-          <label class="input-group__label" for="name" id="name-label">Name</label>
-          <input class="input-group__input" type="text" id="name" name="patient-name"
-            placeholder="Introduce your name..." required>
+          <div class="input-group">
+            <label class="input-group__label" for="email" id="email-label">Email</label>
+            <input class="input-group__input" type="email" id="email" placeholder="your@email.com" required>
+          </div>
+
+          <div class="input-group">
+            <label class="input-group__label" for="number" id="number-label">How old are you?</label>
+            <input class="input-group__input" type="number" id="number" min="1" max="120" id="age" name="patient-age" step="1" placeholder="Introduce your age..." required>
+          </div>
+
+          <div class="input-group">
+            <label class="input-group__label" for="dropdown">In which country do you live from the UE?</label>
+            <select class="input-group__select input-group__input" id="dropdown">
+              <option value="austria">Austria</option>
+              <option value="belgium">Belgium</option>
+              <option value="bulgaria">Bulgaria</option>
+              <option value="croatia">Croatia</option>
+              <option value="cyprus">Cyprus</option>
+              <option value="czech Republic">Czech Republic</option>
+              <option value="estonia">Estonia</option>
+              <option value="finland">Finland</option>
+              <option value="france">France</option>
+              <option value="germany">Germany</option>
+              <option value="greece">Greece</option>
+              <option value="hungary">Hungary</option>
+              <option value="ireland">Ireland</option>
+              <option value="italy">Italy</option>
+              <option value="lithuania">Lithuania</option>
+              <option value="luxembourg">Luxembourg</option>
+              <option value="malta">Malta</option>
+              <option value="netherlands">Netherlands</option>
+              <option value="poland">Poland</option>
+              <option value="portugal">Portugal</option>
+              <option value="romania">Romania</option>
+              <option value="slovakia">Slovakia</option>
+              <option value="slovenia">Slovenia</option>
+              <option value="spain">Spain</option>
+              <option value="sweden">Sweden</option>
+            </select>
+          </div>
+
+          <fieldset class="fieldset">
+            <legend class="fieldset__legend">Do you have previous pathologies?</legend>
+            <div class="checkbox-group">
+              <input class="checkbox-group__input" type="checkbox" value="cardio" id="prev-cardio" name="checkbox-prev">
+              <label class="checkbox-group__label" for="prev-cardio">Cardiovascular disease</label>
+            </div>
+            <div class="checkbox-group">
+              <input class="checkbox-group__input" type="checkbox" value="hypertension" id="prev-hyper" name="checkbox-prev">
+              <label class="checkbox-group__label" for="prev-hyper">Hypertension</label>
+            </div>
+            <div class="checkbox-group">
+              <input class="checkbox-group__input" type="checkbox" value="diabetes" id="prev-diabetes" name="checkbox-prev">
+              <label class="checkbox-group__label" for="prev-diabetes">Diabetes</label>
+            </div>
+            <div class="checkbox-group">
+              <input class="checkbox-group__input" type="checkbox" value="lung-disease" id="prev-lung" name="checkbox-prev">
+              <label class="checkbox-group__label" for="prev-lung">Chronic Lung Disease</label>
+            </div>
+            <div class="checkbox-group">
+              <input class="checkbox-group__input" type="checkbox" value="immune" id="prev-immune" name="checkbox-prev">
+              <label class="checkbox-group__label" for="prev-immune">Immunosuppression</label>
+            </div>
+            <div class="checkbox-group">
+              <input class="checkbox-group__input" type="checkbox" value="cancer" id="prev-cancer" name="checkbox-prev">
+              <label class="checkbox-group__label" for="prev-cancer">Cancer</label>
+            </div>
+            <div class="checkbox-group">
+              <input class="checkbox-group__input" type="checkbox" value="ictus" id="prev-ictus" name="checkbox-prev">
+              <label class="checkbox-group__label" for="prev-ictus">Ictus</label>
+            </div>
+            <div class="checkbox-group">
+              <input class="checkbox-group__input" type="checkbox" value="dementia" id="prev-dementia" name="checkbox-prev">
+              <label class="checkbox-group__label" for="prev-dementia">Dementia</label>
+            </div>
+            <div class="checkbox-group">
+              <input class="checkbox-group__input" type="checkbox" value="liver" id="prev-liver" name="checkbox-prev">
+              <label class="checkbox-group__label" for="prev-liver">Chronic Liver Disease</label>
+            </div>
+            <div class="checkbox-group">
+              <input class="checkbox-group__input" type="checkbox" value="kidney" id="prev-kidney" name="checkbox-prev">
+              <label class="checkbox-group__label" for="prev-kidney">Chronic Kidney Failure</label>
+            </div>
+            <div class="checkbox-group">
+              <input class="checkbox-group__input" type="checkbox" value="none" id="prev-none" name="checkbox-prev">
+              <label class="checkbox-group__label" for="prev-none">None</label>
+            </div>
+          </fieldset>
+        </section>
+        <section class="section">
+          <h2 class="section__title bg-gradient bg-clip">Course of Illness Info</h2>
+          <hr class="horizontal-rule bg-gradient">
+
+          <div class="input-group">
+            <label class="input-group__label" for="date">When the symptoms started?</label>
+            <input class="input-group__input" type="date" id="date" name="symptoms-date">
+          </div>
+
+          <fieldset class="fieldset">
+            <legend class="fieldset__legend">What symptoms do you have during your illness?</legend>
+            <div class="checkbox-group">
+              <input class="checkbox-group__input" type="checkbox" value="fever" id="sympt-fever" name="checkbox-sympt">
+              <label class="checkbox-group__label" for="sympt-fever">Fever</label>
+            </div>
+            <div class="checkbox-group">
+              <input class="checkbox-group__input" type="checkbox" value="fatigue" id="sympt-fatigue" name="checkbox-sympt">
+              <label class="checkbox-group__label" for="sympt-fatigue">Fatigue</label>
+            </div>
+            <div class="checkbox-group">
+              <input class="checkbox-group__input" type="checkbox" value="dry-cough" id="sympt-cough" name="checkbox-sympt">
+              <label class="checkbox-group__label" for="sympt-cough">Dry Cough</label>
+            </div>
+            <div class="checkbox-group">
+              <input class="checkbox-group__input" type="checkbox" value="loss-appetite" id="sympt-appetite" name="checkbox-sympt">
+              <label class="checkbox-group__label" for="sympt-appetite">Loss of appetite</label>
+            </div>
+            <div class="checkbox-group">
+              <input class="checkbox-group__input" type="checkbox" value="body-aches" id="sympt-body-aches" name="checkbox-sympt">
+              <label class="checkbox-group__label" for="sympt-body-aches">Body Aches</label>
+            </div>
+            <div class="checkbox-group">
+              <input class="checkbox-group__input" type="checkbox" value="shortness-breath" id="sympt-breath" name="checkbox-sympt">
+              <label class="checkbox-group__label" for="sympt-breath">Shortness of Breath</label>
+            </div>
+            <div class="checkbox-group">
+              <input class="checkbox-group__input" type="checkbox" value="mucus" id="sympt-mucus" name="checkbox-sympt">
+              <label class="checkbox-group__label" for="sympt-mucus">Mucus</label>
+            </div>
+            <div class="checkbox-group">
+              <input class="checkbox-group__input" type="checkbox" value="sore-throat" id="sympt-sorethroat" name="checkbox-sympt">
+              <label class="checkbox-group__label" for="sympt-sorethroat">Sore Throat</label>
+            </div>
+            <div class="checkbox-group">
+              <input class="checkbox-group__input" type="checkbox" value="headache" id="sympt-headache" name="checkbox-sympt">
+              <label class="checkbox-group__label" for="sympt-headache">Headache</label>
+            </div>
+            <div class="checkbox-group">
+              <input class="checkbox-group__input" type="checkbox" value="nausea" id="sympt-nausea" name="checkbox-sympt">
+              <label class="checkbox-group__label" for="sympt-nausea">Nausea</label>
+            </div>
+            <div class="checkbox-group">
+              <input class="checkbox-group__input" type="checkbox" value="diarrhea" id="sympt-diarrhea" name="checkbox-sympt">
+              <label class="checkbox-group__label" for="sympt-diarrhea">Diarrhea</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend class="fieldset__legend">You needed hospitalization?</legend>
+            <div class="radio-group">
+              <input class="radio-group__input" type="radio" value="hospital-normal" id="hospital-normal" name="radio-hosp" checked>
+              <label class="radio-group__label" for="hospital-normal">Yes, normal hospitalization</label>
+            </div>
+            <div class="radio-group">
+              <input class="radio-group__input"t type="radio" value="hospital-icu" id="hospital-icu" name="radio-hosp">
+              <label class="radio-group__label" for="hospital-icu">Yes, ICU hospitalization</label>
+            </div>
+            <div class="radio-group">
+              <input class="radio-group__input"t type="radio" value="hospital-no" id="hospital-no" name="radio-hosp">
+              <label class="radio-group__label" for="hospital-no">No</label>
+            </div>
+          </fieldset>
+
+          <div class="input-group">
+            <label class="input-group__label" for="msg">If you think we missed something, leave us a message</label>
+            <textarea class="input-group__input" id="msg" name="msg" cols="30" rows="10"></textarea>
+          </div>
+        </section>
+
+        <div class="container">
+          <button class="btn bg-gradient" id="submit" type="submit">Submit</button>
         </div>
+      </form>
+    </main>
 
-        <div class="input-group">
-          <label class="input-group__label" for="email" id="email-label">Email</label>
-          <input class="input-group__input" type="email" id="email" placeholder="your@email.com" required>
-        </div>
-
-        <div class="input-group">
-          <label class="input-group__label" for="number" id="number-label">How old are you?</label>
-          <input class="input-group__input" type="number" id="number" min="1" max="120" id="age" name="patient-age"
-            step="1" placeholder="Introduce your age..." required>
-        </div>
-
-        <div class="input-group">
-          <label class="input-group__label" for="dropdown">In which country do you live from the UE?</label>
-          <select class="input-group__select input-group__input" id="dropdown">
-            <option value="austria">Austria</option>
-            <option value="belgium">Belgium</option>
-            <option value="bulgaria">Bulgaria</option>
-            <option value="croatia">Croatia</option>
-            <option value="cyprus">Cyprus</option>
-            <option value="czech Republic">Czech Republic</option>
-            <option value="estonia">Estonia</option>
-            <option value="finland">Finland</option>
-            <option value="france">France</option>
-            <option value="germany">Germany</option>
-            <option value="greece">Greece</option>
-            <option value="hungary">Hungary</option>
-            <option value="ireland">Ireland</option>
-            <option value="italy">Italy</option>
-            <option value="lithuania">Lithuania</option>
-            <option value="luxembourg">Luxembourg</option>
-            <option value="malta">Malta</option>
-            <option value="netherlands">Netherlands</option>
-            <option value="poland">Poland</option>
-            <option value="portugal">Portugal</option>
-            <option value="romania">Romania</option>
-            <option value="slovakia">Slovakia</option>
-            <option value="slovenia">Slovenia</option>
-            <option value="spain">Spain</option>
-            <option value="sweden">Sweden</option>
-          </select>
-        </div>
-
-        <fieldset class="fieldset">
-          <legend class="fieldset__legend">Do you have previous pathologies?</legend>
-          <div class="checkbox-group">
-            <input class="checkbox-group__input" type="checkbox" value="cardio" id="prev-cardio" name="checkbox-prev">
-            <label class="checkbox-group__label" for="prev-cardio">Cardiovascular disease</label>
-          </div>
-          <div class="checkbox-group">
-            <input class="checkbox-group__input" type="checkbox" value="hypertension" id="prev-hyper"
-              name="checkbox-prev">
-            <label class="checkbox-group__label" for="prev-hyper">Hypertension</label>
-          </div>
-          <div class="checkbox-group">
-            <input class="checkbox-group__input" type="checkbox" value="diabetes" id="prev-diabetes"
-              name="checkbox-prev">
-            <label class="checkbox-group__label" for="prev-diabetes">Diabetes</label>
-          </div>
-          <div class="checkbox-group">
-            <input class="checkbox-group__input" type="checkbox" value="lung-disease" id="prev-lung"
-              name="checkbox-prev">
-            <label class="checkbox-group__label" for="prev-lung">Chronic Lung Disease</label>
-          </div>
-          <div class="checkbox-group">
-            <input class="checkbox-group__input" type="checkbox" value="immune" id="prev-immune" name="checkbox-prev">
-            <label class="checkbox-group__label" for="prev-immune">Immunosuppression</label>
-          </div>
-          <div class="checkbox-group">
-            <input class="checkbox-group__input" type="checkbox" value="cancer" id="prev-cancer" name="checkbox-prev">
-            <label class="checkbox-group__label" for="prev-cancer">Cancer</label>
-          </div>
-          <div class="checkbox-group">
-            <input class="checkbox-group__input" type="checkbox" value="ictus" id="prev-ictus" name="checkbox-prev">
-            <label class="checkbox-group__label" for="prev-ictus">Ictus</label>
-          </div>
-          <div class="checkbox-group">
-            <input class="checkbox-group__input" type="checkbox" value="dementia" id="prev-dementia"
-              name="checkbox-prev">
-            <label class="checkbox-group__label" for="prev-dementia">Dementia</label>
-          </div>
-          <div class="checkbox-group">
-            <input class="checkbox-group__input" type="checkbox" value="liver" id="prev-liver" name="checkbox-prev">
-            <label class="checkbox-group__label" for="prev-liver">Chronic Liver Disease</label>
-          </div>
-          <div class="checkbox-group">
-            <input class="checkbox-group__input" type="checkbox" value="kidney" id="prev-kidney" name="checkbox-prev">
-            <label class="checkbox-group__label" for="prev-kidney">Chronic Kidney Failure</label>
-          </div>
-          <div class="checkbox-group">
-            <input class="checkbox-group__input" type="checkbox" value="none" id="prev-none" name="checkbox-prev">
-            <label class="checkbox-group__label" for="prev-none">None</label>
-          </div>
-        </fieldset>
-      </section>
-      <section class="section">
-        <h2 class="section__title bg-gradient bg-clip">Course of Illness Info</h2>
-        <hr class="horizontal-rule bg-gradient">
-
-        <div class="input-group">
-          <label class="input-group__label" for="date">When the symptoms started?</label>
-          <input class="input-group__input" type="date" id="date" name="symptoms-date">
-        </div>
-
-        <fieldset class="fieldset">
-          <legend class="fieldset__legend">What symptoms do you have during your illness?</legend>
-          <div class="checkbox-group">
-            <input class="checkbox-group__input" type="checkbox" value="fever" id="sympt-fever" name="checkbox-sympt">
-            <label class="checkbox-group__label" for="sympt-fever">Fever</label>
-          </div>
-          <div class="checkbox-group">
-            <input class="checkbox-group__input" type="checkbox" value="fatigue" id="sympt-fatigue"
-              name="checkbox-sympt">
-            <label class="checkbox-group__label" for="sympt-fatigue">Fatigue</label>
-          </div>
-          <div class="checkbox-group">
-            <input class="checkbox-group__input" type="checkbox" value="dry-cough" id="sympt-cough"
-              name="checkbox-sympt">
-            <label class="checkbox-group__label" for="sympt-cough">Dry Cough</label>
-          </div>
-          <div class="checkbox-group">
-            <input class="checkbox-group__input" type="checkbox" value="loss-appetite" id="sympt-appetite"
-              name="checkbox-sympt">
-            <label class="checkbox-group__label" for="sympt-appetite">Loss of appetite</label>
-          </div>
-          <div class="checkbox-group">
-            <input class="checkbox-group__input" type="checkbox" value="body-aches" id="sympt-body-aches"
-              name="checkbox-sympt">
-            <label class="checkbox-group__label" for="sympt-body-aches">Body Aches</label>
-          </div>
-          <div class="checkbox-group">
-            <input class="checkbox-group__input" type="checkbox" value="shortness-breath" id="sympt-breath"
-              name="checkbox-sympt">
-            <label class="checkbox-group__label" for="sympt-breath">Shortness of Breath</label>
-          </div>
-          <div class="checkbox-group">
-            <input class="checkbox-group__input" type="checkbox" value="mucus" id="sympt-mucus" name="checkbox-sympt">
-            <label class="checkbox-group__label" for="sympt-mucus">Mucus</label>
-          </div>
-          <div class="checkbox-group">
-            <input class="checkbox-group__input" type="checkbox" value="sore-throat" id="sympt-sorethroat"
-              name="checkbox-sympt">
-            <label class="checkbox-group__label" for="sympt-sorethroat">Sore Throat</label>
-          </div>
-          <div class="checkbox-group">
-            <input class="checkbox-group__input" type="checkbox" value="headache" id="sympt-headache"
-              name="checkbox-sympt">
-            <label class="checkbox-group__label" for="sympt-headache">Headache</label>
-          </div>
-          <div class="checkbox-group">
-            <input class="checkbox-group__input" type="checkbox" value="nausea" id="sympt-nausea" name="checkbox-sympt">
-            <label class="checkbox-group__label" for="sympt-nausea">Nausea</label>
-          </div>
-          <div class="checkbox-group">
-            <input class="checkbox-group__input" type="checkbox" value="diarrhea" id="sympt-diarrhea"
-              name="checkbox-sympt">
-            <label class="checkbox-group__label" for="sympt-diarrhea">Diarrhea</label>
-          </div>
-        </fieldset>
-
-        <fieldset class="fieldset">
-          <legend class="fieldset__legend">You needed hospitalization?</legend>
-          <div class="radio-group">
-            <input class="radio-group__input" type="radio" value="hospital-normal" id="hospital-normal"
-              name="radio-hosp" checked>
-            <label class="radio-group__label" for="hospital-normal">Yes, normal hospitalization</label>
-          </div>
-          <div class="radio-group">
-            <input class="radio-group__input" t type="radio" value="hospital-icu" id="hospital-icu" name="radio-hosp">
-            <label class="radio-group__label" for="hospital-icu">Yes, ICU hospitalization</label>
-          </div>
-          <div class="radio-group">
-            <input class="radio-group__input" t type="radio" value="hospital-no" id="hospital-no" name="radio-hosp">
-            <label class="radio-group__label" for="hospital-no">No</label>
-          </div>
-        </fieldset>
-
-        <div class="input-group">
-          <label class="input-group__label" for="msg">If you think we missed something, leave us a message</label>
-          <textarea class="input-group__input" id="msg" name="msg" cols="30" rows="10"></textarea>
-        </div>
-      </section>
-
-      <div class="container">
-        <button class="btn bg-gradient" id="submit" type="submit">Submit</button>
-      </div>
-    </form>
-  </main>
-
-  <!-- freeCodeCamp test suit -->
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-</body>
-
+    <!-- freeCodeCamp test suit -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
 </html>
