@@ -9,7 +9,7 @@
 }
 
 html {
-  font-size: 62.5%; /* set font size to a mutiple of 10 */
+  font-size: 62.5%; /* set font size to a multiple of 10 */
 }
 
 body {
@@ -20,7 +20,7 @@ body {
 }
 
 input[type="number"] {
-  -webkit-appearance: texfield;
+  -webkit-appearance: textfield;
   -moz-appearance: textfield;
   appearance: textfield;
 }
@@ -195,5 +195,6 @@ input[type="number"] {
 
 .bg-clip {
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
