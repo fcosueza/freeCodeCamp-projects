@@ -1,3 +1,12 @@
+/* Theme Variables */
+
+:root {
+  --bg-color: #83f29d;
+  --font-color: #212529;
+  --main-color: #1c7333;
+  --second-color: #28a745;
+}
+
 /* Basic CSS reset and Style */
 
 *,
@@ -16,7 +25,7 @@ body {
   font-family: Roboto, "Helvetiva Neu", Arial, sans-serif;
   min-height: 100vh;
   background-image: url(../images/background-texture.png);
-  background-color: #83f29d;
+  background-color: var(--bg-color);
 }
 
 input[type="number"] {
@@ -29,7 +38,7 @@ input[type="number"] {
 
 .main-content {
   padding: 5rem 0;
-  color: #212529;
+  color: var(--font-color);
 }
 
 .form {
