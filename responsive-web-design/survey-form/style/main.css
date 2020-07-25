@@ -111,8 +111,8 @@ input::-webkit-inner-spin-button {
   margin-bottom: 0.6rem;
 }
 
-*::placeholder {
-  color: black;
+.input-group__input::-moz-placeholder {
+  color: #000;
 }
 
 .checkbox-group__label,
