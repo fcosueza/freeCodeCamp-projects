@@ -156,6 +156,18 @@ input[type="number"] {
   transition: all 0.2s ease-in;
 }
 
+.radio-group__input {
+  position: relative;
+  top: 0.25rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  border: 0.15rem solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 /* Elements state */
 
 .input-group__input:focus,
