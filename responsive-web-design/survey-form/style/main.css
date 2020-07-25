@@ -138,6 +138,11 @@ input[type="number"] {
 
 .input-group__select {
   background: no-repeat 96%/2.4% url(../images/triangle-arrow-24.png);
+}
+
+.checkbox-group__input,
+.radio-group__input,
+.input-group__select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -150,9 +155,6 @@ input[type="number"] {
   height: 1.7rem;
   border: 0.15rem solid rgba(0, 0, 0, 0.3);
   border-radius: 0.3rem;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   transition: all 0.2s ease-in;
 }
 
@@ -163,9 +165,6 @@ input[type="number"] {
   height: 1.7rem;
   border: 0.15rem solid rgba(0, 0, 0, 0.3);
   border-radius: 50%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 /* Elements state */
