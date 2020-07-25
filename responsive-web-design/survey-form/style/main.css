@@ -29,14 +29,13 @@ body {
 }
 
 input[type="number"] {
-  -webkit-appearance: textfield;
   -moz-appearance: textfield;
   appearance: textfield;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  display: none;
   margin: 0;
 }
 
@@ -149,7 +148,6 @@ input::-webkit-inner-spin-button {
 .checkbox-group__input,
 .radio-group__input,
 .input-group__select {
-  -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
@@ -162,6 +160,7 @@ input::-webkit-inner-spin-button {
   border: 0.1rem solid rgba(0, 0, 0, 0.3);
   border-radius: 0.3rem;
   transition: all 0.2s ease-in;
+  color: white;
 }
 
 .radio-group__input {
@@ -186,21 +185,13 @@ input::-webkit-inner-spin-button {
 .checkbox-group__input:focus,
 .radio-group__input:focus {
   box-shadow: 0 0 0 0.3rem rgba(28, 115, 51, 0.4);
+  outline: 0;
 }
 
 .checkbox-group__input:checked,
 .radio-group__input:checked {
-  background: #28a745;
+  background: no-repeat 50% 60% url(../images/checkmark-10px.png), #28a745;
   border-color: #1c7333;
-}
-
-.checkbox-group__input:checked::after {
-  content: "\2714";
-  font-size: 1rem;
-  position: absolute;
-  top: 0.2rem;
-  left: 0.3rem;
-  color: white;
 }
 
 .btn:hover {
