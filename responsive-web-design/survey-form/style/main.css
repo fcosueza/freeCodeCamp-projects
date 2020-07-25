@@ -180,7 +180,6 @@ input[type="number"] {
 .checkbox-group__input:checked::after {
   content: "\2714";
   font-size: 1rem;
-  font-weight: bold;
   position: absolute;
   top: 0.2rem;
   left: 0.3rem;
