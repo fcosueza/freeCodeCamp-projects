@@ -197,7 +197,8 @@ input::-webkit-inner-spin-button {
 }
 
 .checkbox-group__input:checked {
-  background: no-repeat center / 90% url(../images/checkmark-17px.png), #28a745;
+  background: no-repeat center / 90% url(../images/checkmark-17px.png),
+    var(--second-color);
 }
 
 .btn:hover {
