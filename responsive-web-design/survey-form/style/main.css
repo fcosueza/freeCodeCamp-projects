@@ -36,6 +36,12 @@ input[type="number"] {
   appearance: textfield;
 }
 
+input,
+select {
+  -moz-appearance: none;
+  appearance: none;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   display: none;
@@ -101,7 +107,6 @@ input::-webkit-inner-spin-button {
   border: 0.1rem solid lightgrey;
   border-radius: 0.4rem;
   padding: 0.6rem 1rem;
-  transition: all 0.2s ease-in;
 }
 
 .input-group__label {
@@ -148,13 +153,6 @@ input::-webkit-inner-spin-button {
   background: no-repeat 96%/2.4% url(../images/triangle-arrow-24.png);
 }
 
-.checkbox-group__input,
-.radio-group__input,
-.input-group__select {
-  -moz-appearance: none;
-  appearance: none;
-}
-
 .checkbox-group__input {
   position: relative;
   top: 0.25rem;
@@ -162,7 +160,6 @@ input::-webkit-inner-spin-button {
   height: 1.7rem;
   border: 0.1rem solid var(--check-border-color);
   border-radius: 0.3rem;
-  transition: all 0.2s ease-in;
   color: white;
 }
 
@@ -173,7 +170,6 @@ input::-webkit-inner-spin-button {
   height: 1.7rem;
   border: 0.15rem solid var(--check-border-color);
   border-radius: 50%;
-  transition: all 0.2s ease-in;
 }
 
 /* Elements state */
