@@ -173,6 +173,7 @@ input::-webkit-inner-spin-button {
   height: 1.7rem;
   border: 0.15rem solid var(--check-border-color);
   border-radius: 50%;
+  transition: all 0.2s ease-in;
 }
 
 /* Elements state */
@@ -199,6 +200,10 @@ input::-webkit-inner-spin-button {
 .checkbox-group__input:checked {
   background: no-repeat center / 90% url(../images/checkmark-17px.png),
     var(--second-color);
+}
+
+.radio-group__input:checked {
+  border: 0.6rem solid var(--second-color);
 }
 
 .btn:hover {
