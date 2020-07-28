@@ -31,15 +31,17 @@ body {
   background-color: var(--bg-color);
 }
 
-input[type="number"] {
-  -moz-appearance: textfield;
-  appearance: textfield;
-}
-
 input,
 select {
+  -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 select::-webkit-outer-spin-button,
@@ -109,6 +111,10 @@ select::-webkit-inner-spin-button {
   padding: 0.6rem 1rem;
 }
 
+.input-group__select {
+  background: no-repeat 96%/2.4% url(../images/triangle-arrow-24.png);
+}
+
 .input-group__label {
   display: inline-block;
 }
@@ -133,26 +139,6 @@ select::-webkit-inner-spin-button {
   padding: 0;
 }
 
-.container {
-  text-align: center;
-}
-
-.btn {
-  display: inline-block;
-  width: 40%;
-  font-size: 1.8rem;
-  font-weight: bold;
-  padding: 0.6rem 1.2rem;
-  margin: 3rem auto;
-  border: none;
-  border-radius: 0.5rem;
-  color: var(--form-bg-color);
-}
-
-.input-group__select {
-  background: no-repeat 96%/2.4% url(../images/triangle-arrow-24.png);
-}
-
 .checkbox-group__input {
   position: relative;
   top: 0.25rem;
@@ -170,6 +156,22 @@ select::-webkit-inner-spin-button {
   height: 1.7rem;
   border: 0.15rem solid var(--check-border-color);
   border-radius: 50%;
+}
+
+.container {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  width: 40%;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  margin: 3rem auto;
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--form-bg-color);
 }
 
 /* Elements state */
