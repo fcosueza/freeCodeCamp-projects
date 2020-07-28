@@ -4,7 +4,7 @@
   --bg-color: #83f29d;
   --form-bg-color: #fff;
   --font-color: #212529;
-  --input-font-color: rgba(0, 0, 0, 0.7);
+  --input-font-color: rgba(0, 0, 0, 0.6);
   --check-border-color: rgba(0, 0, 0, 0.3);
   --main-color: #1c7333;
   --second-color: #28a745;
@@ -83,7 +83,7 @@ select::-webkit-inner-spin-button {
 
 .section {
   width: 75%;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin: 2rem auto 0;
 }
 
@@ -105,6 +105,7 @@ select::-webkit-inner-spin-button {
 .input-group__input {
   display: block;
   width: 100%;
+  font-size: 1.6rem;
   color: var(--input-font-color);
   border: 0.1rem solid lightgrey;
   border-radius: 0.4rem;
@@ -124,8 +125,13 @@ select::-webkit-inner-spin-button {
   margin-bottom: 0.6rem;
 }
 
+.input-group__input::-webkit-input-placeholder,
 .input-group__input::-moz-placeholder {
-  color: #000;
+  opacity: 1;
+}
+
+.input-group__input::placeholder {
+  color: var(--input-font-color);
 }
 
 .checkbox-group__label,
@@ -233,6 +239,10 @@ select::-webkit-inner-spin-button {
 /* Media Queries */
 
 @media only screen and (max-width: 500px) {
+  html {
+    font-size: 60%;
+  }
+
   .main-content {
     padding: 1rem;
   }
