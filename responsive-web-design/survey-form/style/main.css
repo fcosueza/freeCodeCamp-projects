@@ -122,7 +122,7 @@ select::-webkit-inner-spin-button {
 
 .input-group__label,
 .fieldset__legend {
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.4rem;
 }
 
 .input-group__input::-webkit-input-placeholder,
