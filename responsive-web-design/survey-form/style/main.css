@@ -42,8 +42,8 @@ select {
   appearance: none;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+select::-webkit-outer-spin-button,
+select::-webkit-inner-spin-button {
   display: none;
   margin: 0;
 }
@@ -51,7 +51,7 @@ input::-webkit-inner-spin-button {
 /* Elements style */
 
 .main-content {
-  padding: 5rem 0;
+  padding: 5rem 1rem;
   color: var(--font-color);
 }
 
@@ -226,4 +226,18 @@ input::-webkit-inner-spin-button {
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 500px) {
+  .main-content {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  html {
+    font-size: 50%;
+  }
 }
