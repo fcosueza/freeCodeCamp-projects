@@ -26,6 +26,7 @@
     "max-depth": ["error", 4],
     "implicit-arrow-linebreak": "off",
     "arrow-parens": 0,
-    "max-classes-per-file": 0
+    "max-classes-per-file": 0,
+    "function-paren-newline": 0
   }
 }
