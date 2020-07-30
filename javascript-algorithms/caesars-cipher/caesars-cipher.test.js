@@ -22,4 +22,16 @@ describe("Testing rot13 cipher algorithms function", () => {
       "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG."
     );
   });
+
+  test("Decode a number", () => {
+    expect(rot13("123456")).toEqual("123456");
+  });
+
+  test("Decode an alphanumerical string", () => {
+    expect(rot13("1 SERR CVMMN!")).toEqual("1 FREE PIZZA!");
+  });
+
+  test("Decode a string with no alphanumerical characters", () => {
+    expect(rot13("SERR_PBQR_PNZC")).toEqual("FREE_CODE_CAMP");
+  });
 });
