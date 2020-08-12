@@ -159,6 +159,7 @@ body {
   padding: 1rem;
   background: black;
   -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -173,7 +174,7 @@ body {
 }
 
 .card-3D__title {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   line-height: 1.4;
   text-align: center;
   margin-top: 1rem;
