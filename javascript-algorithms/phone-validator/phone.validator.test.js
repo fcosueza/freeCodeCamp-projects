@@ -9,19 +9,23 @@ describe("Test telephoneCheck script against several phone formats", () => {
     expect(telephoneCheck("555-555-5555")).toBe(true);
   });
 
+  test("Should return true with a valid number with white spaces", () => {
+    expect(telephoneCheck("555 555 5555")).toBe(true);
+  });
+
   test("Should return true with a valid number with prefix", () => {
     expect(telephoneCheck("1 555-555-5555")).toBe(true);
   });
 
-  test("Should return true with a valid number without white spaces", () => {
+  test("Should return true with a valid number without digits separation", () => {
     expect(telephoneCheck("5555555555")).toBe(true);
   });
 
-  test("Should return true with a number with correct parenthesis", () => {
+  test("Should return true with a valid number with correct parenthesis", () => {
     expect(telephoneCheck("(555) 555-5555")).toBe(true);
   });
 
-  test("Should return true with a number with correct parenthesis and prefix", () => {
+  test("Should return true with valid number with correct parenthesis and prefix", () => {
     expect(telephoneCheck("1 (555) 555-5555")).toBe(true);
   });
 
@@ -34,10 +38,14 @@ describe("Test telephoneCheck script against several phone formats", () => {
   });
 
   test("Should return false with invalid prefix", () => {
-    expect(telephoneCheck("2 (555) 555-5555")).toBe(false);
+    expect(telephoneCheck("2 555 555-5555")).toBe(false);
   });
 
   test("Should return false with incorrect parenthesis", () => {
-    expect(telephoneCheck("(555 555-555")).toBe(false);
+    expect(telephoneCheck("(555 555-5555")).toBe(false);
+  });
+
+  test("Should return false with incorrect parenthesis and valid prefix", () => {
+    expect(telephoneCheck("1 (555 555 5555)")).toBe(false);
   });
 });
