@@ -38,7 +38,7 @@ describe("Test telephoneCheck script against several phone formats", () => {
   });
 
   test("Should return false with invalid prefix", () => {
-    expect(telephoneCheck("2 555 555-5555")).toBe(false);
+    expect(telephoneCheck("2 555-555-5555")).toBe(false);
   });
 
   test("Should return false with incorrect parenthesis", () => {
@@ -47,5 +47,9 @@ describe("Test telephoneCheck script against several phone formats", () => {
 
   test("Should return false with incorrect parenthesis and valid prefix", () => {
     expect(telephoneCheck("1 (555 555 5555)")).toBe(false);
+  });
+
+  test("Should return false with invalid parenthesis and characters", () => {
+    expect(telephoneCheck("(555)5(55?)-5555")).toBe(false);
   });
 });
