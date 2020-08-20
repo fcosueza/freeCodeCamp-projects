@@ -37,6 +37,14 @@ describe("Test telephoneCheck script against several phone formats", () => {
     expect(telephoneCheck("555-5555")).toBe(false);
   });
 
+  test("Should return false with incorrect number or digit, prefix and no white spaces", () => {
+    expect(telephoneCheck("27576227382")).toBe(false);
+  });
+
+  test("Should return false with incorrect number of digit and parenthesis", () => {
+    expect(telephoneCheck("(275)76227382")).toBe(false);
+  });
+
   test("Should return false with invalid prefix", () => {
     expect(telephoneCheck("2 555-555-5555")).toBe(false);
   });
