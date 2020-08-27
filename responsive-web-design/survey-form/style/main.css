@@ -210,9 +210,8 @@ select::-webkit-inner-spin-button {
   border: 0.6rem solid var(--second-color);
 }
 
-.btn:hover {
-  box-shadow: 0 0.2rem 0.5rem 0.1rem rgba(0, 0, 0, 0.4);
-  cursor: pointer;
+.btn:active {
+  animation: push 0.1s ease-in-out;
 }
 
 /* Util Classes */
@@ -251,5 +250,27 @@ select::-webkit-inner-spin-button {
 @media only screen and (max-width: 280px) {
   html {
     font-size: 50%;
+  }
+}
+
+/* Devices with hover capability */
+
+@media (hover: hover) {
+  .btn:hover {
+    background: var(--main-color);
+    cursor: pointer;
+  }
+}
+
+/* Touchscreen devices*/
+
+@media (hover: none) and (pointer: coarse) {
+  .btn:hover {
+    outline: none;
+  }
+
+  .btn:active {
+    background: var(--main-color);
+    outline: none;
   }
 }
