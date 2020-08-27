@@ -265,10 +265,6 @@ select::-webkit-inner-spin-button {
 /* Touchscreen devices*/
 
 @media (hover: none) and (pointer: coarse) {
-  .btn:hover {
-    outline: none;
-  }
-
   .btn:active {
     background: var(--main-color);
     outline: none;
