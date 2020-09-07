@@ -270,15 +270,6 @@ select::-webkit-inner-spin-button {
   }
 }
 
-/* Touchscreen devices*/
-
-@media (hover: none) and (pointer: coarse) {
-  .btn:active {
-    background: var(--main-color);
-    outline: none;
-  }
-}
-
 /* Animations and Transitions */
 
 @keyframes clicking {
@@ -289,7 +280,4 @@ select::-webkit-inner-spin-button {
   100% {
     transform: scale(1);
   }
-}
-
-@keyframes ripple {
 }
