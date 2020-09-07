@@ -164,6 +164,14 @@ select::-webkit-inner-spin-button {
   border-radius: 50%;
 }
 
+.checkbox-group__input,
+.radio-group__input,
+.input-group__input,
+.input-group__select,
+.input-group__textarea {
+  transition: all 0.2s ease-in;
+}
+
 .container {
   text-align: center;
 }
