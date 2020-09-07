@@ -164,14 +164,6 @@ select::-webkit-inner-spin-button {
   border-radius: 50%;
 }
 
-.checkbox-group__input,
-.radio-group__input,
-.input-group__input,
-.input-group__select,
-.input-group__textarea {
-  transition: all 0.2s ease-in;
-}
-
 .container {
   text-align: center;
 }
@@ -218,6 +210,10 @@ select::-webkit-inner-spin-button {
   border: 0.6rem solid var(--second-color);
 }
 
+.btn:focus {
+  outline: none;
+}
+
 .btn:active {
   animation: 0.1s ease-in clicking;
 }
@@ -241,6 +237,10 @@ select::-webkit-inner-spin-button {
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.transition {
+  transition: all 0.2s ease-in;
 }
 
 /* Media Queries */
