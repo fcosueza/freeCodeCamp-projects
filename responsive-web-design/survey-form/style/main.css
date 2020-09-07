@@ -218,6 +218,10 @@ select::-webkit-inner-spin-button {
   border: 0.6rem solid var(--second-color);
 }
 
+.btn:active {
+  animation: 0.1s ease-in clicking;
+}
+
 /* Util Classes */
 
 .box-shadow {
@@ -273,4 +277,19 @@ select::-webkit-inner-spin-button {
     background: var(--main-color);
     outline: none;
   }
+}
+
+/* Animations and Transitions */
+
+@keyframes clicking {
+  30% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes ripple {
 }
