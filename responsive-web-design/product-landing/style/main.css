@@ -62,3 +62,7 @@ body {
   text-decoration: none;
   color: white;
 }
+
+.nav__link:visited {
+  color: white;
+}
