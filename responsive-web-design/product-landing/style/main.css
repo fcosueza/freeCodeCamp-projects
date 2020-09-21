@@ -63,12 +63,14 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 80rem;
-  background-image: url(../images/hero.jpg);
+  color: white;
+  background: no-repeat center/cover url(../images/hero.jpg);
 }
 
 .header__title {
   font-size: 5rem;
   margin-bottom: 2rem;
+  margin-top: 10rem;
 }
 
 .header__slogan {
