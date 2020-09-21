@@ -21,6 +21,7 @@ body {
 .main-nav {
   display: flex;
   align-items: center;
+  position: fixed;
   width: 100%;
   height: 6rem;
   padding: 0 15rem;
@@ -54,6 +55,36 @@ body {
 
 .nav__item {
   margin: 0 2rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80rem;
+  background-image: url(../images/hero.jpg);
+}
+
+.header__title {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.header__slogan {
+  font-size: 3rem;
+}
+
+.header__button {
+  font-size: 2.5rem;
+  font-weight: bold;
+  width: 15rem;
+  height: 4rem;
+  margin-top: 5rem;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #d97a43;
 }
 
 /* Elements state */
