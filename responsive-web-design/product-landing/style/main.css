@@ -64,7 +64,8 @@ body {
   justify-content: center;
   min-height: 80rem;
   color: white;
-  background: no-repeat center/cover url(../images/hero.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    no-repeat center/cover url(../images/hero.jpg);
 }
 
 .header__title {
