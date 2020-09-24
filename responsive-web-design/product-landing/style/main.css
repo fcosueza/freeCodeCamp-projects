@@ -71,13 +71,14 @@ body {
 }
 
 .header__title {
-  font-size: 8rem;
+  font-size: 7rem;
   margin-bottom: 2rem;
   margin-top: 10rem;
 }
 
 .header__slogan {
   font-size: 3rem;
+  font-weight: normal;
 }
 
 .header__button {
@@ -97,7 +98,7 @@ body {
 }
 
 .section__title {
-  font-size: 3.5rem;
+  font-size: 5rem;
 }
 
 .section-jumbo {
@@ -119,7 +120,7 @@ body {
   padding: 3rem 3rem 0 0;
   width: 50%;
   min-width: 30rem;
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
 .content__button {
@@ -135,7 +136,7 @@ body {
 }
 
 .content__subheading {
-  font-size: 3.7rem;
+  font-size: 3.5rem;
   margin-bottom: 1.5rem;
 }
 
