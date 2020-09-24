@@ -91,6 +91,26 @@ body {
   background-color: #d97a43;
 }
 
+.section {
+  padding: 3rem 0;
+}
+
+.content {
+  width: 60%;
+  min-width: 20rem;
+  margin: 0 auto;
+}
+
+.content__row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.content__text {
+  width: 50%;
+  min-width: 30rem;
+}
+
 /* Elements state */
 
 .nav__link:link {
