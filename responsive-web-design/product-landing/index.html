@@ -61,6 +61,7 @@
 
         <div class="content__right">
           <iframe
+            id="video"
             class="content__iframe"
             width="560"
             height="315"
@@ -199,11 +200,13 @@
         </div>
 
         <div class="content__right">
-          <form action="" class="form">
-            <input type="text" class="form__input">
-            <input type="text" class="form__input">
-            <input type="text" class="form__input">
-            <textarea class="form__textare" name="" id="" cols="30" rows="10"></textarea>
+          <form id="form" action="" class="form">
+            <input id="name" type="text" class="form__input">
+            <input id="email" type="text" class="form__input">
+            <input id="subject" type="text" class="form__input">
+            <textarea id="message" class="form__textare" name="" id="" cols="30" rows="10"></textarea>
+
+            <button class="form__button" id="submit">Submit</button>
           </form>
         </div>
       </div>
