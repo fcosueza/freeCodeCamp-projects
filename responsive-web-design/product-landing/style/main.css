@@ -72,7 +72,7 @@ body {
 
 .header__title {
   font-size: 7rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   margin-top: 10rem;
 }
 
@@ -123,21 +123,9 @@ body {
   line-height: 1.2;
 }
 
-.content__button {
-  width: 15rem;
-  height: 4rem;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-top: 3rem;
-  color: white;
-  background-color: #d97a43;
-  border: none;
-  border-radius: 0.5rem;
-}
-
 .content__subheading {
   font-size: 3.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .content__para {
@@ -146,6 +134,18 @@ body {
 
 .content__iframe {
   box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.content__button {
+  width: 15rem;
+  height: 4rem;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 4rem;
+  color: white;
+  background-color: #d97a43;
+  border: none;
+  border-radius: 0.5rem;
 }
 
 /* Elements state */
