@@ -117,6 +117,10 @@ body {
   flex-flow: row wrap;
 }
 
+.content__row--reverse {
+  flex-direction: row-reverse;
+}
+
 .content__text {
   padding: 3rem 5rem 0 0;
   width: 50%;
@@ -131,10 +135,6 @@ body {
 
 .content__para {
   font-size: 2rem;
-}
-
-.content__iframe {
-  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
 }
 
 .content__button {
