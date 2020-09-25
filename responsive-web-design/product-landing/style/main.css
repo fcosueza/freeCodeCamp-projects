@@ -100,37 +100,54 @@ body {
 
 .section__title {
   font-size: 5rem;
+  margin-bottom: 5rem;
 }
 
-.section-jumbo {
+.section-jumbo,
+.section-pricing {
   background-color: #f8f8f8;
 }
 
 .content {
   width: 60%;
-  min-width: 20rem;
+  min-width: 40rem;
   margin: 0 auto;
 }
 
 .content__row {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row wrap-reverse;
+  text-align: left;
 }
 
 .content__row--reverse {
   flex-direction: row-reverse;
 }
 
-.content__text {
-  padding: 3rem 5rem 0 0;
+.content__row--forward {
+  margin: 8rem 0;
+}
+
+.content__text,
+.content__iframe,
+.content__img {
   width: 50%;
+}
+
+.content__text {
   min-width: 30rem;
   line-height: 1.2;
+  padding-right: 4rem;
+}
+
+.content__text--reverse {
+  padding-left: 4rem;
+  padding-right: 0;
 }
 
 .content__subheading {
   font-size: 3.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .content__para {
@@ -147,6 +164,32 @@ body {
   background-color: #d97a43;
   border: none;
   border-radius: 0.5rem;
+}
+
+.content__cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 32rem;
+  margin: 2rem;
+  color: white;
+  border-radius: 1rem;
+  background-color: black;
+}
+
+.card__text {
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.card__button {
+  width: 40%;
+  margin: 0 0 2rem 2rem;
 }
 
 /* Elements state */
