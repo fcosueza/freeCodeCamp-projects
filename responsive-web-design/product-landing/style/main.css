@@ -22,11 +22,12 @@ body {
 .main-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   width: 100%;
   height: 6rem;
-  padding: 0 15rem;
+  padding: 0 10rem;
   color: white;
   background: black;
 }
@@ -51,7 +52,7 @@ body {
 
 .nav__row {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
 }
 
@@ -95,7 +96,7 @@ body {
 }
 
 .section {
-  padding: 8rem 0;
+  padding: 5rem 2rem;
 }
 
 .section__title {
@@ -131,8 +132,10 @@ body {
 
 .content__text,
 .content__iframe,
-.content__media {
+.content__media,
+.form {
   width: 48%;
+  margin: 0 auto;
 }
 
 .content__text {
@@ -211,4 +214,16 @@ body {
 
 .nav__link:visited {
   color: white;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 1400px) {
+  html {
+    font-size: 45%;
+  }
+
+  .main-nav {
+    padding: 0 5rem;
+  }
 }
