@@ -110,7 +110,7 @@ body {
 
 .content {
   width: 60%;
-  min-width: 40rem;
+  min-width: 110rem;
   margin: 0 auto;
 }
 
@@ -118,6 +118,7 @@ body {
   display: flex;
   flex-flow: row wrap-reverse;
   text-align: left;
+  justify-content: space-between;
 }
 
 .content__row--reverse {
@@ -130,19 +131,12 @@ body {
 
 .content__text,
 .content__iframe,
-.content__img {
-  width: 50%;
+.content__media {
+  width: 48%;
 }
 
 .content__text {
-  min-width: 30rem;
   line-height: 1.2;
-  padding-right: 4rem;
-}
-
-.content__text--reverse {
-  padding-left: 4rem;
-  padding-right: 0;
 }
 
 .content__subheading {
@@ -164,6 +158,10 @@ body {
   background-color: #d97a43;
   border: none;
   border-radius: 0.5rem;
+}
+
+.content__img {
+  width: 100%;
 }
 
 .content__cards {
