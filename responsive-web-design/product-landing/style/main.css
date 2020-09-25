@@ -175,21 +175,33 @@ body {
 .card {
   display: flex;
   flex-direction: column;
-  width: 32rem;
-  margin: 2rem;
+  width: 36rem;
+  margin-bottom: 3rem;
   color: white;
-  border-radius: 1rem;
   background-color: black;
+  box-shadow: 0 0.3rem 0.5rem 0.2rem rgba(0, 0, 0, 0.4);
 }
 
 .card__text {
-  font-size: 2rem;
-  padding: 2rem;
+  padding: 5rem 3rem 4rem 3rem;
+}
+
+.card__title {
+  font-size: 2.5rem;
+  margin-bottom: 1.3rem;
+}
+
+.card__para {
+  font-size: 1.8rem;
 }
 
 .card__button {
   width: 40%;
-  margin: 0 0 2rem 2rem;
+  margin: 0 0 3rem 3rem;
+}
+
+.card__img {
+  border-bottom: 0;
 }
 
 /* Elements state */
