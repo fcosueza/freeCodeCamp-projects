@@ -113,7 +113,8 @@ body {
 .content {
   width: 110rem;
   margin: 0 auto;
-  max-width: 95vw;
+  max-width: 100%;
+  min-width: 30rem;
 }
 
 .content__row {
@@ -156,7 +157,7 @@ body {
   height: 4rem;
   font-size: 2rem;
   font-weight: bold;
-  margin-top: 4rem;
+  margin-top: 3.2rem;
   color: white;
   background-color: #d97a43;
   border: none;
@@ -230,9 +231,9 @@ body {
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 990px) {
   .content {
-    width: 50%;
+    width: 60%;
   }
 
   .content__text,
@@ -247,6 +248,7 @@ body {
   }
 
   .card {
+    width: 80%;
     margin: 2rem auto;
   }
 } ;
