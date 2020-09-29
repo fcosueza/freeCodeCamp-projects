@@ -114,7 +114,6 @@ body {
   width: 110rem;
   margin: 0 auto;
   max-width: 100%;
-  min-width: 30rem;
 }
 
 .content__row {
@@ -233,7 +232,8 @@ body {
 
 @media only screen and (max-width: 990px) {
   .content {
-    width: 60%;
+    width: 50%;
+    min-width: 50rem;
   }
 
   .content__text,
@@ -248,7 +248,7 @@ body {
   }
 
   .card {
-    width: 80%;
+    width: 100%;
     margin: 2rem auto;
   }
 } ;
