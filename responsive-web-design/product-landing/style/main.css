@@ -235,10 +235,16 @@ body {
 
 .footer {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   color: white;
   font-size: 1.6rem;
   background-color: black;
   padding: 2rem;
+}
+
+.footer > * {
+  flex: 1 1 0;
 }
 
 /* Elements state */
