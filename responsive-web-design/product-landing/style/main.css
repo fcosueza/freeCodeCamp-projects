@@ -213,6 +213,26 @@ body {
   border-bottom: 0;
 }
 
+.form {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1.6rem;
+  color: white;
+  background-color: black;
+  padding: 5rem 3rem;
+}
+
+.form__input {
+  line-height: 2;
+}
+
+.form__input,
+.form__textarea {
+  width: 90%;
+}
+
 .footer {
   display: flex;
   color: white;
