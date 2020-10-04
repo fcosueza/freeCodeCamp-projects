@@ -31,10 +31,12 @@ body {
   padding: 0 10rem;
   color: white;
   background: black;
+  z-index: 1;
 }
 
 .logo {
   margin-right: auto;
+  z-index: 100;
 }
 
 .logo__image {
@@ -262,19 +264,33 @@ body {
 }
 
 @media only screen and (max-width: 650px) {
+  .nav {
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 0;
+    height: 3rem;
+  }
+
   .nav__row {
     flex-direction: column;
     align-items: flex-end;
+    background-color: black;
+    width: 100vw;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
   }
 
   .nav__burger {
     display: block;
     top: 1rem;
     font-size: 3rem;
+    margin-bottom: 2rem;
   }
 
   .nav__item {
-    display: none;
-    margin: 0;
+    margin: 0.8rem 0;
+    align-self: center;
+    background: black;
   }
 }
