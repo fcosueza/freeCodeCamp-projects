@@ -248,6 +248,17 @@ body {
   flex: 1 1 0;
 }
 
+.social__link {
+  text-decoration: none;
+}
+
+.social__icon {
+  border-radius: 50%;
+  width: 3.5rem;
+  padding: 0.4rem;
+  background-color: #d97a43;
+}
+
 /* Elements state */
 
 .nav__link:link {
