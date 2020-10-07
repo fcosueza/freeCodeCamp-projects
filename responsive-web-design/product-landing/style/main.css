@@ -237,19 +237,25 @@ body {
 .footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   color: white;
   font-size: 1.6rem;
   background-color: black;
-  padding: 2rem;
+  padding: 2rem 5rem;
 }
 
-.footer > * {
-  flex: 1 1 0;
+.footer__section {
+  width: 25%;
+  align-self: flex-start;
+}
+
+.footer__text {
+  margin: 1rem 0 2rem;
 }
 
 .social__link {
   text-decoration: none;
+  margin: 0.5rem;
 }
 
 .social__icon {
@@ -257,6 +263,19 @@ body {
   width: 3.5rem;
   padding: 0.4rem;
   background-color: #d97a43;
+}
+
+.address {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.address__title {
+  margin-bottom: 1.5rem;
+}
+
+.address__text {
+  line-height: 1.5;
 }
 
 /* Elements state */
