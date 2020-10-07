@@ -40,7 +40,8 @@ body {
 }
 
 .logo__image {
-  margin-right: 1rem;
+  margin-right: 0.5rem;
+  width: 2.8rem;
 }
 
 .logo__text {
