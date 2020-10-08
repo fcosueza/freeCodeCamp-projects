@@ -238,7 +238,7 @@ body {
   color: white;
   font-size: 1.6rem;
   background-color: black;
-  padding: 2rem 5rem;
+  padding: 8rem 0;
 }
 
 .footer__section {
@@ -268,12 +268,23 @@ body {
   background-color: #d97a43;
 }
 
-.address__title {
+.address__title,
+.sitemap__title {
   margin-bottom: 1.5rem;
+  color: #d97a43;
+  font-size: 2.2rem;
 }
 
 .address__text {
-  line-height: 1.5;
+  line-height: 1.8;
+}
+
+.sitemap__link {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 2rem;
+  font-weight: bold;
 }
 
 /* Elements state */
