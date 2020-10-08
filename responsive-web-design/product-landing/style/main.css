@@ -119,8 +119,9 @@ body {
 }
 
 .content {
-  width: 110rem;
+  width: 60%;
   margin: 0 auto;
+  min-width: 110rem;
   max-width: 100%;
 }
 
@@ -184,8 +185,7 @@ body {
 .card {
   display: flex;
   flex-direction: column;
-  width: 36rem;
-  margin-bottom: 3rem;
+  width: 35rem;
   color: white;
   background-color: black;
   box-shadow: 0 0.3rem 0.5rem 0.2rem rgba(0, 0, 0, 0.4);
@@ -317,7 +317,7 @@ body {
   }
 
   .content {
-    width: 50%;
+    width: 80%;
     min-width: 500px;
   }
 
@@ -333,7 +333,8 @@ body {
   }
 
   .card {
-    width: 100%;
+    width: 70%;
+    min-width: 32rem;
     margin: 2rem auto;
   }
 }
