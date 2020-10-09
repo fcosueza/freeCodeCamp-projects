@@ -199,7 +199,7 @@ body {
   width: 35rem;
   color: var(--font-color-light);
   background-color: var(--detail-color);
-  box-shadow: 0 0.3rem 0.5rem 0.2rem rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.15s ease-in-out;
 }
 
 .card__text {
@@ -308,6 +308,10 @@ body {
 
 .nav__link:visited {
   color: var(--font-color-light);
+}
+
+.card:hover {
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.5);
 }
 
 /* Media queries */
