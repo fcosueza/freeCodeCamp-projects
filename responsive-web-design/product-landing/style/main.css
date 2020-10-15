@@ -1,0 +1,30 @@
+/* Variables */
+
+:root {
+  main-color: #fff;
+  font-main-color: #111;
+  font-secund-color: #b7b7b7;
+  accent-color: #dfa667;
+}
+
+/* Basic reset and style */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
