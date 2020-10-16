@@ -33,7 +33,7 @@ body {
 /* Elements styling */
 
 .header {
-  height: 100vh;
+  min-height: 100vh;
   color: var(--main-color);
   background: no-repeat center/cover url(../images/hero-1920x960.jpg);
 }
@@ -42,7 +42,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3rem 12rem;
+  padding: 2.5rem 12rem;
   width: 100%;
 }
 
@@ -75,7 +75,49 @@ body {
 }
 
 .header__content {
-  height: 100%;
-  width: 70%;
+  width: 50%;
   margin: 0 auto;
+  text-align: center;
+}
+
+.header__title {
+  font-family: "Aldrich", Arial, Helvetica, sans-serif;
+  font-size: 7.2rem;
+  text-transform: uppercase;
+  margin-top: 20rem;
+}
+
+.header__button {
+  position: relative;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 1.6rem 5rem;
+  border: none;
+  color: var(--main-color);
+  background: transparent;
+}
+
+.header__button::before,
+.header__button::after {
+  position: absolute;
+  width: 2.8rem;
+  height: 2.8rem;
+  content: "";
+  transition: all 0.6s;
+}
+
+.header__button::before {
+  left: 0;
+  bottom: 0;
+  border-left: 0.2rem solid rgba(255, 255, 255, 0.2);
+  border-bottom: 0.2rem solid rgba(255, 255, 255, 0.2);
+}
+
+.header__button::after {
+  right: 0;
+  top: 0;
+  border-top: 0.2rem solid rgba(255, 255, 255, 0.2);
+  border-right: 0.2rem solid rgba(255, 255, 255, 0.2);
 }
