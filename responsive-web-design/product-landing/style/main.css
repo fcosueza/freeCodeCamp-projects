@@ -1,10 +1,10 @@
 /* Variables */
 
 :root {
-  main-color: #fff;
-  font-main-color: #111;
-  font-secund-color: #b7b7b7;
-  accent-color: #dfa667;
+  --main-color: #fff;
+  --font-main-color: #111;
+  --font-secund-color: #b7b7b7;
+  --accent-color: #dfa667;
 }
 
 /* Basic reset and style */
@@ -17,6 +17,7 @@
 
 html {
   font-size: 62.5%;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -27,4 +28,12 @@ html,
 body {
   margin: 0;
   padding: 0;
+}
+
+/* Elements styling */
+
+.header {
+  height: 100vh;
+  color: var(--main-color);
+  background: no-repeat center/cover url(../images/hero-1920x960.jpg);
 }
