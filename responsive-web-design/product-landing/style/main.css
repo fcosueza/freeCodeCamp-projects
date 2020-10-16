@@ -37,3 +37,45 @@ body {
   color: var(--main-color);
   background: no-repeat center/cover url(../images/hero-1920x960.jpg);
 }
+
+.header__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 12rem;
+  width: 100%;
+}
+
+.menu__item {
+  display: inline-block;
+}
+
+.menu__link {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0 1.8rem;
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.phone {
+  font-family: "Aldrich", Arial, Helvetica, sans-serif;
+  text-align: right;
+}
+
+.phone__text {
+  font-size: 1.4rem;
+  color: var(--font-secund-color);
+}
+
+.phone__number {
+  font-size: 2.2rem;
+  color: var(--accent-color);
+  margin: 0;
+}
+
+.header__content {
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+}
