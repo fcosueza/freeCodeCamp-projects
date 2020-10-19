@@ -105,6 +105,7 @@ body {
 .content__text {
   text-align: left;
   width: 60%;
+  padding-top: 8rem;
 }
 
 .content__description {
@@ -116,8 +117,19 @@ body {
 
 .content__title {
   font-family: "Aldrich", Arial, Helvetica, sans-serif;
+  font-weight: 400;
   font-size: 4.2rem;
   text-transform: uppercase;
+}
+
+.content__para {
+  font-size: 1.5rem;
+  color: rgb(112, 112, 112);
+  line-height: 2.6rem;
+}
+
+.section {
+  padding-top: 12rem;
 }
 
 .button {
@@ -144,8 +156,8 @@ body {
 .button::before {
   left: 0;
   bottom: 0;
-  border-left: 0.2rem solid rgba(255, 255, 255, 0.2);
-  border-bottom: 0.2rem solid rgba(255, 255, 255, 0.2);
+  border-left: 0.2rem solid rgba(255, 255, 255, 0.1);
+  border-bottom: 0.2rem solid rgba(255, 255, 255, 0.1);
   border-radius: 0 0 0 0.4rem;
 }
 
@@ -155,6 +167,16 @@ body {
   border-top: 0.2rem solid rgba(255, 255, 255, 0.2);
   border-right: 0.2rem solid rgba(255, 255, 255, 0.2);
   border-radius: 0 0.4rem 0 0;
+}
+
+.content__button {
+  color: black;
+  margin-top: 5rem;
+}
+
+.content__button::after,
+.content__button::before {
+  border-color: rgba(0, 0, 0, 0.2);
 }
 
 /* Elements State */
