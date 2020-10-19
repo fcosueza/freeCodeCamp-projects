@@ -38,6 +38,13 @@ body {
   background: no-repeat center/cover url(../images/hero-1920x960.jpg);
 }
 
+.header__title {
+  font-family: "Aldrich", Arial, Helvetica, sans-serif;
+  font-size: 7.2rem;
+  text-transform: uppercase;
+  margin-top: 25rem;
+}
+
 .header__bar {
   display: flex;
   align-items: center;
@@ -89,17 +96,28 @@ body {
   margin: 0;
 }
 
-.header__content {
+.content {
   width: 50%;
   margin: 0 auto;
   text-align: center;
 }
 
-.header__title {
-  font-family: "Aldrich", Arial, Helvetica, sans-serif;
-  font-size: 7.2rem;
+.content__text {
+  text-align: left;
+  width: 60%;
+}
+
+.content__description {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--accent-color);
   text-transform: uppercase;
-  margin-top: 20rem;
+}
+
+.content__title {
+  font-family: "Aldrich", Arial, Helvetica, sans-serif;
+  font-size: 4.2rem;
+  text-transform: uppercase;
 }
 
 .button {
