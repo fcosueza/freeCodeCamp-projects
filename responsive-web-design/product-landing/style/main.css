@@ -53,13 +53,14 @@ body {
   top: 0;
   align-items: center;
   justify-content: space-around;
-  padding: 1.5rem 0;
+  padding: 1.2rem 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .nav-bar {
-  width: 30%;
+  width: 50%;
+  max-width: 60rem;
 }
 
 .menu {
@@ -110,9 +111,10 @@ body {
 }
 
 .content {
-  width: 60%;
-  min-width: 100rem;
+  width: 100%;
+  max-width: 110rem;
   margin: 0 auto;
+  padding: 0 2rem;
   text-align: center;
 }
 
@@ -121,7 +123,7 @@ body {
 }
 
 .content--size-l {
-  width: 80%;
+  width: 100%;
 }
 
 .content__text {
@@ -175,6 +177,7 @@ body {
   text-align: center;
   padding: 1.6rem 5rem;
   border: none;
+  cursor: pointer;
   color: var(--main-color);
   background: transparent;
 }
