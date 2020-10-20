@@ -97,15 +97,23 @@ body {
 }
 
 .content {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   text-align: center;
 }
 
+.content--size-m {
+  width: 50%;
+}
+
+.content--size-l {
+  width: 80%;
+}
+
 .content__text {
   text-align: left;
-  width: 60%;
-  padding-top: 8rem;
+  width: 48%;
+  padding-top: 7rem;
 }
 
 .content__description {
@@ -119,6 +127,7 @@ body {
   font-family: "Aldrich", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 4.2rem;
+  margin-top: 1rem;
   text-transform: uppercase;
 }
 
@@ -126,6 +135,7 @@ body {
   font-size: 1.5rem;
   color: rgb(112, 112, 112);
   line-height: 2.6rem;
+  margin-bottom: 2rem;
 }
 
 .section {
