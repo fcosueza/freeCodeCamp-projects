@@ -35,22 +35,34 @@ body {
 .header {
   min-height: 100vh;
   color: var(--main-color);
-  background: no-repeat center/cover url(../images/hero-1920x960.jpg);
+  background: no-repeat top center/cover url(../images/hero-1920x960.jpg);
 }
 
 .header__title {
   font-family: "Aldrich", Arial, Helvetica, sans-serif;
   font-size: 7.2rem;
   text-transform: uppercase;
-  margin-top: 25rem;
+  padding-top: 30rem;
 }
 
 .header__bar {
   display: flex;
+  position: fixed;
+  top: 0;
   align-items: center;
-  justify-content: space-between;
-  padding: 2.5rem 12rem;
+  justify-content: space-around;
+  padding: 1.5rem 0;
   width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.nav-bar {
+  width: 30%;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu__item {
@@ -61,7 +73,6 @@ body {
   position: relative;
   font-size: 1.6rem;
   font-weight: 600;
-  margin: 0 1.8rem;
   padding-bottom: 0.5rem;
   color: var(--main-color);
   text-decoration: none;
@@ -98,6 +109,7 @@ body {
 
 .content {
   width: 60%;
+  min-width: 100rem;
   margin: 0 auto;
   text-align: center;
 }
@@ -112,6 +124,7 @@ body {
 
 .content__text {
   text-align: left;
+  float: left;
   width: 48%;
   padding-top: 7rem;
 }
@@ -140,6 +153,16 @@ body {
 
 .section {
   padding-top: 12rem;
+}
+
+.section__about {
+  display: flex;
+}
+
+.content__pic {
+  float: right;
+  width: 47rem;
+  height: 60rem;
 }
 
 .button {
@@ -182,6 +205,10 @@ body {
 .content__button {
   color: black;
   margin-top: 5rem;
+}
+
+.content__img {
+  max-width: 100%;
 }
 
 .content__button::after,
