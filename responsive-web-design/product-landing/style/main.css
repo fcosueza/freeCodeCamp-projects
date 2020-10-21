@@ -259,15 +259,36 @@ body {
   min-height: 40rem;
 }
 
-.pic__slider {
+.slider {
   position: absolute;
   left: 3.5rem;
-  bottom: 5rem;
+  bottom: -100rem;
   text-align: center;
-  width: 80%;
+  width: 85%;
   padding: 3rem;
   margin: 0 auto;
   background-color: var(--main-color);
+  transition: all 0.6s ease;
+}
+
+.slider__title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--accent-color);
+  letter-spacing: 0.2rem;
+}
+
+.slider__description {
+  font-family: "Aldrich", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 1.5rem 0 0;
+}
+
+.pic:hover .slider {
+  bottom: 3rem;
 }
 
 /* Elements State */
