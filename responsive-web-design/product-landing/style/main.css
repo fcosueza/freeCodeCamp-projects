@@ -119,6 +119,10 @@ body {
   text-align: center;
 }
 
+.content--left {
+  text-align: left;
+}
+
 .content--size-m {
   width: 50%;
 }
@@ -129,6 +133,7 @@ body {
 }
 
 .content__text {
+  display: block;
   text-align: left;
   float: left;
   width: 48%;
@@ -284,6 +289,15 @@ body {
   text-transform: uppercase;
   font-weight: 400;
   margin: 1.5rem 0 0;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service {
+  width: 20%;
 }
 
 /* Elements State */
