@@ -113,7 +113,7 @@ body {
 
 .content {
   width: 100%;
-  max-width: 110rem;
+  max-width: 113rem;
   margin: 0 auto;
   padding: 0 5rem;
   text-align: center;
@@ -294,10 +294,25 @@ body {
 .services {
   display: flex;
   justify-content: space-between;
+  gap: 5rem;
 }
 
 .service {
-  width: 20%;
+  max-width: 22%;
+}
+
+.service__title {
+  font-family: "Aldrich", Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 3.5rem 0 2.2rem 0;
+}
+
+.service__text {
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  color: #707070;
 }
 
 /* Elements State */
