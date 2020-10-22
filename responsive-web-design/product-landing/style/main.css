@@ -61,13 +61,13 @@ body {
 }
 
 .nav-bar {
-  width: 50%;
+  width: 30%;
   max-width: 60rem;
 }
 
 .menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .menu__item {
@@ -114,7 +114,7 @@ body {
 
 .content {
   width: 100%;
-  max-width: 113rem;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 0 5rem;
   text-align: center;
@@ -134,10 +134,9 @@ body {
 }
 
 .content__text {
-  display: block;
   text-align: left;
   float: left;
-  width: 48%;
+  width: 50%;
   padding-top: 7rem;
 }
 
@@ -174,7 +173,7 @@ body {
 .content__pic {
   position: relative;
   float: right;
-  width: 47rem;
+  width: 45rem;
   height: 60rem;
 }
 
@@ -292,21 +291,27 @@ body {
   margin: 1.5rem 0 0;
 }
 
-.services {
+.services,
+.achievements {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 }
 
-.service {
+.service,
+.achievement {
   max-width: 22%;
 }
 
-.service__title {
+.service__title,
+.achievement__title {
   font-family: "Aldrich", Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.service__title {
   margin: 3.5rem 0 2.2rem 0;
 }
 
@@ -314,6 +319,31 @@ body {
   font-size: 1.5rem;
   line-height: 2.3rem;
   color: #707070;
+}
+
+.achievements {
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+  margin: 4rem 0;
+  padding-top: 7rem;
+}
+
+.achievement {
+  display: flow-root;
+  min-width: 21.1rem;
+}
+
+.achievement__title {
+  display: inline;
+  position: relative;
+  top: 1rem;
+  font-size: 1.8rem;
+}
+
+.achievement__number {
+  font-size: 6rem;
+  color: var(--accent-color);
+  float: left;
+  margin-right: 2rem;
 }
 
 /* Elements State */
