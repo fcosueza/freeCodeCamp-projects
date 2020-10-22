@@ -352,9 +352,44 @@ body {
 }
 
 .contact {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
   padding-bottom: 7.5rem;
   margin-bottom: 8.5rem;
   border-bottom: 0.1rem solid rgba(183, 183, 183, 0.9);
+}
+
+.contact__title {
+  font-family: "Aldrich", Arial, Helvetica, sans-serif;
+  font-size: 3.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.form {
+  display: flex;
+  position: relative;
+  font-size: 1.4rem;
+}
+
+.form__input,
+.form__button {
+  border: none;
+}
+
+.form__input {
+  width: 30rem;
+  height: 5rem;
+  padding-left: 1.5rem;
+}
+
+.form__button {
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--accent-color);
 }
 
 /* Elements State */
