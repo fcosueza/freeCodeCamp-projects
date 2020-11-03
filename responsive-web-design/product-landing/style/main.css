@@ -175,7 +175,7 @@ body {
 }
 
 .section__vid {
-	background: url(../images/vid-bg-1920x564.jpg);
+	background: no-repeat center / cover url(../images/vid-bg-1920x564.jpg);
 }
 
 .content__pic {
@@ -183,6 +183,10 @@ body {
 	float: right;
 	width: 45rem;
 	height: 60rem;
+}
+
+.content__vid {
+	margin-bottom: 12rem;
 }
 
 .content__pic::after {
