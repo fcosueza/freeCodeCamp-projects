@@ -167,7 +167,7 @@ body {
 }
 
 .section {
-	padding-top: 12rem;
+	padding: 12rem;
 }
 
 .section__about {
@@ -176,6 +176,14 @@ body {
 
 .section__vid {
 	background: no-repeat center / cover url(../images/vid-bg-1920x564.jpg);
+}
+
+.section__projects {
+	padding-bottom: 0;
+}
+
+.section__services {
+	padding-bottom: 9rem;
 }
 
 .content__pic {
