@@ -147,6 +147,10 @@ body {
 	text-transform: uppercase;
 }
 
+.content__title--white {
+	color: var(--main-color);
+}
+
 .content__title {
 	font-family: "Aldrich", Arial, Helvetica, sans-serif;
 	font-weight: 400;
@@ -168,6 +172,10 @@ body {
 
 .section__about {
 	display: flex;
+}
+
+.section__vid {
+	background: url(../images/vid-bg-1920x564.jpg);
 }
 
 .content__pic {
