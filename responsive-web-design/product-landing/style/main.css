@@ -188,6 +188,7 @@ body {
 	position: relative;
 	width: 45rem;
 	height: 60rem;
+	margin-left: 1rem;
 }
 
 .content__pic::after {
@@ -209,7 +210,7 @@ body {
 	width: 75%;
 	min-width: 60rem;
 	height: 40rem;
-	margin-top: 4rem;
+	margin: 0 auto;
 	border: 0.1rem solid var(--accent-color);
 }
 .button {
@@ -431,4 +432,20 @@ body {
 
 .d-flex {
 	display: flex;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1200px) {
+	.header__bar {
+		justify-content: space-between;
+		padding: 2rem 1rem;
+	}
+	.section {
+		padding: 6rem 0;
+	}
+
+	.content {
+		min-width: 100%;
+	}
 }
