@@ -99,22 +99,6 @@ body {
 	transition: all 0.4s;
 }
 
-.phone {
-	font-family: "Aldrich", Arial, Helvetica, sans-serif;
-	text-align: right;
-}
-
-.phone__text {
-	font-size: 1.4rem;
-	color: var(--font-secund-color);
-}
-
-.phone__number {
-	font-size: 2.2rem;
-	color: var(--accent-color);
-	margin: 0;
-}
-
 .section {
 	padding: 12rem;
 }
@@ -440,17 +424,13 @@ body {
 /* Media Queries */
 
 @media only screen and (max-width: 1300px) {
-	.header__bar {
-		justify-content: space-between;
-		padding: 2rem 1rem;
-	}
 	.section {
 		padding: 6rem 0;
 	}
 
 	.content {
 		min-width: 100%;
-		padding: 0 2rem;
+		padding: 0 2.5rem;
 	}
 }
 
