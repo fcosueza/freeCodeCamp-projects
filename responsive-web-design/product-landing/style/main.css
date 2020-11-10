@@ -476,3 +476,49 @@ body {
 		margin: 1.5rem 0;
 	}
 }
+
+@media screen and (max-width: 620px) {
+	.header__bar {
+		padding: 0;
+	}
+	.header__title {
+		font-size: 5rem;
+	}
+
+	.content__text,
+	.content__pics {
+		width: 100%;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.nav-bar {
+		width: 100%;
+		padding: 0;
+	}
+
+	.nav {
+		flex-flow: column nowrap;
+		align-items: center;
+		text-align: center;
+		padding-left: 0;
+		margin: 0;
+	}
+
+	.nav__item {
+		border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
+		width: 100vw;
+		padding: 0.8rem 0;
+		margin: 0;
+	}
+
+	.nav__link {
+		font-size: 2rem;
+	}
+
+	.contact__title {
+		font-size: 2.5rem;
+	}
+}
