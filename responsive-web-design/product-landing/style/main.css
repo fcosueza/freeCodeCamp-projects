@@ -382,7 +382,7 @@ body {
 	width: 5rem;
 	height: 5rem;
 	cursor: pointer;
-	color: var(--main-color);
+	color: var(--font-main-color);
 	background-color: var(--accent-color);
 }
 
