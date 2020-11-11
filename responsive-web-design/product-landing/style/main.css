@@ -3,7 +3,7 @@
 :root {
 	--main-color: #fff;
 	--font-main-color: #111;
-	--font-secund-color: #b7b7b7;
+	--font-secund-color: rgb(112, 112, 112);
 	--accent-color: #dfa667;
 }
 
@@ -35,7 +35,6 @@ body {
 /* Elements styling */
 
 .header {
-	display: flex;
 	align-items: center;
 	min-height: 100vh;
 	color: var(--main-color);
@@ -51,7 +50,6 @@ body {
 }
 
 .header__bar {
-	display: flex;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -68,7 +66,6 @@ body {
 }
 
 .nav {
-	display: flex;
 	justify-content: space-around;
 }
 
@@ -103,11 +100,11 @@ body {
 	padding: 12rem;
 }
 
-.section__vid {
+.section-vid {
 	background: no-repeat center / cover url(../images/vid-bg-1920x564.jpg);
 }
 
-.section__projects {
+.section-projects {
 	padding-bottom: 0;
 }
 
@@ -163,7 +160,7 @@ body {
 
 .content__para {
 	font-size: 1.5rem;
-	color: rgb(112, 112, 112);
+	color: var(--font-secund-color);
 	line-height: 2.6rem;
 	margin-bottom: 2rem;
 }
@@ -246,8 +243,6 @@ body {
 }
 
 .gallery {
-	display: flex;
-	flex-flow: row wrap;
 	justify-content: space-around;
 	align-items: center;
 	gap: 1rem;
@@ -294,8 +289,6 @@ body {
 
 .services,
 .achievements {
-	display: flex;
-	flex-flow: row wrap;
 	justify-content: space-between;
 }
 
@@ -323,7 +316,6 @@ body {
 }
 
 .achievements {
-	display: flex;
 	justify-content: space-between;
 	border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
 	margin-top: 4rem;
@@ -358,8 +350,6 @@ body {
 }
 
 .contact {
-	display: flex;
-	flex-flow: row wrap;
 	align-items: center;
 	justify-content: space-around;
 	padding-bottom: 6rem;
@@ -374,7 +364,6 @@ body {
 }
 
 .form {
-	display: flex;
 	position: relative;
 	font-size: 1.4rem;
 }
@@ -412,12 +401,6 @@ body {
 
 .pic:hover .slider {
 	bottom: 2rem;
-}
-/* Utility classes */
-
-.d-flex {
-	display: flex;
-	flex-flow: wrap row;
 }
 
 /* Media Queries */
@@ -530,4 +513,19 @@ body {
 	.form__input {
 		width: 85%;
 	}
+}
+
+/* Utility classes */
+
+.d-flex {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.d-flex--col {
+	flex-direction: column;
+}
+
+.d-flex--nowrap {
+	flex-wrap: nowrap;
 }

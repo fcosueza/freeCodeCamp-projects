@@ -18,13 +18,13 @@
   </head>
 
   <body>
-    <header id="header" class="header">
-      <div class="header__bar">
+    <header id="header" class="header d-flex">
+      <div class="header__bar d-flex d-flex--nowrap">
         <div class="logo">
           <img src="images/logo-172x43.png" alt="" id="header-image" class="logo__img">
         </div>
         <nav id="nav-bar" class="nav-bar">
-          <ul class="nav">
+          <ul class="nav d-flex d-flex--nowrap">
             <li class="nav__item"><a class="nav__link" href="#header">Home</a></li>
             <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
             <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
@@ -36,11 +36,11 @@
 
       <div class="content">
         <h1 class="header__title">Quality is not only our standard.</h1>
-        <button class="header__button button">See Project</button>
+        <button class="button">See Project</button>
       </div>
     </header>
 
-    <section id="about" class="section section__about">
+    <section id="about" class="section">
       <div class="content d-flex">
         <div class="content__text">
           <p class="content__description">Who are we</p>
@@ -61,7 +61,7 @@
       </div>
     </section>
 
-    <section class="section section__vid">
+    <section class="section section-vid">
       <div class="content">
         <p class="content__description">About modern Architecture</p>
         <h3 class="content__title content__title--white">The future is now</h3>
@@ -75,13 +75,13 @@
       </div>
     </section>
 
-    <section id="projects" class="section section__projects">
+    <section id="projects" class="section section-projects">
       <div class="content">
         <p class="content__description">Our works</p>
         <h3 class="content__title">Latest projects</h3>
       </div>
       <div class="content--size-l">
-        <div class="gallery">
+        <div class="gallery d-flex">
           <div class="pic">
             <img src="images/project-1-442x600.jpg" alt="" class="pic__img">
             <div class="slider">
@@ -114,12 +114,12 @@
       </div>
     </section>
 
-    <section id="services" class="section section__services">
+    <section id="services" class="section">
       <div class="content content--left">
         <p class="content__description">Our specialization</p>
         <h3 class="content__title">What we do</h3>
 
-        <div class="services">
+        <div class="services d-flex">
           <div class="service">
             <img src="images/services-interior-60x60.png" alt="" class="service__icon">
             <h5 class="service__title">Interior Design</h5>
@@ -151,7 +151,7 @@
           </div>
         </div>
 
-        <div class="achievements">
+        <div class="achievements d-flex">
           <div class="achievement">
             <span class="achievement__number">85</span>
             <h5 class="achievement__title">Projects completed</h5>
@@ -175,9 +175,9 @@
 
     <footer class="footer">
       <div class="content content--left">
-        <div id="contact" class="contact">
+        <div id="contact" class="contact d-flex">
           <h2 class="contact__title">Ready to work with us?</h2>
-          <form class="form" id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+          <form class="form" id="form d-flex d-flex--nowrap" action="https://www.freecodecamp.com/email-submit" method="POST">
             <input class="form__input" type="email" name="email" id="email" placeholder="Enter your email..." required>
             <button class="form__button" id="submit">
               <i class="fas fa-paper-plane"></i>
