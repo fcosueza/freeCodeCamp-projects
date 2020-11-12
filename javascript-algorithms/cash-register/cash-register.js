@@ -11,15 +11,21 @@ const coinValues = [
 ];
 
 const checkCashRegister = (price, cash, cid) => {
-  let change = {
-    status: "CLOSED",
+  const availableChange = cid.reduce((acc, curr) => acc + curr[1], 0);
+  const necessaryChange = cash - price;
+  const changeInDimes = {
+    status: "OPEN",
     change: []
   };
 
-  return change;
-};
+  if (availableChange < necessaryChange) {
+    changeInDimes.status = "INSUFFICIENT_FUNDS";
+  } else if (availableChange === necessaryChange) {
+    changeInDimes.status = "CLOSED";
+    changeInDimes.change = cid;
+  }
 
-const enoughChange = (change, cid) =>
-  cid.reduce((acc, curr) => acc + curr[1], 0) <= change;
+  return changeInDimes;
+};
 
 export default checkCashRegister;
