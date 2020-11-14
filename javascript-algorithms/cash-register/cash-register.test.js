@@ -87,7 +87,7 @@ describe("Cash register", () => {
     expect(checkCashRegister(price, cash, cid)).toMatchObject(change);
   });
 
-  it("shouldn't return change with a status of insufficient funds, with not matching dime type", () => {
+  it("shouldn't return change with enough funds but no matching dime type", () => {
     const cid = [
       ["PENNY", 0.01],
       ["NICKEL", 0],
