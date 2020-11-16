@@ -1,10 +1,9 @@
 /*Variables */
-:root{
---section-bg: #33373A:
---nav-bg: #24282A;
---font-color:#cbd0d0;
---accent-color: #E6244B;
-
+:root {
+  --section-bg: #33373a;
+  --nav-bg: #24282a;
+  --font-color: #cbd0d0;
+  --accent-color: #e6244b;
 }
 
 /* Basic reset and style */
@@ -28,6 +27,7 @@ html {
 
 body {
   min-height: 100vh;
+  color: var(--font-color);
 }
 
 /* Elements Style */
@@ -40,17 +40,27 @@ body {
     "nav content"
     "footer footer";
   grid-template-columns: 1fr 5fr;
-  gap: 2rem;
 }
 
 .nav-bar {
+  display: sticky;
+  top: 0;
+  left: 0;
   grid-area: nav;
+  background-color: var(--nav-bg);
+  padding: 5rem 1rem;
+  text-align: center;
 }
 
 .main-content {
   grid-area: content;
+  background-color: var(--section-bg);
+  padding: 5rem;
 }
 
 .main-footer {
   grid-area: footer;
+  background-color: var(--nav-bg);
+  text-align: center;
+  padding: 2rem 0;
 }
