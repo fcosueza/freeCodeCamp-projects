@@ -1,3 +1,12 @@
+/*Variables */
+:root{
+--section-bg: #33373A:
+--nav-bg: #24282A;
+--font-color:#cbd0d0;
+--accent-color: #E6244B;
+
+}
+
 /* Basic reset and style */
 
 *,
