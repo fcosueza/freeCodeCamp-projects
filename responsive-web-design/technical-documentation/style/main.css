@@ -41,7 +41,7 @@ body {
     ". content"
     ". content"
     "footer footer";
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 6fr;
 }
 
 .nav-bar {
@@ -54,11 +54,32 @@ body {
   text-align: center;
 }
 
+.nav-header__title {
+  font-size: 4rem;
+}
+
+.menu {
+  text-align: center;
+  padding-left: 0;
+}
+
+.menu__item {
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 2rem;
+  color: var(--font-color);
+  line-height: 3rem;
+  font-weight: bold;
+}
+
 .main-content {
   grid-area: content;
   background-color: var(--section-bg);
-  margin: 5rem;
-  padding: 5rem;
+  margin: 5rem 5rem 0 0;
+  padding: 0 5rem 5rem;
   border-radius: 1rem;
 }
 
@@ -72,7 +93,7 @@ body {
 
 .main-footer {
   grid-area: footer;
-
+  font-size: 1.6rem;
+  line-height: 8rem;
   text-align: center;
-  padding: 2rem 0;
 }
