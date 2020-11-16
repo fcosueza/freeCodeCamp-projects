@@ -22,3 +22,26 @@ body {
 }
 
 /* Elements Style */
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "nav content"
+    "nav content"
+    "nav content"
+    "footer footer";
+  grid-template-columns: 1fr 5fr;
+  gap: 2rem;
+}
+
+.nav-bar {
+  grid-area: nav;
+}
+
+.main-content {
+  grid-area: content;
+}
+
+.main-footer {
+  grid-area: footer;
+}

@@ -9,184 +9,186 @@
 
     <link rel="stylesheet" href="style/normalize.css" type="text/css" />
     <link rel="stylesheet" href="style/main.css" type="text/css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" M>
 
     <title>CSS Flexbox Tutorial</title>
 
   <body>
-    <nav id="nav-bar">
-      <header class="nav-header">
-        <h1 class="nav-header__title">CSS Flexbox</h1>
-      </header>
-      <ol>
-        <li><a href="" class="nav-link">DummyS Section</a></li>
-        <li><a href="" class="nav-link">DummyS Section</a></li>
-        <li><a href="" class="nav-link">DummyS Section</a></li>
-        <li><a href="" class="nav-link">DummyS Section</a></li>
-        <li><a href="" class="nav-link">DummyS Section</a></li>
-      </ol>
-    </nav>
-    <main id="main-doc">
-      <section class="main-section">
-        <header class="dummy_section">
-          <h2 class="main-section__title">Dummy Section</h2>
-
-          <p class="main-section__text">
-            Aliqua qui commodo voluptate proident mollit elit. Dolor reprehenderit
-            officia adipisicing sunt ea magna ipsum ea. Dolor ea officia aute ullamco
-            commodo culpa dolore officia irure. Magna velit anim ea amet anim ullamco.
-            Dolor irure commodo deserunt nisi sit ullamco.
-          </p>
-
-          <p class="main-section__text">
-            Tempor consectetur nostrud in labore occaecat consectetur mollit laborum
-            consequat fugiat esse proident. Tempor velit aliqua do pariatur anim. Eiusmod elit ullamco ea
-            in. Elit adipisicing labore adipisicing sit in culpa magna sunt adipisicing consequat adipisicing aute elit. Pariatur
-            mollit pariatur minim dolor. Consequat labore aliquip ut consectetur tempor. Consectetur aliquip duis pariatur sit et
-            laboris veniam veniam eiusmod cillum.
-          </p>
-
-          <p class="main-section__text"></p>
-          Ea eu incididunt amet laborum. Et sunt sit aliqua tempor ut elit deserunt occaecat. Aute laboris elit ullamco officia.
-          </p>
-
-          <p class="main-section__text"></p>
-          Do pariatur id non dolore nulla anim reprehenderit deserunt cillum labore elit sint. Consectetur sit irure elit quis
-          aliquip eiusmod proident non ad deserunt. Cupidatat anim ullamco tempor ut culpa non sint aute aliquip occaecat culpa
-          excepteur deserunt veniam. In ea ea excepteur amet consectetur sint est. Quis est qui eu exercitation incididunt dolor
-          laborum id ut Lorem duis aliquip dolore. Officia irure aliqua Lorem aute ea.
-          </p>
+    <div class="container">
+      <nav id="nav-bar" class="nav-bar">
+        <header class="nav-header">
+          <h1 class="nav-header__title">CSS Flexbox</h1>
         </header>
-      </section>
-      <section class="main-section">
-        <header class="dummy_section">
-          <h2 class="main-section__title">Dummy Section</h2>
+        <ol>
+          <li><a href="" class="nav-link">DummyS Section</a></li>
+          <li><a href="" class="nav-link">DummyS Section</a></li>
+          <li><a href="" class="nav-link">DummyS Section</a></li>
+          <li><a href="" class="nav-link">DummyS Section</a></li>
+          <li><a href="" class="nav-link">DummyS Section</a></li>
+        </ol>
+      </nav>
+      <main id="main-doc" class="main-content">
+        <section class="main-section">
+          <header class="dummy_section">
+            <h2 class="main-section__title">Dummy Section</h2>
 
-          <p class="main-section__text">
-            Aliqua qui commodo voluptate proident mollit elit. Dolor reprehenderit
-            officia adipisicing sunt ea magna ipsum ea. Dolor ea officia aute ullamco
-            commodo culpa dolore officia irure. Magna velit anim ea amet anim ullamco.
-            Dolor irure commodo deserunt nisi sit ullamco.
-          </p>
+            <p class="main-section__text">
+              Aliqua qui commodo voluptate proident mollit elit. Dolor reprehenderit
+              officia adipisicing sunt ea magna ipsum ea. Dolor ea officia aute ullamco
+              commodo culpa dolore officia irure. Magna velit anim ea amet anim ullamco.
+              Dolor irure commodo deserunt nisi sit ullamco.
+            </p>
 
-          <p class="main-section__text">
-            Tempor consectetur nostrud in labore occaecat consectetur mollit laborum
-            consequat fugiat esse proident. Tempor velit aliqua do pariatur anim. Eiusmod elit ullamco ea
-            in. Elit adipisicing labore adipisicing sit in culpa magna sunt adipisicing consequat adipisicing aute elit. Pariatur
-            mollit pariatur minim dolor. Consequat labore aliquip ut consectetur tempor. Consectetur aliquip duis pariatur sit et
-            laboris veniam veniam eiusmod cillum.
-          </p>
+            <p class="main-section__text">
+              Tempor consectetur nostrud in labore occaecat consectetur mollit laborum
+              consequat fugiat esse proident. Tempor velit aliqua do pariatur anim. Eiusmod elit ullamco ea
+              in. Elit adipisicing labore adipisicing sit in culpa magna sunt adipisicing consequat adipisicing aute elit. Pariatur
+              mollit pariatur minim dolor. Consequat labore aliquip ut consectetur tempor. Consectetur aliquip duis pariatur sit et
+              laboris veniam veniam eiusmod cillum.
+            </p>
 
-          <p class="main-section__text"></p>
-          Ea eu incididunt amet laborum. Et sunt sit aliqua tempor ut elit deserunt occaecat. Aute laboris elit ullamco officia.
-          </p>
+            <p class="main-section__text"></p>
+            Ea eu incididunt amet laborum. Et sunt sit aliqua tempor ut elit deserunt occaecat. Aute laboris elit ullamco officia.
+            </p>
 
-          <p class="main-section__text"></p>
-          Do pariatur id non dolore nulla anim reprehenderit deserunt cillum labore elit sint. Consectetur sit irure elit quis
-          aliquip eiusmod proident non ad deserunt. Cupidatat anim ullamco tempor ut culpa non sint aute aliquip occaecat culpa
-          excepteur deserunt veniam. In ea ea excepteur amet consectetur sint est. Quis est qui eu exercitation incididunt dolor
-          laborum id ut Lorem duis aliquip dolore. Officia irure aliqua Lorem aute ea.
-          </p>
-        </header>
-      </section>
-      <section class="main-section">
-        <header class="dummy_section">
-          <h2 class="main-section__title">Dummy Section</h2>
+            <p class="main-section__text"></p>
+            Do pariatur id non dolore nulla anim reprehenderit deserunt cillum labore elit sint. Consectetur sit irure elit quis
+            aliquip eiusmod proident non ad deserunt. Cupidatat anim ullamco tempor ut culpa non sint aute aliquip occaecat culpa
+            excepteur deserunt veniam. In ea ea excepteur amet consectetur sint est. Quis est qui eu exercitation incididunt dolor
+            laborum id ut Lorem duis aliquip dolore. Officia irure aliqua Lorem aute ea.
+            </p>
+          </header>
+        </section>
+        <section class="main-section">
+          <header class="dummy_section">
+            <h2 class="main-section__title">Dummy Section</h2>
 
-          <p class="main-section__text">
-            Aliqua qui commodo voluptate proident mollit elit. Dolor reprehenderit
-            officia adipisicing sunt ea magna ipsum ea. Dolor ea officia aute ullamco
-            commodo culpa dolore officia irure. Magna velit anim ea amet anim ullamco.
-            Dolor irure commodo deserunt nisi sit ullamco.
-          </p>
+            <p class="main-section__text">
+              Aliqua qui commodo voluptate proident mollit elit. Dolor reprehenderit
+              officia adipisicing sunt ea magna ipsum ea. Dolor ea officia aute ullamco
+              commodo culpa dolore officia irure. Magna velit anim ea amet anim ullamco.
+              Dolor irure commodo deserunt nisi sit ullamco.
+            </p>
 
-          <p class="main-section__text">
-            Tempor consectetur nostrud in labore occaecat consectetur mollit laborum
-            consequat fugiat esse proident. Tempor velit aliqua do pariatur anim. Eiusmod elit ullamco ea
-            in. Elit adipisicing labore adipisicing sit in culpa magna sunt adipisicing consequat adipisicing aute elit. Pariatur
-            mollit pariatur minim dolor. Consequat labore aliquip ut consectetur tempor. Consectetur aliquip duis pariatur sit et
-            laboris veniam veniam eiusmod cillum.
-          </p>
+            <p class="main-section__text">
+              Tempor consectetur nostrud in labore occaecat consectetur mollit laborum
+              consequat fugiat esse proident. Tempor velit aliqua do pariatur anim. Eiusmod elit ullamco ea
+              in. Elit adipisicing labore adipisicing sit in culpa magna sunt adipisicing consequat adipisicing aute elit. Pariatur
+              mollit pariatur minim dolor. Consequat labore aliquip ut consectetur tempor. Consectetur aliquip duis pariatur sit et
+              laboris veniam veniam eiusmod cillum.
+            </p>
 
-          <p class="main-section__text"></p>
-          Ea eu incididunt amet laborum. Et sunt sit aliqua tempor ut elit deserunt occaecat. Aute laboris elit ullamco officia.
-          </p>
+            <p class="main-section__text"></p>
+            Ea eu incididunt amet laborum. Et sunt sit aliqua tempor ut elit deserunt occaecat. Aute laboris elit ullamco officia.
+            </p>
 
-          <p class="main-section__text"></p>
-          Do pariatur id non dolore nulla anim reprehenderit deserunt cillum labore elit sint. Consectetur sit irure elit quis
-          aliquip eiusmod proident non ad deserunt. Cupidatat anim ullamco tempor ut culpa non sint aute aliquip occaecat culpa
-          excepteur deserunt veniam. In ea ea excepteur amet consectetur sint est. Quis est qui eu exercitation incididunt dolor
-          laborum id ut Lorem duis aliquip dolore. Officia irure aliqua Lorem aute ea.
-          </p>
-        </header>
-      </section>
-      <section class="main-section">
-        <header class="dummy_section">
-          <h2 class="main-section__title">Dummy Section</h2>
+            <p class="main-section__text"></p>
+            Do pariatur id non dolore nulla anim reprehenderit deserunt cillum labore elit sint. Consectetur sit irure elit quis
+            aliquip eiusmod proident non ad deserunt. Cupidatat anim ullamco tempor ut culpa non sint aute aliquip occaecat culpa
+            excepteur deserunt veniam. In ea ea excepteur amet consectetur sint est. Quis est qui eu exercitation incididunt dolor
+            laborum id ut Lorem duis aliquip dolore. Officia irure aliqua Lorem aute ea.
+            </p>
+          </header>
+        </section>
+        <section class="main-section">
+          <header class="dummy_section">
+            <h2 class="main-section__title">Dummy Section</h2>
 
-          <p class="main-section__text">
-            Aliqua qui commodo voluptate proident mollit elit. Dolor reprehenderit
-            officia adipisicing sunt ea magna ipsum ea. Dolor ea officia aute ullamco
-            commodo culpa dolore officia irure. Magna velit anim ea amet anim ullamco.
-            Dolor irure commodo deserunt nisi sit ullamco.
-          </p>
+            <p class="main-section__text">
+              Aliqua qui commodo voluptate proident mollit elit. Dolor reprehenderit
+              officia adipisicing sunt ea magna ipsum ea. Dolor ea officia aute ullamco
+              commodo culpa dolore officia irure. Magna velit anim ea amet anim ullamco.
+              Dolor irure commodo deserunt nisi sit ullamco.
+            </p>
 
-          <p class="main-section__text">
-            Tempor consectetur nostrud in labore occaecat consectetur mollit laborum
-            consequat fugiat esse proident. Tempor velit aliqua do pariatur anim. Eiusmod elit ullamco ea
-            in. Elit adipisicing labore adipisicing sit in culpa magna sunt adipisicing consequat adipisicing aute elit. Pariatur
-            mollit pariatur minim dolor. Consequat labore aliquip ut consectetur tempor. Consectetur aliquip duis pariatur sit et
-            laboris veniam veniam eiusmod cillum.
-          </p>
+            <p class="main-section__text">
+              Tempor consectetur nostrud in labore occaecat consectetur mollit laborum
+              consequat fugiat esse proident. Tempor velit aliqua do pariatur anim. Eiusmod elit ullamco ea
+              in. Elit adipisicing labore adipisicing sit in culpa magna sunt adipisicing consequat adipisicing aute elit. Pariatur
+              mollit pariatur minim dolor. Consequat labore aliquip ut consectetur tempor. Consectetur aliquip duis pariatur sit et
+              laboris veniam veniam eiusmod cillum.
+            </p>
 
-          <p class="main-section__text"></p>
-          Ea eu incididunt amet laborum. Et sunt sit aliqua tempor ut elit deserunt occaecat. Aute laboris elit ullamco officia.
-          </p>
+            <p class="main-section__text"></p>
+            Ea eu incididunt amet laborum. Et sunt sit aliqua tempor ut elit deserunt occaecat. Aute laboris elit ullamco officia.
+            </p>
 
-          <p class="main-section__text"></p>
-          Do pariatur id non dolore nulla anim reprehenderit deserunt cillum labore elit sint. Consectetur sit irure elit quis
-          aliquip eiusmod proident non ad deserunt. Cupidatat anim ullamco tempor ut culpa non sint aute aliquip occaecat culpa
-          excepteur deserunt veniam. In ea ea excepteur amet consectetur sint est. Quis est qui eu exercitation incididunt dolor
-          laborum id ut Lorem duis aliquip dolore. Officia irure aliqua Lorem aute ea.
-          </p>
-        </header>
-      </section>
-      <section class="main-section">
-        <header class="dummy_section">
-          <h2 class="main-section__title">Dummy Section</h2>
+            <p class="main-section__text"></p>
+            Do pariatur id non dolore nulla anim reprehenderit deserunt cillum labore elit sint. Consectetur sit irure elit quis
+            aliquip eiusmod proident non ad deserunt. Cupidatat anim ullamco tempor ut culpa non sint aute aliquip occaecat culpa
+            excepteur deserunt veniam. In ea ea excepteur amet consectetur sint est. Quis est qui eu exercitation incididunt dolor
+            laborum id ut Lorem duis aliquip dolore. Officia irure aliqua Lorem aute ea.
+            </p>
+          </header>
+        </section>
+        <section class="main-section">
+          <header class="dummy_section">
+            <h2 class="main-section__title">Dummy Section</h2>
 
-          <p class="main-section__text">
-            Aliqua qui commodo voluptate proident mollit elit. Dolor reprehenderit
-            officia adipisicing sunt ea magna ipsum ea. Dolor ea officia aute ullamco
-            commodo culpa dolore officia irure. Magna velit anim ea amet anim ullamco.
-            Dolor irure commodo deserunt nisi sit ullamco.
-          </p>
+            <p class="main-section__text">
+              Aliqua qui commodo voluptate proident mollit elit. Dolor reprehenderit
+              officia adipisicing sunt ea magna ipsum ea. Dolor ea officia aute ullamco
+              commodo culpa dolore officia irure. Magna velit anim ea amet anim ullamco.
+              Dolor irure commodo deserunt nisi sit ullamco.
+            </p>
 
-          <p class="main-section__text">
-            Tempor consectetur nostrud in labore occaecat consectetur mollit laborum
-            consequat fugiat esse proident. Tempor velit aliqua do pariatur anim. Eiusmod elit ullamco ea
-            in. Elit adipisicing labore adipisicing sit in culpa magna sunt adipisicing consequat adipisicing aute elit. Pariatur
-            mollit pariatur minim dolor. Consequat labore aliquip ut consectetur tempor. Consectetur aliquip duis pariatur sit et
-            laboris veniam veniam eiusmod cillum.
-          </p>
+            <p class="main-section__text">
+              Tempor consectetur nostrud in labore occaecat consectetur mollit laborum
+              consequat fugiat esse proident. Tempor velit aliqua do pariatur anim. Eiusmod elit ullamco ea
+              in. Elit adipisicing labore adipisicing sit in culpa magna sunt adipisicing consequat adipisicing aute elit. Pariatur
+              mollit pariatur minim dolor. Consequat labore aliquip ut consectetur tempor. Consectetur aliquip duis pariatur sit et
+              laboris veniam veniam eiusmod cillum.
+            </p>
 
-          <p class="main-section__text"></p>
-          Ea eu incididunt amet laborum. Et sunt sit aliqua tempor ut elit deserunt occaecat. Aute laboris elit ullamco officia.
-          </p>
+            <p class="main-section__text"></p>
+            Ea eu incididunt amet laborum. Et sunt sit aliqua tempor ut elit deserunt occaecat. Aute laboris elit ullamco officia.
+            </p>
 
-          <p class="main-section__text"></p>
-          Do pariatur id non dolore nulla anim reprehenderit deserunt cillum labore elit sint. Consectetur sit irure elit quis
-          aliquip eiusmod proident non ad deserunt. Cupidatat anim ullamco tempor ut culpa non sint aute aliquip occaecat culpa
-          excepteur deserunt veniam. In ea ea excepteur amet consectetur sint est. Quis est qui eu exercitation incididunt dolor
-          laborum id ut Lorem duis aliquip dolore. Officia irure aliqua Lorem aute ea.
-          </p>
-        </header>
-      </section>
-    </main>
+            <p class="main-section__text"></p>
+            Do pariatur id non dolore nulla anim reprehenderit deserunt cillum labore elit sint. Consectetur sit irure elit quis
+            aliquip eiusmod proident non ad deserunt. Cupidatat anim ullamco tempor ut culpa non sint aute aliquip occaecat culpa
+            excepteur deserunt veniam. In ea ea excepteur amet consectetur sint est. Quis est qui eu exercitation incididunt dolor
+            laborum id ut Lorem duis aliquip dolore. Officia irure aliqua Lorem aute ea.
+            </p>
+          </header>
+        </section>
+        <section class="main-section">
+          <header class="dummy_section">
+            <h2 class="main-section__title">Dummy Section</h2>
 
-    <footer class="main-footer">
-      <p class="main-footer__text">Adipisicing enim velit velit nostrud aute incididunt id nostrud.</p>
-    </footer>
+            <p class="main-section__text">
+              Aliqua qui commodo voluptate proident mollit elit. Dolor reprehenderit
+              officia adipisicing sunt ea magna ipsum ea. Dolor ea officia aute ullamco
+              commodo culpa dolore officia irure. Magna velit anim ea amet anim ullamco.
+              Dolor irure commodo deserunt nisi sit ullamco.
+            </p>
+
+            <p class="main-section__text">
+              Tempor consectetur nostrud in labore occaecat consectetur mollit laborum
+              consequat fugiat esse proident. Tempor velit aliqua do pariatur anim. Eiusmod elit ullamco ea
+              in. Elit adipisicing labore adipisicing sit in culpa magna sunt adipisicing consequat adipisicing aute elit. Pariatur
+              mollit pariatur minim dolor. Consequat labore aliquip ut consectetur tempor. Consectetur aliquip duis pariatur sit et
+              laboris veniam veniam eiusmod cillum.
+            </p>
+
+            <p class="main-section__text"></p>
+            Ea eu incididunt amet laborum. Et sunt sit aliqua tempor ut elit deserunt occaecat. Aute laboris elit ullamco officia.
+            </p>
+
+            <p class="main-section__text"></p>
+            Do pariatur id non dolore nulla anim reprehenderit deserunt cillum labore elit sint. Consectetur sit irure elit quis
+            aliquip eiusmod proident non ad deserunt. Cupidatat anim ullamco tempor ut culpa non sint aute aliquip occaecat culpa
+            excepteur deserunt veniam. In ea ea excepteur amet consectetur sint est. Quis est qui eu exercitation incididunt dolor
+            laborum id ut Lorem duis aliquip dolore. Officia irure aliqua Lorem aute ea.
+            </p>
+          </header>
+        </section>
+      </main>
+
+      <footer class="main-footer">
+        <p class="main-footer__text">Adipisicing enim velit velit nostrud aute incididunt id nostrud.</p>
+      </footer>
+    </div>
   </body>
 
 </html>
