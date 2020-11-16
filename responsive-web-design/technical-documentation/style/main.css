@@ -1,3 +1,7 @@
+/* Fonts Imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 /* Basic reset and style */
 
 *,
@@ -14,8 +18,11 @@ body {
 
 html {
   font-size: 62.5%;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 body {
   min-height: 100vh;
 }
+
+/* Elements Style */
