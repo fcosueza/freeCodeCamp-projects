@@ -28,22 +28,24 @@ html {
 body {
   min-height: 100vh;
   color: var(--font-color);
+  background-color: var(--nav-bg);
 }
 
 /* Elements Style */
 
 .container {
   display: grid;
+  position: relative;
   grid-template-areas:
     "nav content"
-    "nav content"
-    "nav content"
+    ". content"
+    ". content"
     "footer footer";
   grid-template-columns: 1fr 5fr;
 }
 
 .nav-bar {
-  display: sticky;
+  position: sticky;
   top: 0;
   left: 0;
   grid-area: nav;
@@ -55,12 +57,22 @@ body {
 .main-content {
   grid-area: content;
   background-color: var(--section-bg);
+  margin: 5rem;
   padding: 5rem;
+  border-radius: 1rem;
+}
+
+.main-section__title {
+  font-size: 4rem;
+}
+
+.main-section__text {
+  font-size: 1.8rem;
 }
 
 .main-footer {
   grid-area: footer;
-  background-color: var(--nav-bg);
+
   text-align: center;
   padding: 2rem 0;
 }
