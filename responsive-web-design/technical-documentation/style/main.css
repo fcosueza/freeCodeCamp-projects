@@ -56,7 +56,7 @@ body {
 
 .nav-header__title {
   font-size: 5.5rem;
-  margin: 0;
+  margin: 0 0 0 2rem;
   text-transform: uppercase;
   text-align: left;
 }
@@ -103,6 +103,10 @@ body {
   border-radius: 1rem;
 }
 
+.main-section__link {
+  text-decoration: none;
+}
+
 .main-footer {
   grid-area: footer;
   font-size: 1.6rem;
@@ -110,8 +114,18 @@ body {
   text-align: center;
 }
 
+/* Elements State */
+
+.main-section__link:hover {
+  text-decoration: underline;
+}
+
 /* Util Classes */
 
 .accent {
   color: var(--accent-color);
+}
+
+.bold {
+  font-weight: bold;
 }
