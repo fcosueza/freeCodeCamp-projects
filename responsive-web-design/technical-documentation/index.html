@@ -36,6 +36,7 @@
           <header class="dummy_section">
             <h2 class="main-section__title">What is grid layout?</h2>
           </header>
+          <hr>
 
           <p class="main-section__text">
             CSS Grid Layout is a two-dimensional layout system for the web. It lets you lay content out in rows and columns, and
@@ -63,6 +64,9 @@
           <header class="dummy_section">
             <h2 class="main-section__title">Creating your grid in CSS</h2>
           </header>
+          <hr>
+
+          <h3 class="main-section__subhead">Defining grids</h3>
 
           <p class="main-section__text">
             Having decided on the grid that your design needs, you can use CSS Grid Layout to create that grid in CSS and place items
@@ -126,11 +130,60 @@
             Add the 2nd declaration to your CSS rule, then reload the page, and you should see that the items have rearranged themselves one into each cell
             of the created grid.
           </p>
+
+          <h3 class="main-section__subhead">Flexible grid with the fr unit</h3>
+
+          <p class="main-section__text">
+            In addition to creating grids using lengths and percentages, we can use the <code class="code bold">fr</code> unit to flexibly size grid rows
+            and columns. This unit represents one fraction of the available space in the grid container.
+          </p>
+
+          <p class="main-section__text">
+            Change your track listing to the following definition, creating three <code class="code bold">1fr</code> tracks.
+          </p>
+
+          <pre class="main-section__code">
+            <code class="code">
+             <span class="code__class">.container</span> <span class="code__parens">{</span>
+               <span class="code__property">display</span><span class="code__punctuation">:</span> <span class="code__value">grid</span><span class="code__puntiation">;</span>
+               <span class="code__property">grid-template-columns</span><span class="code__punctuation">:</span> <span class="code__value">1</span><span class="code__unit">fr</span> <span class="code__value">1</span><span class="code__unit">fr</span> <span class="code__value">1</span><span class="code__unit">fr</span><span class="code__puntiation">;</span>
+             <span class="code__parens">}</span><span class="code__line-numbers">
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+             </span></code>
+           </pre>
+
+          <p class="main-section__text">
+            You should now see that you have flexible tracks. The <code class="code bold">fr</code> unit distributes space in proportion, therefore you can
+            give different positive values to your tracks, for example if you change the definition like so:
+          </p>
+
+          <pre class="main-section__code">
+            <code class="code">
+             <span class="code__class">.container</span> <span class="code__parens">{</span>
+               <span class="code__property">display</span><span class="code__punctuation">:</span> <span class="code__value">grid</span><span class="code__puntiation">;</span>
+               <span class="code__property">grid-template-columns</span><span class="code__punctuation">:</span> <span class="code__value">2</span><span class="code__unit">fr</span> <span class="code__value">1</span><span class="code__unit">fr</span> <span class="code__value">1</span><span class="code__unit">fr</span><span class="code__puntiation">;</span>
+             <span class="code__parens">}</span><span class="code__line-numbers">
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+             </span></code>
+           </pre>
+
+          <p class="main-section__text">
+            The first track now gets <code class="code bold">2fr</code> of the available space and the other two tracks get
+            <code class="code bold">1fr</code>, making the first track larger. You can mix <code class="code bold">fr</code> units and fixed length tracks
+            — in such a case the space needed for the fixed tracks is taken away before the space is distributed to the other tracks.
+          </p>
         </section>
         <section class="main-section" id="Line-based_placement">
           <header class="dummy_section">
             <h2 class="main-section__title">Line-based placement</h2>
           </header>
+          <hr>
 
           <p class="main-section__text">
             Aliqua qui commodo voluptate proident mollit elit. Dolor reprehenderit
@@ -162,6 +215,7 @@
           <header class="dummy_section">
             <h2 class="main-section__title">Position with template areas</h2>
           </header>
+          <hr>
 
           <p class="main-section__text">
             Aliqua qui commodo voluptate proident mollit elit. Dolor reprehenderit
@@ -193,6 +247,7 @@
           <header class="dummy_section">
             <h2 class="main-section__title">A CSS Grid</h2>
           </header>
+          <hr>
 
           <p class="main-section__text">
             Aliqua qui commodo voluptate proident mollit elit. Dolor reprehenderit
@@ -225,6 +280,7 @@
           <header class="dummy_section">
             <h2 class="main-section__title">Test your skills!</h2>
           </header>
+          <hr>
 
           <p class="main-section__text">
             Aliqua qui commodo voluptate proident mollit elit. Dolor reprehenderit
@@ -257,6 +313,7 @@
           <header class="dummy_section" id="Know_more_about_CSS_Grid">
             <h2 class="main-section__title">Know more about CSS Grid</h2>
           </header>
+          <hr>
 
           <p class="main-section__text">
             Aliqua qui commodo voluptate proident mollit elit. Dolor reprehenderit
