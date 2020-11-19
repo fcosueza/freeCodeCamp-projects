@@ -73,10 +73,10 @@
           </p>
 
           <p class="main-section__text">
-            As a starting point, download and open <a class="main-section__link accent"
+            As a starting point, download and open <a class="main-section__link accent bold"
               href="https://github.com/mdn/learning-area/blob/master/css/css-layout/grids/0-starting-point.html" rel="noopener" target="blank_">
               the starting point file</a>
-            in you text editos or browser (you can also <a class="main-section__link accent"
+            in you text editos or browser (you can also <a class="main-section__link accent bold"
               href="https://mdn.github.io/learning-area/css/css-layout/grids/0-starting-point.html"
               rel="noopener" target="blank_"> see it live here</a>).
             You will see an example with a container, which has some child items. By default these display in normal flow so the boxes display one below
@@ -84,10 +84,31 @@
           </p>
 
           <p class="main-section__text">
-            To define a grid we use the <code class="bold">grid</code> value of the <a class="main-section__link accent"
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank" rel="noopener"><code>display</code></a>
+            To define a grid we use the <code class="bold code">grid</code> value of the <a class="main-section__link accent"
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank" rel="noopener"><code class="code bold">display</code></a>
             property. As with Flexbox, this switches on Grid Layout, and all of the direct children of the container become grid items. Add this to the CSS
             inside your file:
+          </p>
+
+          <pre class="main-section__code">
+           <code class="code">
+            <span class="code__class">.container</span> <span class="code__parens">{</span>
+              <span class="code__property">display</span><span class="code__punctuation">:</span> <span class="code__value">grid</span><span class="code__puntiation">;</span>
+            <span class="code__parens">}</span><span class="code__line-numbers">
+              <span class="code__line"></span>
+              <span class="code__line"></span>
+              <span class="code__line"></span>
+            </span></code>
+          </pre>
+
+          <p class="main-section__text">
+            Unlike flexbox, the items will not immediately look any different. Declaring display: grid gives you a one column grid, so your items will
+            continue to display one below the other as they do in normal flow.
+          </p>
+
+          <p class="main-section__text">
+            To see something that looks more grid-like, we will need to add some columns to the grid. Let's add three 200-pixel columns here. You can use
+            any length unit, or percentages to create these column tracks.
           </p>
         </section>
         <section class="main-section" id="Line-based_placement">
