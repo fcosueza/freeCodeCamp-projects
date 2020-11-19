@@ -93,15 +93,15 @@
           </p>
 
           <pre class="main-section__code">
-           <code class="code">
-            <span class="code__class">.container</span> <span class="code__parens">{</span>
-              <span class="code__property">display</span><span class="code__punctuation">:</span> <span class="code__value">grid</span><span class="code__puntiation">;</span>
-            <span class="code__parens">}</span><span class="code__line-numbers">
-              <span class="code__line"></span>
-              <span class="code__line"></span>
-              <span class="code__line"></span>
-            </span></code>
-          </pre>
+            <code class="code">
+             <span class="code__class">.container</span> <span class="code__parens">{</span>
+               <span class="code__property">display</span><span class="code__punctuation">:</span> <span class="code__value">grid</span><span class="code__puntiation">;</span>
+             <span class="code__parens">}</span><span class="code__line-numbers">
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+             </span></code>
+           </pre>
 
           <p class="main-section__text">
             Unlike flexbox, the items will not immediately look any different. Declaring display: grid gives you a one column grid, so your items will
@@ -178,6 +178,13 @@
             <code class="code bold">1fr</code>, making the first track larger. You can mix <code class="code bold">fr</code> units and fixed length tracks
             — in such a case the space needed for the fixed tracks is taken away before the space is distributed to the other tracks.
           </p>
+
+          <p class="main-section__text">
+            Also note that the <code class="code bold">fr</code> unit distributes available space, not all space. Therefore if one of your tracks has
+            something large inside it there will be less free space to share out.
+          </p>
+
+          <h3 class="main-section__subhead">Gaps between tracks</h3>
         </section>
         <section class="main-section" id="Line-based_placement">
           <header class="dummy_section">
