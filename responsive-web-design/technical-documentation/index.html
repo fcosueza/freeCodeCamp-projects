@@ -58,8 +58,6 @@
             src="./images/grid-layout-1200x550.png"
             alt="An image of rows and columns describing a grid"
             title="Grid Layout Example" />
-
-          </header>
         </section>
         <section class="main-section" id="Creating_your_grid_in_CSS">
           <header class="dummy_section">
@@ -109,6 +107,24 @@
           <p class="main-section__text">
             To see something that looks more grid-like, we will need to add some columns to the grid. Let's add three 200-pixel columns here. You can use
             any length unit, or percentages to create these column tracks.
+          </p>
+
+          <pre class="main-section__code">
+            <code class="code">
+             <span class="code__class">.container</span> <span class="code__parens">{</span>
+               <span class="code__property">display</span><span class="code__punctuation">:</span> <span class="code__value">grid</span><span class="code__puntiation">;</span>
+               <span class="code__property">grid-template-columns</span><span class="code__punctuation">:</span> <span class="code__value">200</span><span class="code__unit">px</span> <span class="code__value">200</span><span class="code__unit">px</span> <span class="code__value">200</span><span class="code__unit">px</span><span class="code__puntiation">;</span>
+             <span class="code__parens">}</span><span class="code__line-numbers">
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+             </span></code>
+           </pre>
+
+          <p class="main-section__text">
+            Add the 2nd declaration to your CSS rule, then reload the page, and you should see that the items have rearranged themselves one into each cell
+            of the created grid.
           </p>
         </section>
         <section class="main-section" id="Line-based_placement">

@@ -145,6 +145,9 @@ body {
 .code__value {
   color: #9066ce;
 }
+.code__unit {
+  color: var(--accent-color);
+}
 
 .code__line-numbers {
   position: absolute;
