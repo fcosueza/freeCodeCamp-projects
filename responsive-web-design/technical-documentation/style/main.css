@@ -1,9 +1,19 @@
 /*Variables */
 :root {
+  /* Page theme */
+
   --section-bg: #33373a;
   --nav-bg: #24282a;
+  --menu-bg: rgba(0, 0, 0, 0.2);
   --font-color: #cbd0d0;
   --accent-color: #e6244b;
+
+  /* Theme for CSS code (Monokai) */
+
+  --class-color: #9adb00;
+  --punctuation-color: white;
+  --property-color: #1bcddc;
+  --value-color: #9066ce;
 }
 
 /* Basic reset and style */
@@ -65,7 +75,7 @@ body {
   text-align: left;
   padding: 2rem;
   border-radius: 1rem;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--menu-bg);
 }
 
 .menu__item {
@@ -115,7 +125,7 @@ body {
 
 .main-section__code {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--menu-bg);
   border-left: 1rem solid var(--accent-color);
   font-size: 1.8rem;
   line-height: 1.5;
@@ -137,16 +147,16 @@ body {
 }
 
 .code__class {
-  color: #9adb00;
+  color: var(--class-color);
 }
 
 .code__parens,
 .code__punctuation {
-  color: white;
+  color: var(--punctuation-color);
 }
 
 .code__property {
-  color: #1bcddc;
+  color: var(--property-color);
 }
 
 .code__value {
