@@ -14,6 +14,8 @@
   --punctuation-color: white;
   --property-color: #1bcddc;
   --value-color: #9066ce;
+  --function-color: #9066ce;
+  --param-color: white;
 }
 
 /* Basic reset and style */
@@ -164,6 +166,10 @@ body {
 }
 .code__unit {
   color: var(--accent-color);
+}
+
+.code__function {
+  color: var(--function-color);
 }
 
 .code__line-numbers {
