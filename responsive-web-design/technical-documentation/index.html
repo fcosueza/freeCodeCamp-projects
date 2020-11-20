@@ -259,6 +259,109 @@
             the listing to repeat, while the second value is a track listing, which may be one or more tracks that you want to repeat.
           </p>
 
+          <h3 class="main-section__subhead">The implicit and explicit grid</h3>
+
+          <p class="main-section__text">
+            We have only specified column tracks so far, and yet rows are being created to hold our content. This is an example of the explicit versus the implicit
+            grid. The explicit grid is the one that you create using <code class="code bold">grid-template-columns</code> or
+            <code class="code bold">grid-template-rows</code>. The implicit grid is created when content is placed outside of that grid — such as into our rows.
+          </p>
+
+          <p class="main-section__text">
+            By default, tracks created in the implicit grid are auto sized, which in general means that they are large enough to fit their content. If you wish to
+            give implicit grid tracks a size you can use the <a class="main-section__link accent bold"
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows" rel="noopener" target="blank_">grid-auto-rows</a>
+            and <a class="main-section__link accent bold" href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns" rel="noopener"
+              target="blank_">grid-auto-columns</a> properties. If you add <code class="code bold">grid-auto-rows</code> with a value of 100px to your CSS, you will
+            see that those created rows are now 100 pixels tall.
+          </p>
+
+          <pre class="main-section__code">
+            <code class="code">
+             <span class="code__class">.container</span> <span class="code__parens">{</span>
+               <span class="code__property">display</span><span class="code__punctuation">:</span> <span class="code__value">grid</span><span class="code__punctuation">;</span>
+               <span class="code__property">grid-template-columns</span><span class="code__punctuation">:</span> <span class="code__function">repeat</span><span class="code__punctuation">(</span><span class="code__params">3</span><span class="code__punctuation">, </span><span class="code__params">1</span><span class="code__unit">fr</span><span class="code__punctuation">)</span><span class="code__punctuation">;</span>
+               <span class="code__property">grid-auto-rows</span><span class="code__punctuation">:</span> <span class="code__value">100</span><span class="code__unit">px</span><span class="code__punctuation">;</span>
+               <span class="code__property">grid-gap</span><span class="code__punctuation">:</span> <span class="code__value">20</span><span class="code__unit">px</span><span class="code__punctuation">;</span>
+             <span class="code__parens">}</span><span class="code__line-numbers">
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+             </span></code>
+           </pre>
+
+          <h3 class="main-section__subhead">The minmax() function</h3>
+
+          <p class="main-section__text">
+            Our 100-pixel tall tracks won’t be very useful if we add content into those tracks that is taller than 100 pixels, in which case it would cause an
+            overflow. It might be better to have tracks that are at least 100 pixels tall and can still expand if more content gets into them. A fairly basic fact
+            about the web is that you never really know how tall something is going to be; additional content or larger font sizes can cause problems with designs
+            that attempt to be pixel perfect in every dimension.
+          </p>
+
+          <p class="main-section__text">
+            The <a class="main-section__link accent bold" href="https://developer.mozilla.org/en-US/docs/Web/CSS/minmax()" rel="noopener" target="blank_">
+              minmax()</a> function lets us set a minimum and maximum size for a track, for example <code class="code bold">minmax(100px, auto)</code>. The minimum
+            size is 100 pixels, but the maximum is <code class="code bold">auto</code>, which will expand to fit the content. Try changing
+            <code class="code bold">grid-auto-rows</code> to use a minmax value:
+          </p>
+
+          <pre class="main-section__code">
+            <code class="code">
+             <span class="code__class">.container</span> <span class="code__parens">{</span>
+               <span class="code__property">display</span><span class="code__punctuation">:</span> <span class="code__value">grid</span><span class="code__punctuation">;</span>
+               <span class="code__property">grid-template-columns</span><span class="code__punctuation">:</span> <span class="code__function">repeat</span><span class="code__punctuation">(</span><span class="code__params">3</span><span class="code__punctuation">, </span><span class="code__params">1</span><span class="code__unit">fr</span><span class="code__punctuation">)</span><span class="code__punctuation">;</span>
+               <span class="code__property">grid-auto-rows</span><span class="code__punctuation">:</span> <span class="code__function">minmax</span><span class="code__punctuation">(</span><span class="code__params">100</span><span class="code__unit">px</span><span class="code__punctuation">, </span><span class="code__unit">auto</span><span class="code__punctiation">)</span><span class="code__punctuation">;</span>
+               <span class="code__property">grid-gap</span><span class="code__punctuation">:</span> <span class="code__value">20</span><span class="code__unit">px</span><span class="code__punctuation">;</span>
+             <span class="code__parens">}</span><span class="code__line-numbers">
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+             </span></code>
+           </pre>
+
+          <p class="main-section__text">
+            If you add extra content you will see that the track expands to allow it to fit. Note that the expansion happens right along the row.
+          </p>
+
+          <h3 class="main-section__subhead">As many columns as will fit</h3>
+
+          <p class="main-section__text">
+            We can combine some of the things we have learned about track listing, repeat notation and <code class="code bold">minmax()</code> to create a useful
+            pattern. Sometimes it is helpful to be able to ask grid to create as many columns as will fit into the container. We do this by setting the value of
+            <code class="code bold">grid-template-columns</code> using <code class="code bold">repeat()</code> notation, but instead of passing in a number,
+            pass in the keyword <code class="code bold">auto-fill</code>. For the second parameter of the function we use <code class="code bold">minmax()</code>,
+            with a minimum value equal to the minimum track size that we would like to have, and a maximum of <code class="code bold">1fr</code>.
+          </p>
+
+          <pre class="main-section__code">
+            <code class="code">
+             <span class="code__class">.container</span> <span class="code__parens">{</span>
+               <span class="code__property">display</span><span class="code__punctuation">:</span> <span class="code__value">grid</span><span class="code__punctuation">;</span>
+               <span class="code__property">grid-template-columns</span><span class="code__punctuation">:</span> <span class="code__function">repeat</span><span class="code__punctuation">(</span><span class="code__unit">auto</span><span class="code__punctuation">, </span><span class="code__function">minmax</span><span class="code__punctuation">(</span><span class="code__params">200</span><span class="code__unit">px</span><span class="code__punctuation">, </span><span class="code__params">1</span><span class="code__unit">fr</span><span class="code__punctiation">)<span class="code__punctuation">)</span><span class="code__punctuation">;</span>
+               <span class="code__property">grid-auto-rows</span><span class="code__punctuation">:</span> <span class="code__function">minmax</span><span class="code__punctuation">(</span><span class="code__params">100</span><span class="code__unit">px</span><span class="code__punctuation">, </span><span class="code__unit">auto</span><span class="code__punctiation">)</span><span class="code__punctuation">;</span>
+               <span class="code__property">grid-gap</span><span class="code__punctuation">:</span> <span class="code__value">20</span><span class="code__unit">px</span><span class="code__punctuation">;</span>
+             <span class="code__parens">}</span><span class="code__line-numbers">
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+             </span></code>
+           </pre>
+
+          <p class="main-section__text">
+            This works because grid is creating as many 200 pixel columns as will fit into the container, then sharing whatever space is leftover between all of the
+            columns — the maximum is 1fr which, as we already know, distributes space evenly between tracks.
+          </p>
+
         </section>
         <section class="main-section" id="Line-based_placement">
           <header class="dummy_section">

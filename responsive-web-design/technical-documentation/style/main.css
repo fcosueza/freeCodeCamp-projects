@@ -15,7 +15,7 @@
   --property-color: #1bcddc;
   --value-color: #9066ce;
   --function-color: #9066ce;
-  --param-color: white;
+  --param-color: #cacc6c;
 }
 
 /* Basic reset and style */
@@ -170,6 +170,10 @@ body {
 
 .code__function {
   color: var(--function-color);
+}
+
+.code__params {
+  color: var(--param-color);
 }
 
 .code__line-numbers {
