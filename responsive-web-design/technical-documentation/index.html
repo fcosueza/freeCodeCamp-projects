@@ -134,7 +134,7 @@
           <h3 class="main-section__subhead">Flexible grid with the fr unit</h3>
 
           <p class="main-section__text">
-            In addition to creating grids using lengths and percentages, we can use the <code class="code bold">fr</code> unit to flexibly size grid rows
+            In addition to creating grids using lengths and percentages, we can use the <code class="code">fr</code> unit to flexibly size grid rows
             and columns. This unit represents one fraction of the available space in the grid container.
           </p>
 
@@ -185,6 +185,55 @@
           </p>
 
           <h3 class="main-section__subhead">Gaps between tracks</h3>
+
+          <p class="main-section__text">
+            To create gaps between tracks we use the properties <a class="main-section__link accent"
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap" rel="noopener" target="_blank"> <code class="code bold">grid-column-gap</code></a>
+            for gaps between columns, <a class="main-section__link accent" href="https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap"
+              rel="noopener" target="_blank"><code class="code bold">grid-row-gap</code></a> for gaps between rows and <a class="main-section__link accent"
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/gap" rel="noopener" target="_blank"><code class="code bold">grid-gap</code></a> to
+            set both at once. This gap can be any length unit or percentage but not an <code class="code bold">fr</code> unit.
+          </p>
+
+          <pre class="main-section__code">
+            <code class="code">
+             <span class="code__class">.container</span> <span class="code__parens">{</span>
+               <span class="code__property">display</span><span class="code__punctuation">:</span> <span class="code__value">grid</span><span class="code__puntiation">;</span>
+               <span class="code__property">grid-template-columns</span><span class="code__punctuation">:</span> <span class="code__value">2</span><span class="code__unit">fr</span> <span class="code__value">1</span><span class="code__unit">fr</span> <span class="code__value">1</span><span class="code__unit">fr</span><span class="code__puntiation">;</span>
+               <span class="code__property">grid-gap</span><span class="code__punctuation">:</span> <span class="code__value">20</span><span class="code__unit">px</span><span class="code__puntiation">;</span>
+             <span class="code__parens">}</span><span class="code__line-numbers">
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+             </span></code>
+           </pre>
+
+          <p class="main-section__text">
+            The <code class="code bold">*gap</code> properties used to be prefixed by <code class="code bold">grid-</code>, but this has been changed in the spec,
+            as the intention is to make them usable in multiple layout methods. The prefixed versions will be maintained as an alias so will be safe to use for
+            some time. To be on the safe side, you could double up and add both properties to make your code more bulletproof.
+          </p>
+
+          <pre class="main-section__code">
+            <code class="code">
+             <span class="code__class">.container</span> <span class="code__parens">{</span>
+               <span class="code__property">display</span><span class="code__punctuation">:</span> <span class="code__value">grid</span><span class="code__puntiation">;</span>
+               <span class="code__property">grid-template-columns</span><span class="code__punctuation">:</span> <span class="code__value">2</span><span class="code__unit">fr</span> <span class="code__value">1</span><span class="code__unit">fr</span> <span class="code__value">1</span><span class="code__unit">fr</span><span class="code__puntiation">;</span>
+               <span class="code__property">grid-gap</span><span class="code__punctuation">:</span> <span class="code__value">20</span><span class="code__unit">px</span><span class="code__puntiation">;</span>
+               <span class="code__property">gap</span><span class="code__punctuation">:</span> <span class="code__value">20</span><span class="code__unit">px</span><span class="code__puntiation">;</span>
+             <span class="code__parens">}</span><span class="code__line-numbers">
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+               <span class="code__line"></span>
+             </span></code>
+           </pre>
+
+
         </section>
         <section class="main-section" id="Line-based_placement">
           <header class="dummy_section">
