@@ -54,7 +54,9 @@ body {
     ". content"
     ". content"
     "footer footer";
-  grid-template-columns: 1.5fr 6fr;
+  grid-template-columns:
+    minmax(30rem, 1.3fr)
+    minmax(30rem, 6fr);
 }
 
 .nav-bar {
@@ -132,7 +134,7 @@ body {
   border-left: 1rem solid var(--accent-color);
   font-size: 1.8rem;
   line-height: 1.5;
-  padding-right: 1rem;
+  overflow: auto;
 }
 
 .main-footer {
