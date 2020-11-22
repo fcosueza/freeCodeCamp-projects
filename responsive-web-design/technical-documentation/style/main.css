@@ -193,6 +193,11 @@ body {
   border-right: 0.1rem dashed white;
 }
 
+.code__line--padded {
+  position: relative;
+  left: -1.1rem;
+}
+
 /* Elements State */
 
 .main-section__link:hover {

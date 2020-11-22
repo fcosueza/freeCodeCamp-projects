@@ -362,27 +362,6 @@
             columns — the maximum is 1fr which, as we already know, distributes space evenly between tracks.
           </p>
 
-          <pre class="main-section__code">
-            <code class="code">
-              <span class="code__class">header</span> <span class="code__parens">{</span>
-                <span class="code__property">grid-column</span><span class="code__punctuation">:</span> <span class="code__value">1</span> <span class="code__punctuation">/</span> <span class="code__value">2</span><span class="code__punctuation">;</span>
-                <span class="code__property">grid-row</span><span class="code__punctuation">:</span> <span class="code__value">1</span><span class="code__punctuation">;</span>
-              <span class="code__punctiation">}</span>
-
-              <span class="code__class">footer</span> <span class="code__parens">{</span>
-                <span class="code__property">grid-column</span><span class="code__punctuation">:</span> <span class="code__value">1</span> <span class="code__punctuation">/</span> <span class="code__value">3</span><span class="code__punctuation">;</span>
-                <span class="code__property">grid-row</span><span class="code__punctuation">:</span> <span class="code__value">3</span><span class="code__punctuation">;</span>
-              <span class="code__parens">}</span><span class="code__line-numbers">
-                <span class="code__line"></span>
-                <span class="code__line"></span>
-                <span class="code__line"></span>
-                <span class="code__line"></span>
-                <span class="code__line"></span>
-                <span class="code__line"></span>
-                <span class="code__line"></span>
-                <span class="code__line"></span>
-              </span></code>
-           </pre>
 
 
         </section>
@@ -447,6 +426,40 @@
           <p class="main-section__text">
             We will instead place all of the elements for our site on the grid, using the grid lines. Add the following rules to the bottom of your CSS:
           </p>
+
+
+          <pre class="main-section__code">
+            <code class="code">
+              <span class="code__class">header</span> <span class="code__parens">{</span>
+                <span class="code__property">grid-column</span><span class="code__punctuation">:</span> <span class="code__value">1</span> <span class="code__punctuation">/</span> <span class="code__value">2</span><span class="code__punctuation">;</span>
+                <span class="code__property">grid-row</span><span class="code__punctuation">:</span> <span class="code__value">1</span><span class="code__punctuation">;</span>
+              <span class="code__punctiation">}</span>
+
+              <span class="code__class">article</span> <span class="code__parens">{</span>
+                <span class="code__property">grid-column</span><span class="code__punctuation">:</span> <span class="code__value">2</span><span class="code__punctuation">;</span>
+                <span class="code__property">grid-row</span><span class="code__punctuation">:</span> <span class="code__value">2</span><span class="code__punctuation">;</span>
+              <span class="code__punctiation">}</span>
+
+              <span class="code__class">footer</span> <span class="code__parens">{</span>
+                <span class="code__property">grid-column</span><span class="code__punctuation">:</span> <span class="code__value">1</span> <span class="code__punctuation">/</span> <span class="code__value">3</span><span class="code__punctuation">;</span>
+                <span class="code__property">grid-row</span><span class="code__punctuation">:</span> <span class="code__value">3</span><span class="code__punctuation">;</span>
+              <span class="code__parens">}</span><span class="code__line-numbers">
+                <span class="code__line"></span>
+                <span class="code__line"></span>
+                <span class="code__line"></span>
+                <span class="code__line"></span>
+                <span class="code__line"></span>
+                <span class="code__line"></span>
+                <span class="code__line"></span>
+                <span class="code__line"></span>
+                <span class="code__line"></span>
+                <span class="code__line code__line--padded"></span>
+                <span class="code__line code__line--padded"></span>
+                <span class="code__line code__line--padded"></span>
+                <span class="code__line code__line--padded"></span>
+                <span class="code__line code__line--padded"></span>
+              </span></code>
+           </pre>
         </section>
         <section class="main-section" id="Position_with_template_areas">
           <header class="dummy_section">
