@@ -135,6 +135,7 @@ body {
   font-size: 1.8rem;
   line-height: 1.5;
   overflow: auto;
+  white-space: pre-wrap;
 }
 
 .main-footer {
@@ -182,7 +183,7 @@ body {
 .code__line-numbers {
   position: absolute;
   top: 0;
-  left: -8rem;
+  left: -9rem;
 }
 
 .code__line::before {
