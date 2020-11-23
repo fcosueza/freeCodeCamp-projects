@@ -179,6 +179,10 @@ body {
   color: var(--param-color);
 }
 
+.code__string {
+  color: var(--param-color);
+}
+
 .code__line-numbers {
   position: absolute;
   top: 0;

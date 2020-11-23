@@ -211,9 +211,9 @@
            </pre>
 
           <p class="main-section__text">
-            The <code class="code bold">*gap</code> properties used to be prefixed by <code class="code bold">grid-</code>, but this has been changed in the spec,
-            as the intention is to make them usable in multiple layout methods. The prefixed versions will be maintained as an alias so will be safe to use for
-            some time. To be on the safe side, you could double up and add both properties to make your code more bulletproof.
+            The <code class="code bold">*gap</code> properties used to be prefixed by <code class="code bold">grid-</code>, but this has been changed in the
+            spec, as the intention is to make them usable in multiple layout methods. The prefixed versions will be maintained as an alias so will be safe
+            to use for some time. To be on the safe side, you could double up and add both properties to make your code more bulletproof.
           </p>
 
           <pre class="main-section__code">
@@ -255,24 +255,26 @@
            </pre>
 
           <p class="main-section__text">
-            You will now get 3 <code class="code bold">1fr</code> tracks just as before. The first value passed to the repeat function is how many times you want
-            the listing to repeat, while the second value is a track listing, which may be one or more tracks that you want to repeat.
+            You will now get 3 <code class="code bold">1fr</code> tracks just as before. The first value passed to the repeat function is how many times you
+            want the listing to repeat, while the second value is a track listing, which may be one or more tracks that you want to repeat.
           </p>
 
           <h3 class="main-section__subhead">The implicit and explicit grid</h3>
 
           <p class="main-section__text">
-            We have only specified column tracks so far, and yet rows are being created to hold our content. This is an example of the explicit versus the implicit
-            grid. The explicit grid is the one that you create using <code class="code bold">grid-template-columns</code> or
-            <code class="code bold">grid-template-rows</code>. The implicit grid is created when content is placed outside of that grid — such as into our rows.
+            We have only specified column tracks so far, and yet rows are being created to hold our content. This is an example of the explicit versus the
+            implicit grid. The explicit grid is the one that you create using <code class="code bold">grid-template-columns</code> or
+            <code class="code bold">grid-template-rows</code>. The implicit grid is created when content is placed outside of that grid — such as into our
+            rows.
           </p>
 
           <p class="main-section__text">
-            By default, tracks created in the implicit grid are auto sized, which in general means that they are large enough to fit their content. If you wish to
-            give implicit grid tracks a size you can use the <a class="main-section__link accent bold"
+            By default, tracks created in the implicit grid are auto sized, which in general means that they are large enough to fit their content. If you
+            wish to give implicit grid tracks a size you can use the <a class="main-section__link accent bold"
               href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows" rel="noopener" target="blank_">grid-auto-rows</a>
             and <a class="main-section__link accent bold" href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns" rel="noopener"
-              target="blank_">grid-auto-columns</a> properties. If you add <code class="code bold">grid-auto-rows</code> with a value of 100px to your CSS, you will
+              target="blank_">grid-auto-columns</a> properties. If you add <code class="code bold">grid-auto-rows</code> with a value of 100px to your CSS,
+            you will
             see that those created rows are now 100 pixels tall.
           </p>
 
@@ -296,16 +298,16 @@
           <h3 class="main-section__subhead">The minmax() function</h3>
 
           <p class="main-section__text">
-            Our 100-pixel tall tracks won’t be very useful if we add content into those tracks that is taller than 100 pixels, in which case it would cause an
-            overflow. It might be better to have tracks that are at least 100 pixels tall and can still expand if more content gets into them. A fairly basic fact
-            about the web is that you never really know how tall something is going to be; additional content or larger font sizes can cause problems with designs
-            that attempt to be pixel perfect in every dimension.
+            Our 100-pixel tall tracks won’t be very useful if we add content into those tracks that is taller than 100 pixels, in which case it would cause
+            an overflow. It might be better to have tracks that are at least 100 pixels tall and can still expand if more content gets into them. A fairly
+            basic fact about the web is that you never really know how tall something is going to be; additional content or larger font sizes can cause
+            problems with designs that attempt to be pixel perfect in every dimension.
           </p>
 
           <p class="main-section__text">
             The <a class="main-section__link accent bold" href="https://developer.mozilla.org/en-US/docs/Web/CSS/minmax()" rel="noopener" target="blank_">
-              minmax()</a> function lets us set a minimum and maximum size for a track, for example <code class="code bold">minmax(100px, auto)</code>. The minimum
-            size is 100 pixels, but the maximum is <code class="code bold">auto</code>, which will expand to fit the content. Try changing
+              minmax()</a> function lets us set a minimum and maximum size for a track, for example <code class="code bold">minmax(100px, auto)</code>. The
+            minimum size is 100 pixels, but the maximum is <code class="code bold">auto</code>, which will expand to fit the content. Try changing
             <code class="code bold">grid-auto-rows</code> to use a minmax value:
           </p>
 
@@ -333,8 +335,9 @@
           <h3 class="main-section__subhead">As many columns as will fit</h3>
 
           <p class="main-section__text">
-            We can combine some of the things we have learned about track listing, repeat notation and <code class="code bold">minmax()</code> to create a useful
-            pattern. Sometimes it is helpful to be able to ask grid to create as many columns as will fit into the container. We do this by setting the value of
+            We can combine some of the things we have learned about track listing, repeat notation and <code class="code bold">minmax()</code> to create a
+            useful pattern. Sometimes it is helpful to be able to ask grid to create as many columns as will fit into the container. We do this by setting
+            the value of
             <code class="code bold">grid-template-columns</code> using <code class="code bold">repeat()</code> notation, but instead of passing in a number,
             pass in the keyword <code class="code bold">auto-fill</code>. For the second parameter of the function we use <code class="code bold">minmax()</code>,
             with a minimum value equal to the minimum track size that we would like to have, and a maximum of <code class="code bold">1fr</code>.
@@ -470,6 +473,11 @@
                 <span class="code__line code__line--padded"></span>
               </span></code>
            </pre>
+
+          <p class="main-section__text">
+            You can also use the value -1 to target the end column or row line, and count inwards from the end using negative values. Note that lines count always from
+            the edges of the explicit grid, not the implicit grid.
+          </p>
         </section>
         <section class="main-section" id="Position_with_template_areas">
           <header class="dummy_section">
@@ -478,29 +486,90 @@
           <hr>
 
           <p class="main-section__text">
-            Aliqua qui commodo voluptate proident mollit elit. Dolor reprehenderit
-            officia adipisicing sunt ea magna ipsum ea. Dolor ea officia aute ullamco
-            commodo culpa dolore officia irure. Magna velit anim ea amet anim ullamco.
-            Dolor irure commodo deserunt nisi sit ullamco.
+            An alternative way to place items on your grid is to use the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas"
+              class="main-section__link accent bold" rel="noopener" target="_blank">grid-template-areas</a> property and giving the various elements of your design a
+            name.
           </p>
 
           <p class="main-section__text">
-            Tempor consectetur nostrud in labore occaecat consectetur mollit laborum
-            consequat fugiat esse proident. Tempor velit aliqua do pariatur anim. Eiusmod elit ullamco ea
-            in. Elit adipisicing labore adipisicing sit in culpa magna sunt adipisicing consequat adipisicing aute elit. Pariatur
-            mollit pariatur minim dolor. Consequat labore aliquip ut consectetur tempor. Consectetur aliquip duis pariatur sit et
-            laboris veniam veniam eiusmod cillum.
+            Remove the line-based positioning from the last example (or re-download the file to have a fresh starting point), and add the following CSS.
+          </p>
+
+
+          <pre class="main-section__code">
+            <code class="code">
+              <span class="code__class">.container</span> <span class="code__parens">{</span>
+                <span class="code__property">display:</span><span class="code__punctiation">:</span> <span class="code__value">grid</span><span class="code__punctiation">;</span>
+                <span class="code__property">grid-template-areas</span><span class="code__punctuation">:</span>
+                  <span class="code__string">"header header"</span>
+                  <span class="code__string">"sidebar content"</span>
+                  <span class="code__string">"footer footer</span><span class="code__punctuation">;</span>
+                <span class="code__property">grid-template-columns</span><span class="code__punctuation">:</span> <span class="code__value">1</span><span class="code__unit">fr</span> <span class="code__value">3</span><span class="code__unit">fr</span> <span class="code__punctuation">;</span>
+                <span class="code__property">grid-gap</span><span class="code__punctuation">:</span> <span class="code__value">20</span><span class="code__unit">px</span><span class="code__punctuation">;</span>
+              <span class="code__parens">}</span>
+
+              <span class="code__class">header</span> <span class="code__parens">{</span>
+                <span class="code__property">grid-area</span><span class="code__punctuation">:</span> <span class="code__value">header</span><span class="code__punctuation">;</span>
+              <span class="code__punctiation">}</span>
+
+              <span class="code__class">article</span> <span class="code__parens">{</span>
+                <span class="code__property">grid-area</span><span class="code__punctuation">:</span> <span class="code__value">content</span><span class="code__punctuation">;</span>
+              <span class="code__punctiation">}</span>
+
+              <span class="code__class">aside</span> <span class="code__parens">{</span>
+                <span class="code__property">grid-area</span><span class="code__punctuation">:</span> <span class="code__value">sidebar</span><span class="code__punctuation">;</span>
+              <span class="code__punctiation">}</span>
+
+              <span class="code__class">footer</span> <span class="code__parens">{</span>
+                <span class="code__property">grid-area</span><span class="code__punctuation">:</span> <span class="code__value">footer</span><span class="code__punctuation">;</span>
+              <span class="code__parens">}</span><span class="code__line-numbers">
+                <span class="code__line"></span>
+                <span class="code__line"></span>
+                <span class="code__line"></span>
+                <span class="code__line"></span>
+                <span class="code__line"></span>
+                <span class="code__line"></span>
+                <span class="code__line"></span>
+                <span class="code__line"></span>
+                <span class="code__line"></span>
+                <span class="code__line code__line--padded"></span>
+                <span class="code__line code__line--padded"></span>
+                <span class="code__line code__line--padded"></span>
+                <span class="code__line code__line--padded"></span>
+                <span class="code__line code__line--padded"></span>
+                <span class="code__line code__line--padded"></span>
+                <span class="code__line code__line--padded"></span>
+                <span class="code__line code__line--padded"></span>
+                <span class="code__line code__line--padded"></span>
+                <span class="code__line code__line--padded"></span>
+                <span class="code__line code__line--padded"></span>
+                <span class="code__line code__line--padded"></span>
+                <span class="code__line code__line--padded"></span>
+                <span class="code__line code__line--padded"></span>
+                <span class="code__line code__line--padded"></span>
+                <span class="code__line code__line--padded"></span>
+              </span></code>
+           </pre>
+
+          <p class="main-section__text">
+            Reload the page and you will see that your items have been placed just as before without us needing to use any line numbers!
           </p>
 
           <p class="main-section__text">
-            Ea eu incididunt amet laborum. Et sunt sit aliqua tempor ut elit deserunt occaecat. Aute laboris elit ullamco officia.
+            The rules for <code class="code bold">grid-template-areas</code> are as follows:
           </p>
 
+          <ul class="main-section__list main-section__text">
+            <li>You need to have every cell of the grid filled.</li>
+            <li>To span across two cells, repeat the name.</li>
+            <li>To leave a cell empty, use a <code class="code bold">.</code> (period).</li>
+            <li>Areas must be rectangular — you can’t have an L-shaped area for example.</li>
+            <li>Areas can't be repeated in different locations.</li>
+          </ul>
+
           <p class="main-section__text">
-            Do pariatur id non dolore nulla anim reprehenderit deserunt cillum labore elit sint. Consectetur sit irure elit quis
-            aliquip eiusmod proident non ad deserunt. Cupidatat anim ullamco tempor ut culpa non sint aute aliquip occaecat culpa
-            excepteur deserunt veniam. In ea ea excepteur amet consectetur sint est. Quis est qui eu exercitation incididunt dolor
-            laborum id ut Lorem duis aliquip dolore. Officia irure aliqua Lorem aute ea.
+            You can play around with our layout, changing the footer to only sit underneath the content and the sidebar to span all the way down for example. This is a
+            very nice way to describe a layout as it is obvious from the CSS exactly what is happening.
           </p>
         </section>
         <section class="main-section" id="A_CSS_Grid">
