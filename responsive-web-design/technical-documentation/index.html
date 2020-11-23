@@ -28,7 +28,6 @@
           <li class="menu__item"><a href="" class="nav-link">Position with template areas</a></li>
           <li class="menu__item"><a href="" class="nav-link">A CSS Grid</a></li>
           <li class="menu__item"><a href="" class="nav-link">Test your skills!</a></li>
-          <li class="menu__item"><a href="" class="nav-link">Know more about CSS Grid</a></li>
         </ol>
       </nav>
       <main id="main-doc" class="main-content">
@@ -420,10 +419,12 @@
           </p>
 
           <p class="main-section__text">
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row" class="main-section__link accent bold" rel="noopener"
-              target="_blank">Download this file as a starting point</a> or <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row"
-              class="main-section__link accent bold" rel="noopener" target="_blank">see it live here</a>. It has a grid defined already, and a simple article
-            outlined. You can see that auto-placement is placing items one into each cell of the grid that we have created.
+            <a href="https://github.com/mdn/learning-area/blob/master/css/css-layout/grids/8-placement-starting-point.html" class="main-section__link accent bold"
+              rel="noopener" target="_blank">Download this file as a starting point</a> or
+            <a href="https://mdn.github.io/learning-area/css/css-layout/grids/8-placement-starting-point.html"
+              class="main-section__link accent bold" rel="noopener" target="_blank">see it live here</a>.
+            It has a grid defined already, and a simple article outlined. You can see that auto-placement is placing items one into each cell of the grid that
+            we have created.
           </p>
 
           <p class="main-section__text">
@@ -579,30 +580,68 @@
           <hr>
 
           <p class="main-section__text">
-            Aliqua qui commodo voluptate proident mollit elit. Dolor reprehenderit
-            officia adipisicing sunt ea magna ipsum ea. Dolor ea officia aute ullamco
-            commodo culpa dolore officia irure. Magna velit anim ea amet anim ullamco.
-            Dolor irure commodo deserunt nisi sit ullamco.
+            Grid "frameworks" tend to be based around 12 or 16 column grids and with CSS Grid, you don’t need any third party tool to give you such a framework — it's
+            already there in the spec.
           </p>
 
           <p class="main-section__text">
-            Tempor consectetur nostrud in labore occaecat consectetur mollit laborum
-            consequat fugiat esse proident. Tempor velit aliqua do pariatur anim. Eiusmod elit ullamco ea
-            in. Elit adipisicing labore adipisicing sit in culpa magna sunt adipisicing consequat adipisicing aute elit. Pariatur
-            mollit pariatur minim dolor. Consequat labore aliquip ut consectetur tempor. Consectetur aliquip duis pariatur sit et
-            laboris veniam veniam eiusmod cillum.
+            <a href="https://github.com/mdn/learning-area/blob/master/css/css-layout/grids/11-grid-system-starting-point.html" class="main-section__link accent bold"
+              rel="noopener" target="_blank">Download the starting point file</a>. This contains a container with a 12 column grid defined, and the same markup as we
+            used in the previous two examples. We can now use line-based placement to place our content on the 12 column grid.
           </p>
 
-          <p class="main-section__text">
-            Ea eu incididunt amet laborum. Et sunt sit aliqua tempor ut elit deserunt occaecat. Aute laboris elit ullamco officia.
-          </p>
+          <pre class="main-section__code">
+            <code class="code">
+              <span class="code__class">header</span> <span class="code__parens">{</span>
+                <span class="code__property">grid-column</span><span class="code__punctuation">:</span> <span class="code__value">1</span> <span class="code__punctuation">/</span> <span class="code__value">13</span><span class="code__punctuation">;</span>
+                <span class="code__property">grid-row</span><span class="code__punctuation">:</span> <span class="code__value">1</span><span class="code__punctuation">;</span>
+              <span class="code__punctiation">}</span>
+
+              <span class="code__class">article</span> <span class="code__parens">{</span>
+                <span class="code__property">grid-column</span><span class="code__punctuation">:</span> <span class="code__value">4</span> <span class="code__punctuation">/</span> <span class="code__value">13</span><span class="code__punctuation">;</span>
+                <span class="code__property">grid-row</span><span class="code__punctuation">:</span> <span class="code__value">2</span><span class="code__punctuation">;</span>
+              <span class="code__punctiation">}</span>
+
+              <span class="code__class">aside</span> <span class="code__parens">{</span>
+                <span class="code__property">grid-column</span><span class="code__punctuation">:</span> <span class="code__value">1</span> <span class="code__punctuation">/</span> <span class="code__value">4</span><span class="code__punctuation">;</span>
+                <span class="code__property">grid-row</span><span class="code__punctuation">:</span> <span class="code__value">2</span><span class="code__punctuation">;</span>
+              <span class="code__punctiation">}</span>
+
+              <span class="code__class">footer</span> <span class="code__parens">{</span>
+                <span class="code__property">grid-column</span><span class="code__punctuation">:</span> <span class="code__value">1</span> <span class="code__punctuation">/</span> <span class="code__value">13</span><span class="code__punctuation">;</span>
+                <span class="code__property">grid-row</span><span class="code__punctuation">:</span> <span class="code__value">3</span><span class="code__punctuation">;</span>
+              <span class="code__parens">}</span><span class="code__line-numbers">
+                <span class="code__line"></span>
+                <span class="code__line"></span>
+                <span class="code__line"></span>
+                <span class="code__line"></span>
+                <span class="code__line"></span>
+                <span class="code__line"></span>
+                <span class="code__line"></span>
+                <span class="code__line"></span>
+                <span class="code__line"></span>
+                <span class="code__line code__line--padded"></span>
+                <span class="code__line code__line--padded"></span>
+                <span class="code__line code__line--padded"></span>
+                <span class="code__line code__line--padded"></span>
+                <span class="code__line code__line--padded"></span>
+                <span class="code__line code__line--padded"></span>
+                <span class="code__line code__line--padded"></span>
+                <span class="code__line code__line--padded"></span>
+                <span class="code__line code__line--padded"></span>
+                <span class="code__line code__line--padded"></span>
+              </span></code>
+           </pre>
 
           <p class="main-section__text">
-            Do pariatur id non dolore nulla anim reprehenderit deserunt cillum labore elit sint. Consectetur sit irure elit quis
-            aliquip eiusmod proident non ad deserunt. Cupidatat anim ullamco tempor ut culpa non sint aute aliquip occaecat culpa
-            excepteur deserunt veniam. In ea ea excepteur amet consectetur sint est. Quis est qui eu exercitation incididunt dolor
-            laborum id ut Lorem duis aliquip dolore. Officia irure aliqua Lorem aute ea.
+            If you use the Firefox Grid Inspector to overlay the grid lines on your design, you can see how our 12 column grid works.
           </p>
+
+          <img
+            class="main-section__img"
+            src="./images/grids-inspector-2028x1026.png"
+            alt="An image of the Firefox Grid Inspector"
+            title="Firefox Grid Inspector" />
         </section>
 
         <section class="main-section" id="Test_your_skills!">
@@ -612,62 +651,10 @@
           <hr>
 
           <p class="main-section__text">
-            Aliqua qui commodo voluptate proident mollit elit. Dolor reprehenderit
-            officia adipisicing sunt ea magna ipsum ea. Dolor ea officia aute ullamco
-            commodo culpa dolore officia irure. Magna velit anim ea amet anim ullamco.
-            Dolor irure commodo deserunt nisi sit ullamcos.
-          </p>
-
-          <p class="main-section__text">
-            Tempor consectetur nostrud in labore occaecat consectetur mollit laborum
-            consequat fugiat esse proident. Tempor velit aliqua do pariatur anim. Eiusmod elit ullamco ea
-            in. Elit adipisicing labore adipisicing sit in culpa magna sunt adipisicing consequat adipisicing aute elit. Pariatur
-            mollit pariatur minim dolor. Consequat labore aliquip ut consectetur tempor. Consectetur aliquip duis pariatur sit et
-            laboris veniam veniam eiusmod cillum.
-          </p>
-
-          <p class="main-section__text">
-            Ea eu incididunt amet laborum. Et sunt sit aliqua tempor ut elit deserunt occaecat. Aute laboris elit ullamco officia.
-          </p>
-
-          <p class="main-section__text">
-            Do pariatur id non dolore nulla anim reprehenderit deserunt cillum labore elit sint. Consectetur sit irure elit quis
-            aliquip eiusmod proident non ad deserunt. Cupidatat anim ullamco tempor ut culpa non sint aute aliquip occaecat culpa
-            excepteur deserunt veniam. In ea ea excepteur amet consectetur sint est. Quis est qui eu exercitation incididunt dolor
-            laborum id ut Lorem duis aliquip dolore. Officia irure aliqua Lorem aute ea.
-          </p>
-        </section>
-
-        <section class="main-section">
-          <header class="dummy_section" id="Know_more_about_CSS_Grid">
-            <h2 class="main-section__title">Know more about CSS Grid</h2>
-          </header>
-          <hr>
-
-          <p class="main-section__text">
-            Aliqua qui commodo voluptate proident mollit elit. Dolor reprehenderit
-            officia adipisicing sunt ea magna ipsum ea. Dolor ea officia aute ullamco
-            commodo culpa dolore officia irure. Magna velit anim ea amet anim ullamco.
-            Dolor irure commodo deserunt nisi sit ullamco.
-          </p>
-
-          <p class="main-section__text">
-            Tempor consectetur nostrud in labore occaecat consectetur mollit laborum
-            consequat fugiat esse proident. Tempor velit aliqua do pariatur anim. Eiusmod elit ullamco ea
-            in. Elit adipisicing labore adipisicing sit in culpa magna sunt adipisicing consequat adipisicing aute elit. Pariatur
-            mollit pariatur minim dolor. Consequat labore aliquip ut consectetur tempor. Consectetur aliquip duis pariatur sit et
-            laboris veniam veniam eiusmod cillum.
-          </p>
-
-          <p class="main-section__text">
-            Ea eu incididunt amet laborum. Et sunt sit aliqua tempor ut elit deserunt occaecat. Aute laboris elit ullamco officia.
-          </p>
-
-          <p class="main-section__text">
-            Do pariatur id non dolore nulla anim reprehenderit deserunt cillum labore elit sint. Consectetur sit irure elit quis
-            aliquip eiusmod proident non ad deserunt. Cupidatat anim ullamco tempor ut culpa non sint aute aliquip occaecat culpa
-            excepteur deserunt veniam. In ea ea excepteur amet consectetur sint est. Quis est qui eu exercitation incididunt dolor
-            laborum id ut Lorem duis aliquip dolore. Officia irure aliqua Lorem aute ea.
+            You've reached the end of this article, but can you remember the most important information? You can find some further tests to
+            verify that you've retained this information before you move on — see
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grid_skills" class="main-section__link accent bold" rel="noopener"
+              target="_blank">Test your skills: Grids.</a>
           </p>
         </section>
       </main>
