@@ -57,7 +57,7 @@ body {
     "footer footer";
   grid-template-columns:
     minmax(30rem, 1.3fr)
-    minmax(30rem, 6fr);
+    minmax(1rem, 6fr);
 }
 
 .nav-bar {
@@ -252,6 +252,7 @@ body {
   html {
     font-size: 58%;
   }
+
   .container {
     grid-template-areas:
       "nav nav"
@@ -308,5 +309,22 @@ body {
 
   .main-section {
     padding-top: 4rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  html {
+    font-size: 52%;
+  }
+
+  .main-content {
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .nav-header__title {
+    font-size: 2.5rem;
+    line-height: 1.8;
   }
 }
