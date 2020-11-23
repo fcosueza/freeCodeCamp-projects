@@ -84,8 +84,25 @@ body {
 }
 
 .menu__item {
+  position: relative;
   list-style: none;
   margin: 2rem 0;
+}
+
+.menu__item::after {
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  content: "";
+  height: 0.4rem;
+  width: 0;
+  border-radius: 1rem;
+  background-color: var(--accent-color);
+  transition: all 0.5s ease-in-out;
+}
+
+.menu__item:hover::after {
+  width: 100%;
 }
 
 .nav-link {
@@ -102,6 +119,10 @@ body {
   padding: 0 5rem 5rem;
   border-radius: 1rem;
   background-color: var(--section-bg);
+}
+
+.main-section {
+  padding-top: 2rem;
 }
 
 .main-section__title {
@@ -228,6 +249,9 @@ body {
 }
 
 @media only screen and (max-width: 900px) {
+  html {
+    font-size: 58%;
+  }
   .container {
     grid-template-areas:
       "nav nav"
@@ -271,11 +295,11 @@ body {
 
   .menu:hover .menu__item {
     display: block;
+    margin-left: 2rem;
   }
 
   .menu__item {
     display: none;
-    padding: 0 2rem;
   }
 
   .main-content {
