@@ -61,10 +61,10 @@ body {
 }
 
 .nav-bar {
+  grid-area: nav;
   position: sticky;
   top: 1rem;
   left: 0;
-  grid-area: nav;
   padding: 0 1rem;
   margin: 5rem 1rem;
   text-align: center;
@@ -89,7 +89,7 @@ body {
   margin: 2rem 0;
 }
 
-.menu__item::after {
+.nav-link::after {
   position: absolute;
   bottom: -0.5rem;
   left: 0;
@@ -101,13 +101,9 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-.menu__item:hover::after {
-  width: 100%;
-}
-
 .nav-link {
-  text-decoration: none;
   font-size: 2rem;
+  text-decoration: none;
   color: var(--font-color);
   line-height: 3rem;
   font-weight: bold;
@@ -152,19 +148,19 @@ body {
 
 .main-section__code {
   position: relative;
-  background-color: var(--menu-bg);
-  border-left: 1rem solid var(--accent-color);
   font-size: 1.8rem;
   line-height: 1.5;
   overflow: auto;
+  background-color: var(--menu-bg);
+  border-left: 1rem solid var(--accent-color);
 }
 
 .main-footer {
   grid-area: footer;
   font-size: 1.6rem;
   line-height: 1.5;
-  padding: 2rem;
   text-align: center;
+  padding: 2rem;
 }
 
 /* Code style */
@@ -228,6 +224,10 @@ body {
 
 .main-section__link:hover {
   text-decoration: underline;
+}
+
+.nav-link:hover::after {
+  width: 20%;
 }
 
 /* Util Classes */
