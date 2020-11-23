@@ -103,6 +103,7 @@ body {
   border-radius: 1rem;
   background-color: var(--section-bg);
 }
+
 .main-section__title {
   font-size: 4rem;
   margin-bottom: 0;
@@ -236,7 +237,6 @@ body {
   }
 
   .nav-bar {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -279,6 +279,10 @@ body {
   }
 
   .main-content {
-    margin: 1rem 2rem;
+    margin: 0 2rem;
+  }
+
+  .main-section {
+    padding-top: 4rem;
   }
 }
