@@ -5,6 +5,7 @@
   --section-bg: #33373a;
   --nav-bg: #24282a;
   --menu-bg: rgba(0, 0, 0, 0.2);
+  --menu-bg-darker: rgba(0, 0, 0, 0.9);
   --font-color: #cbd0d0;
   --accent-color: #e6244b;
 
@@ -222,5 +223,62 @@ body {
 @media only screen and (max-width: 1300px) {
   .main-section__img {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    grid-template-areas:
+      "nav nav"
+      "content content"
+      "content content"
+      "footer footer";
+  }
+
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    background-color: var(--nav-bg);
+    z-index: 1;
+  }
+
+  .nav-header__title {
+    font-size: 3rem;
+    padding-left: 1rem;
+  }
+
+  .menu {
+    position: absolute;
+    top: 5.2rem;
+    right: 2rem;
+    margin: 0;
+    padding: 0;
+    background-color: var(--nav-bg);
+  }
+
+  .menu::before {
+    position: absolute;
+    top: -3.8rem;
+    right: 0.2rem;
+    content: url(../images/menu-icon-26.png);
+    padding: 0.5rem 0.8rem 0;
+    border-radius: 0.5rem;
+    border: 0.1rem solid var(--font-color);
+  }
+
+  .menu:hover .menu__item {
+    display: block;
+  }
+
+  .menu__item {
+    display: none;
+    padding: 0 2rem;
+  }
+
+  .main-content {
+    margin: 1rem 2rem;
   }
 }
