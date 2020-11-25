@@ -1,3 +1,13 @@
+/* Variables */
+
+:root {
+  --main-color: darkblue;
+  --font-color: white;
+  --navbar-color: black;
+  --projects-bg-color: #8c7300;
+  --contact-bg-color: #403400;
+}
+
 /* Reset and basic style */
 
 *,
@@ -13,6 +23,7 @@ html {
 
 body {
   min-height: 100vh;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 html,
@@ -32,7 +43,7 @@ body {
   left: 0;
   width: 100%;
   padding: 0 5rem;
-  background-color: black;
+  background-color: var(--navbar-color);
 }
 
 .navbar__menu {
@@ -44,7 +55,7 @@ body {
 }
 .navbar__link {
   text-decoration: none;
-  color: white;
+  color: var(--font-color);
 }
 
 .header {
@@ -54,15 +65,64 @@ body {
   flex-flow: column nowrap;
   text-align: center;
   height: 100vh;
-  color: white;
+  color: var(--font-color);
   background-color: darkblue;
 }
 
 .header__title {
-  font-size: 7 rem;
+  font-size: 7rem;
   margin-bottom: 0;
 }
 
 .header__text {
   font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+.section {
+  color: var(--font-color);
+  padding: 10rem 0;
+}
+
+.content {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.content--lg {
+  width: 100%;
+}
+
+.section--projects {
+  background-color: var(--projects-bg-color);
+}
+
+.section--contact {
+  background-color: var(--contact-bg-color);
+}
+
+.section__title {
+  font-size: 5rem;
+  margin-bottom: 5rem;
+  margin-top: 0;
+}
+
+.project-tile {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin: 0 auto;
+}
+
+.project-tile__item {
+  width: 30rem;
+  height: 30rem;
+  text-align: center;
+  background-color: #fff;
 }
