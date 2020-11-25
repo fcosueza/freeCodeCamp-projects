@@ -19,3 +19,25 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* Elements Style */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4rem;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.navbar__menu {
+  display: flex;
+  justify-content: end;
+}
+
+.header {
+  text-align: center;
+  height: 100vh;
+  padding-top: 5rem;
+}
