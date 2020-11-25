@@ -107,7 +107,6 @@ body {
 
 .section__title {
   font-size: 5rem;
-  margin-bottom: 5rem;
   margin-top: 0;
 }
 
@@ -115,7 +114,6 @@ body {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: center;
   gap: 5rem;
   margin: 0 auto;
 }
@@ -125,4 +123,15 @@ body {
   height: 30rem;
   text-align: center;
   background-color: #fff;
+}
+
+.footer {
+  color: var(--font-color);
+  background-color: var(--navbar-color);
+  text-align: center;
+  line-height: 5;
+}
+
+.footer__text {
+  margin: 0;
 }
