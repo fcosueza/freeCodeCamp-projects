@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -23,21 +24,45 @@ body {
 /* Elements Style */
 
 .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: end;
   position: fixed;
   top: 0;
   left: 0;
-  height: 4rem;
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 5rem;
+  background-color: black;
 }
 
 .navbar__menu {
   display: flex;
-  justify-content: end;
+  justify-content: space-around;
+  width: 20%;
+  font-size: 2rem;
+  list-style: none;
+}
+.navbar__link {
+  text-decoration: none;
+  color: white;
 }
 
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
   text-align: center;
   height: 100vh;
-  padding-top: 5rem;
+  color: white;
+  background-color: darkblue;
+}
+
+.header__title {
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+
+.header__text {
+  font-size: 2rem;
 }
