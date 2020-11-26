@@ -131,6 +131,16 @@ body {
   background-color: #fff;
 }
 
+.social-media {
+  display: flex;
+  margin-top: 5rem;
+}
+
+.social-media__item {
+  font-size: 5rem;
+  margin: 0 2rem;
+}
+
 .footer {
   color: var(--font-color);
   background-color: var(--navbar-color);
