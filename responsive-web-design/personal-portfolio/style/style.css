@@ -37,6 +37,7 @@ body {
 .link {
   color: var(--font-color);
   font-weight: bold;
+  text-decoration: none;
 }
 
 .navbar {
@@ -62,8 +63,8 @@ body {
   list-style: none;
 }
 .navbar__link {
-  text-decoration: none;
   color: var(--main-color);
+  transition: all 0.2s ease;
 }
 
 .header {
@@ -138,6 +139,7 @@ body {
 .project-tile__item {
   text-align: center;
   background-color: var(--main-color);
+  font-weight: 400;
 }
 
 .card {
@@ -180,7 +182,15 @@ body {
   margin: 0;
 }
 
+.footer__link {
+  color: var(--navbar-color);
+}
+
 /* Elements State */
+
+.navbar__link:hover {
+  color: var(--font-color);
+}
 
 .card:hover {
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.5);
@@ -189,4 +199,10 @@ body {
 
 .social-media__item:hover {
   transform: translateY(-0.4rem);
+}
+
+/* Utility classes */
+
+.text-strike {
+  text-decoration: line-through;
 }
