@@ -108,6 +108,12 @@ body {
 .section__title {
   font-size: 5rem;
   margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section__text {
+  justify-self: start;
+  font-size: 2rem;
 }
 
 .project-tile {
@@ -115,7 +121,7 @@ body {
   flex-flow: row wrap;
   align-items: center;
   gap: 5rem;
-  margin: 0 auto;
+  margin: 5rem auto;
 }
 
 .project-tile__item {
