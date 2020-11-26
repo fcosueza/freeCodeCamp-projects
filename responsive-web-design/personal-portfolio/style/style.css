@@ -1,10 +1,10 @@
 /* Variables */
 
 :root {
-  --main-color: darkblue;
-  --font-color: white;
-  --navbar-color: black;
-  --projects-bg-color: #8c7300;
+  --main-color: #222831;
+  --font-color: #eee;
+  --navbar-color: #00adb5;
+  --projects-bg-color: #393e46;
   --contact-bg-color: #403400;
 }
 
@@ -34,6 +34,11 @@ body {
 
 /* Elements Style */
 
+.link {
+  color: var(--font-color);
+  font-weight: bold;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -50,15 +55,13 @@ body {
   display: flex;
   justify-content: space-around;
   width: 20%;
+  min-width: 30rem;
   font-size: 2rem;
   list-style: none;
 }
 .navbar__link {
   text-decoration: none;
-}
-
-.link {
-  color: var(--font-color);
+  color: var(--main-color);
 }
 
 .header {
@@ -69,7 +72,7 @@ body {
   text-align: center;
   height: 100vh;
   color: var(--font-color);
-  background-color: darkblue;
+  background-color: var(--main-color);
 }
 
 .header__title {
@@ -80,6 +83,7 @@ body {
 .header__text {
   font-size: 2.5rem;
   margin-top: 2rem;
+  color: var(--navbar-color);
 }
 
 .section {
@@ -105,7 +109,7 @@ body {
 }
 
 .section--contact {
-  background-color: var(--contact-bg-color);
+  background-color: var(--main-color);
 }
 
 .section__title {
@@ -117,21 +121,36 @@ body {
 .section__text {
   justify-self: start;
   font-size: 2rem;
+  font-weight: 500;
 }
 
 .project-tile {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  justify-content: center;
   gap: 5rem;
   margin: 5rem auto;
 }
 
 .project-tile__item {
-  width: 30rem;
-  height: 30rem;
   text-align: center;
-  background-color: #fff;
+  background-color: var(--main-color);
+}
+
+.card {
+  width: 40rem;
+  height: 45rem;
+}
+
+.card__img {
+  width: 100%;
+  height: 85%;
+  background-color: var(--main-color);
+}
+
+.card__text {
+  font-size: 2rem;
 }
 
 .social-media {
@@ -146,9 +165,11 @@ body {
 
 .footer {
   color: var(--font-color);
-  background-color: var(--navbar-color);
+  background-color: var(--main-color);
   text-align: center;
   line-height: 5;
+  font-size: 1.8rem;
+  border-top: 0.3rem solid var(--navbar-color);
 }
 
 .footer__text {
