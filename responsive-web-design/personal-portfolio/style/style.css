@@ -69,6 +69,7 @@ body {
   flex-flow: column nowrap;
   text-align: center;
   height: 100vh;
+  padding: 1rem;
   color: var(--font-color);
   background-color: var(--main-color);
 }
@@ -85,8 +86,9 @@ body {
 }
 
 .section {
+  text-align: center;
+  padding: 10rem 1rem;
   color: var(--font-color);
-  padding: 10rem 0;
 }
 
 .content {
@@ -129,8 +131,8 @@ body {
 
 .project-tile__item {
   text-align: center;
-  background-color: var(--main-color);
   font-weight: 400;
+  background-color: var(--main-color);
 }
 
 .card {
@@ -160,12 +162,13 @@ body {
 }
 
 .footer {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  text-align: center;
+  padding: 5rem 1rem;
+  border-top: 0.3rem solid var(--navbar-color);
   color: var(--font-color);
   background-color: var(--main-color);
-  text-align: center;
-  line-height: 5;
-  font-size: 1.8rem;
-  border-top: 0.3rem solid var(--navbar-color);
 }
 
 .footer__text {
@@ -200,4 +203,44 @@ body {
 
 .text-strike {
   text-decoration: line-through;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 600px) {
+  .content {
+    width: 100%;
+  }
+
+  .navbar {
+    justify-content: center;
+  }
+
+  .navbar__menu {
+    justify-content: space-around;
+    font-size: 1.6rem;
+    width: 100%;
+    padding: 0;
+  }
+
+  .card {
+    width: 65%;
+    min-width: 30rem;
+  }
+
+  .social-media {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .social-media__item {
+    margin: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  html {
+    font-size: 58%;
+  }
 }
