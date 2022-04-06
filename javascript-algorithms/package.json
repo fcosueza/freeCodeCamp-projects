@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "@types/jest": "^26.0.15",
-    "node-notifier": ">=8.0.1"
+    "node-notifier": ">=8.0.1",
+    "json-schema": ">=0.4.0"
   }
 }
